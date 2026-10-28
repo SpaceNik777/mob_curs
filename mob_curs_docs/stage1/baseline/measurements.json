@@ -1,0 +1,545 @@
+{
+  "measured_at_utc": "2026-10-28T22:39:38.773090+00:00",
+  "commit": "b43f23e52f4c92879777d76bf25da39b65b327a2",
+  "source_sha256": {
+    "app/src/main/kotlin/ru/course/cityservices/CityServicesApp.kt": "4651ee16131c4dc58f7843d10052efea6c963b7f579c9ff65f30cd9ed8d69241",
+    "app/src/main/kotlin/ru/course/cityservices/MainActivity.kt": "7315d67f0662ca7d3952cda682e13ff206715ce0c43a819500aff24a1fe6936c",
+    "app/src/main/kotlin/ru/course/cityservices/analytic/AnalyticsTracker.kt": "226a4ec7077d5d5aaff4603d6e1bfcbd5857fa7753e38d4c821ea132b876f493",
+    "app/src/main/kotlin/ru/course/cityservices/core/ServiceLocator.kt": "16c1fab8b2f33bd69899c985ddfefbdcdf08aedc68b9e66932120090db86e873",
+    "app/src/main/kotlin/ru/course/cityservices/domain/DomainModels.kt": "119bebbee8a04c49963fff318026cd96f363fb09b599bdb1cbce9bf623cc5628",
+    "app/src/main/kotlin/ru/course/cityservices/domain/RequestValidator.kt": "70acdbd271ce0a8f902126529dcefe9a3d54fff65c8bc4e9e5e155e1bc00318b",
+    "app/src/main/kotlin/ru/course/cityservices/model/Models.kt": "cf5e530756c7bea93a8c5b26542a8eb084d5afc164e469209b6e1edb02e59277",
+    "app/src/main/kotlin/ru/course/cityservices/network/CityApi.kt": "e924525423080718fd5fd02fa284f5cfcf239c9c0444d5d7f0da1ba63b98ebfa",
+    "app/src/main/kotlin/ru/course/cityservices/network/FakeApi.kt": "46307f4ac64a4cd0c2a8a04ca6b1880673ecfeadcb146f3700174d78fd561757",
+    "app/src/main/kotlin/ru/course/cityservices/state/AppState.kt": "6bb1fe8461a1c7546136653748827b3703dd1c6aa5a14e1732716d236cefa14e",
+    "app/src/main/kotlin/ru/course/cityservices/storage/AppDatabase.kt": "4a6e5d65f933f38cdc62aa2f9295baaec1cb6b6dcc88701223acc208881f5a22",
+    "app/src/main/kotlin/ru/course/cityservices/storage/InstantConverter.kt": "4c672c2d5e5febc11c06681caa9d26ef24b0f6f1adb4ec0a2c5a851a893b4b59",
+    "app/src/main/kotlin/ru/course/cityservices/storage/RequestDao.kt": "f41dd63e6b6c5fd1e3db23a091ffe3f353d681f3a95009f0ed955a6c3247da29",
+    "app/src/main/kotlin/ru/course/cityservices/storage/SessionStore.kt": "68eec061cff1708aada3260a070cb184f578b62948409accdfd4f3785db4257b",
+    "app/src/main/kotlin/ru/course/cityservices/ui/component/ServiceCard.kt": "46dbfff5ae18e157c949f1d85892d0865ad7bddd5e38c8e44d08f2ec518f1cea",
+    "app/src/main/kotlin/ru/course/cityservices/ui/component/StatusBadge.kt": "11c6117110a4a3abc53ea3b35595e3bd3d99dc7a9960b90e911a011d270e003b",
+    "app/src/main/kotlin/ru/course/cityservices/ui/screen/LoginScreen.kt": "2dba3f2a87620da71eef625d598959974e3163e9ebc6c6da57216d5459718005",
+    "app/src/main/kotlin/ru/course/cityservices/ui/screen/NotificationsScreen.kt": "81242cd026f820adb2a94da014cbdf809d851c021e4a59e4ac1a697a9b5f2293",
+    "app/src/main/kotlin/ru/course/cityservices/ui/screen/RequestsScreen.kt": "e69b5d8406695f3ac9e19bfeb4cca594feb9949ef9e1653020e73a394ad8a277",
+    "app/src/main/kotlin/ru/course/cityservices/ui/screen/ServiceDetailScreen.kt": "6c195be842f21933dbdea7a79a1d1899492f70d0bbe1dde6f71a90e4939a0a6f",
+    "app/src/main/kotlin/ru/course/cityservices/ui/screen/ServicesScreen.kt": "3571c3b873afe666b98f99d0f99b41a0166a2267a90ae84e9bfcf7020671782e",
+    "app/src/main/kotlin/ru/course/cityservices/ui/theme/Theme.kt": "afe7046d2c7e5d30c71debe2bb58df26bdca5d9a2e896358862f60b0ac1ed084",
+    "app/src/main/kotlin/ru/course/cityservices/util/TimeFormat.kt": "b830839fb91ecb043cbe538b6cfae5f43484ee66ab42f8b3f3396f1be03b1732"
+  },
+  "method": "Lexical source counts. Files, not classes, are dependency graph nodes. No coverage inferred.",
+  "structure": {
+    "main_files": 23,
+    "main_lines": 1750,
+    "import_edges": 38,
+    "reference_edges": 42,
+    "packages": 12,
+    "package_edges": 21,
+    "file_scc": [],
+    "package_scc": []
+  },
+  "metrics": [
+    {
+      "file": "Models",
+      "package": "model",
+      "lines": 31,
+      "fan_in": 10,
+      "fan_out": 0,
+      "transitive_dependents": 14
+    },
+    {
+      "file": "ServiceLocator",
+      "package": "core",
+      "lines": 206,
+      "fan_in": 6,
+      "fan_out": 8,
+      "transitive_dependents": 6
+    },
+    {
+      "file": "AppState",
+      "package": "state",
+      "lines": 51,
+      "fan_in": 4,
+      "fan_out": 1,
+      "transitive_dependents": 8
+    },
+    {
+      "file": "CityApi",
+      "package": "network",
+      "lines": 30,
+      "fan_in": 2,
+      "fan_out": 1,
+      "transitive_dependents": 8
+    },
+    {
+      "file": "DomainModels",
+      "package": "domain",
+      "lines": 54,
+      "fan_in": 2,
+      "fan_out": 0,
+      "transitive_dependents": 4
+    },
+    {
+      "file": "TimeFormat",
+      "package": "util",
+      "lines": 27,
+      "fan_in": 2,
+      "fan_out": 0,
+      "transitive_dependents": 4
+    },
+    {
+      "file": "InstantConverter",
+      "package": "storage",
+      "lines": 13,
+      "fan_in": 1,
+      "fan_out": 0,
+      "transitive_dependents": 8
+    },
+    {
+      "file": "RequestDao",
+      "package": "storage",
+      "lines": 26,
+      "fan_in": 1,
+      "fan_out": 1,
+      "transitive_dependents": 8
+    },
+    {
+      "file": "AnalyticsTracker",
+      "package": "analytic",
+      "lines": 23,
+      "fan_in": 1,
+      "fan_out": 0,
+      "transitive_dependents": 7
+    },
+    {
+      "file": "AppDatabase",
+      "package": "storage",
+      "lines": 16,
+      "fan_in": 1,
+      "fan_out": 3,
+      "transitive_dependents": 7
+    },
+    {
+      "file": "FakeApi",
+      "package": "network",
+      "lines": 252,
+      "fan_in": 1,
+      "fan_out": 2,
+      "transitive_dependents": 7
+    },
+    {
+      "file": "RequestValidator",
+      "package": "domain",
+      "lines": 26,
+      "fan_in": 1,
+      "fan_out": 0,
+      "transitive_dependents": 7
+    },
+    {
+      "file": "SessionStore",
+      "package": "storage",
+      "lines": 47,
+      "fan_in": 1,
+      "fan_out": 0,
+      "transitive_dependents": 7
+    },
+    {
+      "file": "ServiceCard",
+      "package": "ui.component",
+      "lines": 45,
+      "fan_in": 1,
+      "fan_out": 1,
+      "transitive_dependents": 3
+    },
+    {
+      "file": "StatusBadge",
+      "package": "ui.component",
+      "lines": 41,
+      "fan_in": 1,
+      "fan_out": 1,
+      "transitive_dependents": 3
+    },
+    {
+      "file": "LoginScreen",
+      "package": "ui.screen",
+      "lines": 143,
+      "fan_in": 1,
+      "fan_out": 1,
+      "transitive_dependents": 2
+    },
+    {
+      "file": "NotificationsScreen",
+      "package": "ui.screen",
+      "lines": 85,
+      "fan_in": 1,
+      "fan_out": 2,
+      "transitive_dependents": 2
+    },
+    {
+      "file": "RequestsScreen",
+      "package": "ui.screen",
+      "lines": 201,
+      "fan_in": 1,
+      "fan_out": 5,
+      "transitive_dependents": 2
+    },
+    {
+      "file": "ServiceDetailScreen",
+      "package": "ui.screen",
+      "lines": 119,
+      "fan_in": 1,
+      "fan_out": 2,
+      "transitive_dependents": 2
+    },
+    {
+      "file": "ServicesScreen",
+      "package": "ui.screen",
+      "lines": 162,
+      "fan_in": 1,
+      "fan_out": 4,
+      "transitive_dependents": 2
+    },
+    {
+      "file": "CityServicesApp",
+      "package": "root",
+      "lines": 104,
+      "fan_in": 1,
+      "fan_out": 7,
+      "transitive_dependents": 1
+    },
+    {
+      "file": "Theme",
+      "package": "ui.theme",
+      "lines": 24,
+      "fan_in": 1,
+      "fan_out": 0,
+      "transitive_dependents": 1
+    },
+    {
+      "file": "MainActivity",
+      "package": "root",
+      "lines": 24,
+      "fan_in": 0,
+      "fan_out": 3,
+      "transitive_dependents": 0
+    }
+  ],
+  "indicators": {
+    "ui_locator_calls": {
+      "occurrences": 10,
+      "files": 5,
+      "evidence": [
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/CityServicesApp.kt",
+          "line": 35,
+          "match": "ServiceLocator.restoreSession("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/CityServicesApp.kt",
+          "line": 47,
+          "match": "ServiceLocator.refreshRequests("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/CityServicesApp.kt",
+          "line": 68,
+          "match": "ServiceLocator.logout("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/LoginScreen.kt",
+          "line": 38,
+          "match": "ServiceLocator.login("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/RequestsScreen.kt",
+          "line": 57,
+          "match": "ServiceLocator.loadLocalRequests("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/RequestsScreen.kt",
+          "line": 60,
+          "match": "ServiceLocator.refreshRequests("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/RequestsScreen.kt",
+          "line": 57,
+          "match": "ServiceLocator.loadLocalRequests("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/ServiceDetailScreen.kt",
+          "line": 104,
+          "match": "ServiceLocator.submitRequest("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/ServicesScreen.kt",
+          "line": 43,
+          "match": "ServiceLocator.loadServices("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/ServicesScreen.kt",
+          "line": 43,
+          "match": "ServiceLocator.loadServices("
+        }
+      ]
+    },
+    "ui_direct_storage_or_api_imports": {
+      "occurrences": 0,
+      "files": 0,
+      "evidence": []
+    },
+    "domain_android_compose_room_imports": {
+      "occurrences": 0,
+      "files": 0,
+      "evidence": []
+    },
+    "appstate_external_mutations": {
+      "occurrences": 10,
+      "files": 2,
+      "evidence": [
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/CityServicesApp.kt",
+          "line": 62,
+          "match": "AppState.selectedService ="
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/core/ServiceLocator.kt",
+          "line": 42,
+          "match": "AppState.login("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/core/ServiceLocator.kt",
+          "line": 42,
+          "match": "AppState.login("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/core/ServiceLocator.kt",
+          "line": 89,
+          "match": "AppState.reset("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/core/ServiceLocator.kt",
+          "line": 98,
+          "match": "AppState.services ="
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/core/ServiceLocator.kt",
+          "line": 99,
+          "match": "AppState.lastError ="
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/core/ServiceLocator.kt",
+          "line": 99,
+          "match": "AppState.lastError ="
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/core/ServiceLocator.kt",
+          "line": 175,
+          "match": "AppState.notifications.add"
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/core/ServiceLocator.kt",
+          "line": 99,
+          "match": "AppState.lastError ="
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/core/ServiceLocator.kt",
+          "line": 99,
+          "match": "AppState.lastError ="
+        }
+      ]
+    },
+    "global_locator_calls": {
+      "occurrences": 11,
+      "files": 6,
+      "evidence": [
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/CityServicesApp.kt",
+          "line": 35,
+          "match": "ServiceLocator.restoreSession("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/CityServicesApp.kt",
+          "line": 47,
+          "match": "ServiceLocator.refreshRequests("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/CityServicesApp.kt",
+          "line": 68,
+          "match": "ServiceLocator.logout("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/MainActivity.kt",
+          "line": 16,
+          "match": "ServiceLocator.init("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/LoginScreen.kt",
+          "line": 38,
+          "match": "ServiceLocator.login("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/RequestsScreen.kt",
+          "line": 57,
+          "match": "ServiceLocator.loadLocalRequests("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/RequestsScreen.kt",
+          "line": 60,
+          "match": "ServiceLocator.refreshRequests("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/RequestsScreen.kt",
+          "line": 57,
+          "match": "ServiceLocator.loadLocalRequests("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/ServiceDetailScreen.kt",
+          "line": 104,
+          "match": "ServiceLocator.submitRequest("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/ServicesScreen.kt",
+          "line": 43,
+          "match": "ServiceLocator.loadServices("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/ServicesScreen.kt",
+          "line": 43,
+          "match": "ServiceLocator.loadServices("
+        }
+      ]
+    },
+    "all_presentation_locator_calls": {
+      "occurrences": 11,
+      "files": 6,
+      "evidence": [
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/CityServicesApp.kt",
+          "line": 35,
+          "match": "ServiceLocator.restoreSession("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/CityServicesApp.kt",
+          "line": 47,
+          "match": "ServiceLocator.refreshRequests("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/CityServicesApp.kt",
+          "line": 68,
+          "match": "ServiceLocator.logout("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/MainActivity.kt",
+          "line": 16,
+          "match": "ServiceLocator.init("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/LoginScreen.kt",
+          "line": 38,
+          "match": "ServiceLocator.login("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/RequestsScreen.kt",
+          "line": 57,
+          "match": "ServiceLocator.loadLocalRequests("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/RequestsScreen.kt",
+          "line": 60,
+          "match": "ServiceLocator.refreshRequests("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/RequestsScreen.kt",
+          "line": 57,
+          "match": "ServiceLocator.loadLocalRequests("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/ServiceDetailScreen.kt",
+          "line": 104,
+          "match": "ServiceLocator.submitRequest("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/ServicesScreen.kt",
+          "line": 43,
+          "match": "ServiceLocator.loadServices("
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/ServicesScreen.kt",
+          "line": 43,
+          "match": "ServiceLocator.loadServices("
+        }
+      ]
+    },
+    "address_validation_calls_outside_validator": {
+      "occurrences": 0,
+      "files": 0,
+      "evidence": []
+    },
+    "notification_read_mutation": {
+      "occurrences": 1,
+      "files": 1,
+      "evidence": [
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/NotificationsScreen.kt",
+          "line": 66,
+          "match": "notification.isRead = true"
+        }
+      ]
+    }
+  },
+  "source_contract_checks": {
+    "history_reads_all_users": true,
+    "history_dao_returns_flow": false,
+    "request_has_sync_or_operation_id": false,
+    "notification_read_is_plain_var": true,
+    "activity_calls_locator_init": true,
+    "init_creates_fake_api": true,
+    "detail_uses_saved_state": false,
+    "exception_handlers_in_locator": 4,
+    "explicit_cancellation_handling_in_locator": false
+  },
+  "tests": {
+    "local_files": 4,
+    "local_test_annotations": 16,
+    "instrumented_files": 0,
+    "coverage_percent": null
+  },
+  "device": {
+    "model": "sdk_gphone64_x86_64",
+    "api": "34",
+    "size": "Physical size: 1080x2220",
+    "provenance": "Preinstalled APK; identity to source commit not established. No data reset; saved session and DB retained."
+  },
+  "launch": {
+    "samples": [
+      {
+        "run": 1,
+        "TotalTime": 1790,
+        "WaitTime": 1795
+      },
+      {
+        "run": 2,
+        "TotalTime": 1705,
+        "WaitTime": 1711
+      },
+      {
+        "run": 3,
+        "TotalTime": 1811,
+        "WaitTime": 1816
+      },
+      {
+        "run": 4,
+        "TotalTime": 3277,
+        "WaitTime": 3343
+      },
+      {
+        "run": 5,
+        "TotalTime": 1767,
+        "WaitTime": 1768
+      }
+    ],
+    "median_total_ms": 1790,
+    "min_total_ms": 1705,
+    "max_total_ms": 3277,
+    "meaning": "Android am start -W TotalTime: Activity launch, NOT time until catalog ready. Five sequential process-cold, cache-warm launches; not Macrobenchmark."
+  },
+  "retained_device_measurement_utc": "2026-10-28T22:23:20.811469+00:00"
+}

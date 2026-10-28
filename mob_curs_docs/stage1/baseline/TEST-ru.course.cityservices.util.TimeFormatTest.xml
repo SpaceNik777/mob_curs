@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.course.cityservices.util.TimeFormatTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-28T22:23:46.490Z" hostname="redacted" time="0.005">
+  <properties/>
+  <testcase name="минуты назад" classname="ru.course.cityservices.util.TimeFormatTest" time="0.003"/>
+  <testcase name="ровно сутки - вчера" classname="ru.course.cityservices.util.TimeFormatTest" time="0.0"/>
+  <testcase name="несколько дней назад" classname="ru.course.cityservices.util.TimeFormatTest" time="0.0"/>
+  <testcase name="часы назад" classname="ru.course.cityservices.util.TimeFormatTest" time="0.0"/>
+  <testcase name="меньше минуты - только что" classname="ru.course.cityservices.util.TimeFormatTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

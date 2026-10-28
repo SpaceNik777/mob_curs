@@ -1,0 +1,7 @@
+Starting: Intent { cmp=ru.course.cityservices/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: ru.course.cityservices/.MainActivity
+TotalTime: 3277
+WaitTime: 3343
+Complete

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.course.cityservices.domain.RequestValidatorTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-28T22:23:41.919Z" hostname="redacted" time="0.046">
+  <properties/>
+  <testcase name="достаточный комментарий принимается" classname="ru.course.cityservices.domain.RequestValidatorTest" time="0.016"/>
+  <testcase name="переход статусов идёт по цепочке" classname="ru.course.cityservices.domain.RequestValidatorTest" time="0.002"/>
+  <testcase name="короткий комментарий отклоняется" classname="ru.course.cityservices.domain.RequestValidatorTest" time="0.0"/>
+  <testcase name="полная проверка возвращает обе ошибки сразу" classname="ru.course.cityservices.domain.RequestValidatorTest" time="0.025"/>
+  <testcase name="пустой адрес отклоняется" classname="ru.course.cityservices.domain.RequestValidatorTest" time="0.0"/>
+  <testcase name="незнакомая строка статуса не маппится" classname="ru.course.cityservices.domain.RequestValidatorTest" time="0.001"/>
+  <testcase name="пустой комментарий отклоняется" classname="ru.course.cityservices.domain.RequestValidatorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
