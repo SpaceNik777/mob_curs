@@ -1,0 +1,730 @@
+{
+  "method": "lexical imports plus same-package declaration references; no compiler resolution",
+  "main_files": 23,
+  "main_lines": 1750,
+  "import_edges": 38,
+  "reference_edges": 42,
+  "packages": 12,
+  "package_edges": 21,
+  "file_scc": [],
+  "package_scc": [],
+  "file_cycles": [],
+  "metrics": [
+    {
+      "file": "Models",
+      "package": "model",
+      "lines": 31,
+      "fan_in": 10,
+      "fan_out": 0,
+      "transitive_dependents": 14
+    },
+    {
+      "file": "ServiceLocator",
+      "package": "core",
+      "lines": 206,
+      "fan_in": 6,
+      "fan_out": 8,
+      "transitive_dependents": 6
+    },
+    {
+      "file": "AppState",
+      "package": "state",
+      "lines": 51,
+      "fan_in": 4,
+      "fan_out": 1,
+      "transitive_dependents": 8
+    },
+    {
+      "file": "CityApi",
+      "package": "network",
+      "lines": 30,
+      "fan_in": 2,
+      "fan_out": 1,
+      "transitive_dependents": 8
+    },
+    {
+      "file": "DomainModels",
+      "package": "domain",
+      "lines": 54,
+      "fan_in": 2,
+      "fan_out": 0,
+      "transitive_dependents": 4
+    },
+    {
+      "file": "TimeFormat",
+      "package": "util",
+      "lines": 27,
+      "fan_in": 2,
+      "fan_out": 0,
+      "transitive_dependents": 4
+    },
+    {
+      "file": "InstantConverter",
+      "package": "storage",
+      "lines": 13,
+      "fan_in": 1,
+      "fan_out": 0,
+      "transitive_dependents": 8
+    },
+    {
+      "file": "RequestDao",
+      "package": "storage",
+      "lines": 26,
+      "fan_in": 1,
+      "fan_out": 1,
+      "transitive_dependents": 8
+    },
+    {
+      "file": "AnalyticsTracker",
+      "package": "analytic",
+      "lines": 23,
+      "fan_in": 1,
+      "fan_out": 0,
+      "transitive_dependents": 7
+    },
+    {
+      "file": "AppDatabase",
+      "package": "storage",
+      "lines": 16,
+      "fan_in": 1,
+      "fan_out": 3,
+      "transitive_dependents": 7
+    },
+    {
+      "file": "FakeApi",
+      "package": "network",
+      "lines": 252,
+      "fan_in": 1,
+      "fan_out": 2,
+      "transitive_dependents": 7
+    },
+    {
+      "file": "RequestValidator",
+      "package": "domain",
+      "lines": 26,
+      "fan_in": 1,
+      "fan_out": 0,
+      "transitive_dependents": 7
+    },
+    {
+      "file": "SessionStore",
+      "package": "storage",
+      "lines": 47,
+      "fan_in": 1,
+      "fan_out": 0,
+      "transitive_dependents": 7
+    },
+    {
+      "file": "ServiceCard",
+      "package": "ui.component",
+      "lines": 45,
+      "fan_in": 1,
+      "fan_out": 1,
+      "transitive_dependents": 3
+    },
+    {
+      "file": "StatusBadge",
+      "package": "ui.component",
+      "lines": 41,
+      "fan_in": 1,
+      "fan_out": 1,
+      "transitive_dependents": 3
+    },
+    {
+      "file": "LoginScreen",
+      "package": "ui.screen",
+      "lines": 143,
+      "fan_in": 1,
+      "fan_out": 1,
+      "transitive_dependents": 2
+    },
+    {
+      "file": "NotificationsScreen",
+      "package": "ui.screen",
+      "lines": 85,
+      "fan_in": 1,
+      "fan_out": 2,
+      "transitive_dependents": 2
+    },
+    {
+      "file": "RequestsScreen",
+      "package": "ui.screen",
+      "lines": 201,
+      "fan_in": 1,
+      "fan_out": 5,
+      "transitive_dependents": 2
+    },
+    {
+      "file": "ServiceDetailScreen",
+      "package": "ui.screen",
+      "lines": 119,
+      "fan_in": 1,
+      "fan_out": 2,
+      "transitive_dependents": 2
+    },
+    {
+      "file": "ServicesScreen",
+      "package": "ui.screen",
+      "lines": 162,
+      "fan_in": 1,
+      "fan_out": 4,
+      "transitive_dependents": 2
+    },
+    {
+      "file": "CityServicesApp",
+      "package": "root",
+      "lines": 104,
+      "fan_in": 1,
+      "fan_out": 7,
+      "transitive_dependents": 1
+    },
+    {
+      "file": "Theme",
+      "package": "ui.theme",
+      "lines": 24,
+      "fan_in": 1,
+      "fan_out": 0,
+      "transitive_dependents": 1
+    },
+    {
+      "file": "MainActivity",
+      "package": "root",
+      "lines": 24,
+      "fan_in": 0,
+      "fan_out": 3,
+      "transitive_dependents": 0
+    }
+  ],
+  "files": {
+    "AnalyticsTracker": {
+      "path": "app/src/main/kotlin/ru/course/cityservices/analytic/AnalyticsTracker.kt",
+      "package": "ru.course.cityservices.analytic",
+      "group": "analytic",
+      "lines": 23,
+      "imports": [
+        "android.util.Log"
+      ],
+      "declarations": [
+        "AnalyticsTracker"
+      ]
+    },
+    "CityServicesApp": {
+      "path": "app/src/main/kotlin/ru/course/cityservices/CityServicesApp.kt",
+      "package": "ru.course.cityservices",
+      "group": "root",
+      "lines": 104,
+      "imports": [
+        "androidx.compose.foundation.layout.Box",
+        "androidx.compose.foundation.layout.fillMaxSize",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.material3.CircularProgressIndicator",
+        "androidx.compose.material3.Scaffold",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.runtime.LaunchedEffect",
+        "androidx.compose.runtime.getValue",
+        "androidx.compose.runtime.mutableStateOf",
+        "androidx.compose.runtime.remember",
+        "androidx.compose.runtime.rememberCoroutineScope",
+        "androidx.compose.runtime.setValue",
+        "androidx.compose.ui.Alignment",
+        "androidx.compose.ui.Modifier",
+        "kotlinx.coroutines.delay",
+        "kotlinx.coroutines.launch",
+        "ru.course.cityservices.core.ServiceLocator",
+        "ru.course.cityservices.state.AppState",
+        "ru.course.cityservices.ui.screen.LoginScreen",
+        "ru.course.cityservices.ui.screen.NotificationsScreen",
+        "ru.course.cityservices.ui.screen.RequestsScreen",
+        "ru.course.cityservices.ui.screen.ServiceDetailScreen",
+        "ru.course.cityservices.ui.screen.ServicesScreen",
+        "kotlin.time.Duration.Companion.seconds"
+      ],
+      "declarations": [
+        "CityServicesApp"
+      ]
+    },
+    "ServiceLocator": {
+      "path": "app/src/main/kotlin/ru/course/cityservices/core/ServiceLocator.kt",
+      "package": "ru.course.cityservices.core",
+      "group": "core",
+      "lines": 206,
+      "imports": [
+        "android.content.Context",
+        "androidx.room.Room",
+        "ru.course.cityservices.analytic.AnalyticsTracker",
+        "ru.course.cityservices.domain.RequestValidator",
+        "ru.course.cityservices.model.NotificationItem",
+        "ru.course.cityservices.model.RequestResponse",
+        "ru.course.cityservices.model.ServiceResponse",
+        "ru.course.cityservices.network.CityApi",
+        "ru.course.cityservices.network.FakeApi",
+        "ru.course.cityservices.state.AppState",
+        "ru.course.cityservices.storage.AppDatabase",
+        "ru.course.cityservices.storage.SessionStore",
+        "kotlin.time.Clock"
+      ],
+      "declarations": [
+        "ServiceLocator"
+      ]
+    },
+    "DomainModels": {
+      "path": "app/src/main/kotlin/ru/course/cityservices/domain/DomainModels.kt",
+      "package": "ru.course.cityservices.domain",
+      "group": "domain",
+      "lines": 54,
+      "imports": [],
+      "declarations": [
+        "RequestStatus",
+        "ServiceRequest",
+        "StatusRules"
+      ]
+    },
+    "RequestValidator": {
+      "path": "app/src/main/kotlin/ru/course/cityservices/domain/RequestValidator.kt",
+      "package": "ru.course.cityservices.domain",
+      "group": "domain",
+      "lines": 26,
+      "imports": [],
+      "declarations": [
+        "RequestValidator"
+      ]
+    },
+    "MainActivity": {
+      "path": "app/src/main/kotlin/ru/course/cityservices/MainActivity.kt",
+      "package": "ru.course.cityservices",
+      "group": "root",
+      "lines": 24,
+      "imports": [
+        "android.os.Bundle",
+        "androidx.activity.ComponentActivity",
+        "androidx.activity.compose.setContent",
+        "androidx.activity.enableEdgeToEdge",
+        "ru.course.cityservices.core.ServiceLocator",
+        "ru.course.cityservices.ui.theme.CityServicesTheme"
+      ],
+      "declarations": [
+        "MainActivity"
+      ]
+    },
+    "Models": {
+      "path": "app/src/main/kotlin/ru/course/cityservices/model/Models.kt",
+      "package": "ru.course.cityservices.model",
+      "group": "model",
+      "lines": 31,
+      "imports": [
+        "androidx.room.Entity",
+        "androidx.room.PrimaryKey",
+        "kotlin.time.Instant"
+      ],
+      "declarations": [
+        "ServiceResponse",
+        "RequestResponse",
+        "NotificationItem"
+      ]
+    },
+    "CityApi": {
+      "path": "app/src/main/kotlin/ru/course/cityservices/network/CityApi.kt",
+      "package": "ru.course.cityservices.network",
+      "group": "network",
+      "lines": 30,
+      "imports": [
+        "ru.course.cityservices.model.RequestResponse",
+        "ru.course.cityservices.model.ServiceResponse"
+      ],
+      "declarations": [
+        "CityApi",
+        "AuthResponse"
+      ]
+    },
+    "FakeApi": {
+      "path": "app/src/main/kotlin/ru/course/cityservices/network/FakeApi.kt",
+      "package": "ru.course.cityservices.network",
+      "group": "network",
+      "lines": 252,
+      "imports": [
+        "android.util.Log",
+        "kotlinx.coroutines.delay",
+        "ru.course.cityservices.model.RequestResponse",
+        "ru.course.cityservices.model.ServiceResponse",
+        "java.io.IOException",
+        "kotlin.random.Random",
+        "kotlin.time.Clock",
+        "kotlin.time.Duration.Companion.days",
+        "kotlin.time.Duration.Companion.milliseconds"
+      ],
+      "declarations": [
+        "FakeApi"
+      ]
+    },
+    "AppState": {
+      "path": "app/src/main/kotlin/ru/course/cityservices/state/AppState.kt",
+      "package": "ru.course.cityservices.state",
+      "group": "state",
+      "lines": 51,
+      "imports": [
+        "androidx.compose.runtime.getValue",
+        "androidx.compose.runtime.mutableLongStateOf",
+        "androidx.compose.runtime.mutableStateListOf",
+        "androidx.compose.runtime.mutableStateOf",
+        "androidx.compose.runtime.setValue",
+        "kotlinx.coroutines.flow.MutableStateFlow",
+        "kotlinx.coroutines.flow.StateFlow",
+        "kotlinx.coroutines.flow.asStateFlow",
+        "ru.course.cityservices.model.NotificationItem",
+        "ru.course.cityservices.model.ServiceResponse"
+      ],
+      "declarations": [
+        "AppState"
+      ]
+    },
+    "AppDatabase": {
+      "path": "app/src/main/kotlin/ru/course/cityservices/storage/AppDatabase.kt",
+      "package": "ru.course.cityservices.storage",
+      "group": "storage",
+      "lines": 16,
+      "imports": [
+        "androidx.room.Database",
+        "androidx.room.RoomDatabase",
+        "androidx.room.TypeConverters",
+        "ru.course.cityservices.model.RequestResponse"
+      ],
+      "declarations": [
+        "AppDatabase"
+      ]
+    },
+    "InstantConverter": {
+      "path": "app/src/main/kotlin/ru/course/cityservices/storage/InstantConverter.kt",
+      "package": "ru.course.cityservices.storage",
+      "group": "storage",
+      "lines": 13,
+      "imports": [
+        "androidx.room.TypeConverter",
+        "kotlin.time.Instant"
+      ],
+      "declarations": [
+        "InstantConverter"
+      ]
+    },
+    "RequestDao": {
+      "path": "app/src/main/kotlin/ru/course/cityservices/storage/RequestDao.kt",
+      "package": "ru.course.cityservices.storage",
+      "group": "storage",
+      "lines": 26,
+      "imports": [
+        "androidx.room.Dao",
+        "androidx.room.Delete",
+        "androidx.room.Insert",
+        "androidx.room.OnConflictStrategy",
+        "androidx.room.Query",
+        "ru.course.cityservices.model.RequestResponse"
+      ],
+      "declarations": [
+        "RequestDao"
+      ]
+    },
+    "SessionStore": {
+      "path": "app/src/main/kotlin/ru/course/cityservices/storage/SessionStore.kt",
+      "package": "ru.course.cityservices.storage",
+      "group": "storage",
+      "lines": 47,
+      "imports": [
+        "android.content.Context",
+        "androidx.datastore.preferences.core.MutablePreferences",
+        "androidx.datastore.preferences.core.edit",
+        "androidx.datastore.preferences.core.longPreferencesKey",
+        "androidx.datastore.preferences.core.stringPreferencesKey",
+        "androidx.datastore.preferences.preferencesDataStore",
+        "kotlinx.coroutines.flow.first"
+      ],
+      "declarations": [
+        "SessionData",
+        "SessionStore"
+      ]
+    },
+    "ServiceCard": {
+      "path": "app/src/main/kotlin/ru/course/cityservices/ui/component/ServiceCard.kt",
+      "package": "ru.course.cityservices.ui.component",
+      "group": "ui.component",
+      "lines": 45,
+      "imports": [
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.Spacer",
+        "androidx.compose.foundation.layout.fillMaxWidth",
+        "androidx.compose.foundation.layout.height",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.material3.Card",
+        "androidx.compose.material3.MaterialTheme",
+        "androidx.compose.material3.Text",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.unit.dp",
+        "ru.course.cityservices.model.ServiceResponse"
+      ],
+      "declarations": [
+        "ServiceCard"
+      ]
+    },
+    "StatusBadge": {
+      "path": "app/src/main/kotlin/ru/course/cityservices/ui/component/StatusBadge.kt",
+      "package": "ru.course.cityservices.ui.component",
+      "group": "ui.component",
+      "lines": 41,
+      "imports": [
+        "androidx.compose.foundation.background",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.foundation.shape.RoundedCornerShape",
+        "androidx.compose.material3.Text",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.graphics.Color",
+        "androidx.compose.ui.text.font.FontWeight",
+        "androidx.compose.ui.unit.dp",
+        "androidx.compose.ui.unit.sp",
+        "ru.course.cityservices.domain.RequestStatus"
+      ],
+      "declarations": [
+        "StatusBadge"
+      ]
+    },
+    "LoginScreen": {
+      "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/LoginScreen.kt",
+      "package": "ru.course.cityservices.ui.screen",
+      "group": "ui.screen",
+      "lines": 143,
+      "imports": [
+        "androidx.compose.foundation.layout.Arrangement",
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.Spacer",
+        "androidx.compose.foundation.layout.fillMaxSize",
+        "androidx.compose.foundation.layout.fillMaxWidth",
+        "androidx.compose.foundation.layout.height",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.foundation.layout.size",
+        "androidx.compose.foundation.layout.width",
+        "androidx.compose.foundation.text.KeyboardOptions",
+        "androidx.compose.material3.Button",
+        "androidx.compose.material3.CircularProgressIndicator",
+        "androidx.compose.material3.MaterialTheme",
+        "androidx.compose.material3.OutlinedButton",
+        "androidx.compose.material3.OutlinedTextField",
+        "androidx.compose.material3.Text",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.runtime.getValue",
+        "androidx.compose.runtime.mutableStateOf",
+        "androidx.compose.runtime.remember",
+        "androidx.compose.runtime.setValue",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.text.input.KeyboardType",
+        "androidx.compose.ui.text.input.PasswordVisualTransformation",
+        "androidx.compose.ui.unit.dp",
+        "androidx.lifecycle.ViewModel",
+        "androidx.lifecycle.viewModelScope",
+        "androidx.lifecycle.viewmodel.compose.viewModel",
+        "kotlinx.coroutines.launch",
+        "ru.course.cityservices.core.ServiceLocator"
+      ],
+      "declarations": [
+        "LoginViewModel",
+        "LoginScreen"
+      ]
+    },
+    "NotificationsScreen": {
+      "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/NotificationsScreen.kt",
+      "package": "ru.course.cityservices.ui.screen",
+      "group": "ui.screen",
+      "lines": 85,
+      "imports": [
+        "androidx.compose.foundation.layout.Box",
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.Row",
+        "androidx.compose.foundation.layout.Spacer",
+        "androidx.compose.foundation.layout.fillMaxSize",
+        "androidx.compose.foundation.layout.fillMaxWidth",
+        "androidx.compose.foundation.layout.height",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.foundation.lazy.LazyColumn",
+        "androidx.compose.foundation.lazy.items",
+        "androidx.compose.material3.Card",
+        "androidx.compose.material3.MaterialTheme",
+        "androidx.compose.material3.Text",
+        "androidx.compose.material3.TextButton",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.ui.Alignment",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.text.font.FontWeight",
+        "androidx.compose.ui.unit.dp",
+        "ru.course.cityservices.state.AppState",
+        "ru.course.cityservices.util.TimeFormat"
+      ],
+      "declarations": [
+        "NotificationsScreen"
+      ]
+    },
+    "RequestsScreen": {
+      "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/RequestsScreen.kt",
+      "package": "ru.course.cityservices.ui.screen",
+      "group": "ui.screen",
+      "lines": 201,
+      "imports": [
+        "androidx.compose.foundation.horizontalScroll",
+        "androidx.compose.foundation.layout.Arrangement",
+        "androidx.compose.foundation.layout.Box",
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.Row",
+        "androidx.compose.foundation.layout.Spacer",
+        "androidx.compose.foundation.layout.fillMaxSize",
+        "androidx.compose.foundation.layout.fillMaxWidth",
+        "androidx.compose.foundation.layout.height",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.foundation.lazy.LazyColumn",
+        "androidx.compose.foundation.lazy.items",
+        "androidx.compose.foundation.rememberScrollState",
+        "androidx.compose.material3.Card",
+        "androidx.compose.material3.CircularProgressIndicator",
+        "androidx.compose.material3.FilterChip",
+        "androidx.compose.material3.MaterialTheme",
+        "androidx.compose.material3.Text",
+        "androidx.compose.material3.TextButton",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.runtime.LaunchedEffect",
+        "androidx.compose.runtime.getValue",
+        "androidx.compose.runtime.mutableStateOf",
+        "androidx.compose.runtime.remember",
+        "androidx.compose.runtime.setValue",
+        "androidx.compose.ui.Alignment",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.unit.dp",
+        "androidx.lifecycle.ViewModel",
+        "androidx.lifecycle.viewModelScope",
+        "androidx.lifecycle.viewmodel.compose.viewModel",
+        "kotlinx.coroutines.launch",
+        "ru.course.cityservices.core.ServiceLocator",
+        "ru.course.cityservices.domain.RequestStatus",
+        "ru.course.cityservices.model.RequestResponse",
+        "ru.course.cityservices.ui.component.StatusBadge",
+        "ru.course.cityservices.util.TimeFormat"
+      ],
+      "declarations": [
+        "RequestsViewModel",
+        "RequestsScreen"
+      ]
+    },
+    "ServiceDetailScreen": {
+      "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/ServiceDetailScreen.kt",
+      "package": "ru.course.cityservices.ui.screen",
+      "group": "ui.screen",
+      "lines": 119,
+      "imports": [
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.Row",
+        "androidx.compose.foundation.layout.Spacer",
+        "androidx.compose.foundation.layout.fillMaxSize",
+        "androidx.compose.foundation.layout.fillMaxWidth",
+        "androidx.compose.foundation.layout.height",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.foundation.layout.width",
+        "androidx.compose.material3.Button",
+        "androidx.compose.material3.MaterialTheme",
+        "androidx.compose.material3.OutlinedButton",
+        "androidx.compose.material3.OutlinedTextField",
+        "androidx.compose.material3.Text",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.runtime.getValue",
+        "androidx.compose.runtime.mutableStateOf",
+        "androidx.compose.runtime.remember",
+        "androidx.compose.runtime.rememberCoroutineScope",
+        "androidx.compose.runtime.setValue",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.unit.dp",
+        "kotlinx.coroutines.launch",
+        "ru.course.cityservices.core.ServiceLocator",
+        "ru.course.cityservices.model.ServiceResponse"
+      ],
+      "declarations": [
+        "ServiceDetailScreen"
+      ]
+    },
+    "ServicesScreen": {
+      "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/ServicesScreen.kt",
+      "package": "ru.course.cityservices.ui.screen",
+      "group": "ui.screen",
+      "lines": 162,
+      "imports": [
+        "androidx.compose.foundation.layout.Box",
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.Row",
+        "androidx.compose.foundation.layout.Spacer",
+        "androidx.compose.foundation.layout.fillMaxSize",
+        "androidx.compose.foundation.layout.fillMaxWidth",
+        "androidx.compose.foundation.layout.height",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.foundation.layout.width",
+        "androidx.compose.foundation.lazy.LazyColumn",
+        "androidx.compose.foundation.lazy.items",
+        "androidx.compose.material3.Button",
+        "androidx.compose.material3.CircularProgressIndicator",
+        "androidx.compose.material3.MaterialTheme",
+        "androidx.compose.material3.Text",
+        "androidx.compose.material3.TextButton",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.runtime.LaunchedEffect",
+        "androidx.compose.runtime.getValue",
+        "androidx.compose.runtime.mutableStateOf",
+        "androidx.compose.runtime.remember",
+        "androidx.compose.runtime.setValue",
+        "androidx.compose.ui.Alignment",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.unit.dp",
+        "androidx.lifecycle.ViewModel",
+        "androidx.lifecycle.viewModelScope",
+        "kotlinx.coroutines.launch",
+        "ru.course.cityservices.core.ServiceLocator",
+        "ru.course.cityservices.model.ServiceResponse",
+        "ru.course.cityservices.state.AppState",
+        "ru.course.cityservices.ui.component.ServiceCard"
+      ],
+      "declarations": [
+        "ServicesViewModel",
+        "ServicesScreen"
+      ]
+    },
+    "Theme": {
+      "path": "app/src/main/kotlin/ru/course/cityservices/ui/theme/Theme.kt",
+      "package": "ru.course.cityservices.ui.theme",
+      "group": "ui.theme",
+      "lines": 24,
+      "imports": [
+        "androidx.compose.material3.MaterialTheme",
+        "androidx.compose.material3.lightColorScheme",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.ui.graphics.Color"
+      ],
+      "declarations": [
+        "CityServicesTheme"
+      ]
+    },
+    "TimeFormat": {
+      "path": "app/src/main/kotlin/ru/course/cityservices/util/TimeFormat.kt",
+      "package": "ru.course.cityservices.util",
+      "group": "util",
+      "lines": 27,
+      "imports": [
+        "kotlin.time.Clock",
+        "kotlin.time.Duration.Companion.days",
+        "kotlin.time.Duration.Companion.hours",
+        "kotlin.time.Duration.Companion.minutes",
+        "kotlin.time.Instant"
+      ],
+      "declarations": [
+        "TimeFormat"
+      ]
+    }
+  },
+  "external_import_roots": [
+    "android",
+    "androidx",
+    "java",
+    "kotlin",
+    "kotlinx"
+  ]
+}

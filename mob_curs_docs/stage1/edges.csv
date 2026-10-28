@@ -1,0 +1,49 @@
+﻿consumer,dependency,kind,symbol
+AppDatabase,InstantConverter,same-package lexical reference,InstantConverter
+AppDatabase,Models,import,ru.course.cityservices.model.RequestResponse
+AppDatabase,RequestDao,same-package lexical reference,RequestDao
+AppState,Models,import,ru.course.cityservices.model.NotificationItem
+AppState,Models,import,ru.course.cityservices.model.ServiceResponse
+CityApi,Models,import,ru.course.cityservices.model.RequestResponse
+CityApi,Models,import,ru.course.cityservices.model.ServiceResponse
+CityServicesApp,AppState,import,ru.course.cityservices.state.AppState
+CityServicesApp,LoginScreen,import,ru.course.cityservices.ui.screen.LoginScreen
+CityServicesApp,NotificationsScreen,import,ru.course.cityservices.ui.screen.NotificationsScreen
+CityServicesApp,RequestsScreen,import,ru.course.cityservices.ui.screen.RequestsScreen
+CityServicesApp,ServiceDetailScreen,import,ru.course.cityservices.ui.screen.ServiceDetailScreen
+CityServicesApp,ServiceLocator,import,ru.course.cityservices.core.ServiceLocator
+CityServicesApp,ServicesScreen,import,ru.course.cityservices.ui.screen.ServicesScreen
+FakeApi,CityApi,same-package lexical reference,AuthResponse
+FakeApi,CityApi,same-package lexical reference,CityApi
+FakeApi,Models,import,ru.course.cityservices.model.RequestResponse
+FakeApi,Models,import,ru.course.cityservices.model.ServiceResponse
+LoginScreen,ServiceLocator,import,ru.course.cityservices.core.ServiceLocator
+MainActivity,CityServicesApp,same-package lexical reference,CityServicesApp
+MainActivity,ServiceLocator,import,ru.course.cityservices.core.ServiceLocator
+MainActivity,Theme,import,ru.course.cityservices.ui.theme.CityServicesTheme
+NotificationsScreen,AppState,import,ru.course.cityservices.state.AppState
+NotificationsScreen,TimeFormat,import,ru.course.cityservices.util.TimeFormat
+RequestDao,Models,import,ru.course.cityservices.model.RequestResponse
+RequestsScreen,DomainModels,import,ru.course.cityservices.domain.RequestStatus
+RequestsScreen,Models,import,ru.course.cityservices.model.RequestResponse
+RequestsScreen,ServiceLocator,import,ru.course.cityservices.core.ServiceLocator
+RequestsScreen,StatusBadge,import,ru.course.cityservices.ui.component.StatusBadge
+RequestsScreen,TimeFormat,import,ru.course.cityservices.util.TimeFormat
+ServiceCard,Models,import,ru.course.cityservices.model.ServiceResponse
+ServiceDetailScreen,Models,import,ru.course.cityservices.model.ServiceResponse
+ServiceDetailScreen,ServiceLocator,import,ru.course.cityservices.core.ServiceLocator
+ServiceLocator,AnalyticsTracker,import,ru.course.cityservices.analytic.AnalyticsTracker
+ServiceLocator,AppDatabase,import,ru.course.cityservices.storage.AppDatabase
+ServiceLocator,AppState,import,ru.course.cityservices.state.AppState
+ServiceLocator,CityApi,import,ru.course.cityservices.network.CityApi
+ServiceLocator,FakeApi,import,ru.course.cityservices.network.FakeApi
+ServiceLocator,Models,import,ru.course.cityservices.model.NotificationItem
+ServiceLocator,Models,import,ru.course.cityservices.model.RequestResponse
+ServiceLocator,Models,import,ru.course.cityservices.model.ServiceResponse
+ServiceLocator,RequestValidator,import,ru.course.cityservices.domain.RequestValidator
+ServiceLocator,SessionStore,import,ru.course.cityservices.storage.SessionStore
+ServicesScreen,AppState,import,ru.course.cityservices.state.AppState
+ServicesScreen,Models,import,ru.course.cityservices.model.ServiceResponse
+ServicesScreen,ServiceCard,import,ru.course.cityservices.ui.component.ServiceCard
+ServicesScreen,ServiceLocator,import,ru.course.cityservices.core.ServiceLocator
+StatusBadge,DomainModels,import,ru.course.cityservices.domain.RequestStatus
