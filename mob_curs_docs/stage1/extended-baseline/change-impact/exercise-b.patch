@@ -1,0 +1,82 @@
+diff --git a/app/src/main/kotlin/ru/course/cityservices/domain/DomainModels.kt b/app/src/main/kotlin/ru/course/cityservices/domain/DomainModels.kt
+index 6c88a8f..d7eabf2 100644
+--- a/app/src/main/kotlin/ru/course/cityservices/domain/DomainModels.kt
++++ b/app/src/main/kotlin/ru/course/cityservices/domain/DomainModels.kt
+@@ -8,16 +8,17 @@ enum class RequestStatus(val title: String) {
+     IN_PROGRESS(title = "В работе"),
+ 
+     DONE(title = "Выполнена"),
++    REJECTED(title = "Отклонена"),
+     ;
+ 
+     /**
+-     * Единственный допустимый следующий статус; для DONE - null
++     * Следующий статус успешной обработки; для терминальных статусов - null
+      */
+     fun next(): RequestStatus? = when (this) {
+         CREATED -> ACCEPTED
+         ACCEPTED -> IN_PROGRESS
+         IN_PROGRESS -> DONE
+-        DONE -> null
++        DONE, REJECTED -> null
+     }
+ 
+     companion object {
+@@ -47,8 +48,11 @@ data class ServiceRequest(
+  */
+ object StatusRules {
+ 
+-    fun allowedTransitions(from: RequestStatus): List<RequestStatus> =
+-        listOfNotNull(element = from.next())
++    fun allowedTransitions(from: RequestStatus): List<RequestStatus> = when (from) {
++        RequestStatus.CREATED -> listOf(RequestStatus.ACCEPTED, RequestStatus.REJECTED)
++        else -> listOfNotNull(element = from.next())
++    }
+ 
+-    fun isTerminal(status: RequestStatus): Boolean = status == RequestStatus.DONE
++    fun isTerminal(status: RequestStatus): Boolean =
++        status == RequestStatus.DONE || status == RequestStatus.REJECTED
+ }
+diff --git a/app/src/main/kotlin/ru/course/cityservices/network/FakeApi.kt b/app/src/main/kotlin/ru/course/cityservices/network/FakeApi.kt
+index ecf4638..2d3db3b 100644
+--- a/app/src/main/kotlin/ru/course/cityservices/network/FakeApi.kt
++++ b/app/src/main/kotlin/ru/course/cityservices/network/FakeApi.kt
+@@ -2,6 +2,8 @@ package ru.course.cityservices.network
+ 
+ import android.util.Log
+ import kotlinx.coroutines.delay
++import ru.course.cityservices.domain.RequestStatus
++import ru.course.cityservices.domain.StatusRules
+ import ru.course.cityservices.model.RequestResponse
+ import ru.course.cityservices.model.ServiceResponse
+ import java.io.IOException
+@@ -228,13 +230,12 @@ class FakeApi : CityApi {
+ 
+     // Эмитация жизни на сервере - часть заявок переходит в следующий статус
+     private fun advanceStatuses() {
+-        val order = listOf("Создана", "Принята", "В работе", "Выполнена")
+-
+         for (i in serverRequests.indices) {
+             val current = serverRequests[i]
+-            val index = order.indexOf(current.status)
+-            if (index in 0 until order.lastIndex && Random.nextFloat() < 0.35f) {
+-                serverRequests[i] = current.copy(status = order[index + 1])
++            val status = RequestStatus.fromTitle(current.status) ?: continue
++            val transitions = StatusRules.allowedTransitions(status)
++            if (transitions.isNotEmpty() && Random.nextFloat() < 0.35f) {
++                serverRequests[i] = current.copy(status = transitions.random().title)
+             }
+         }
+     }
+diff --git a/app/src/main/kotlin/ru/course/cityservices/ui/component/StatusBadge.kt b/app/src/main/kotlin/ru/course/cityservices/ui/component/StatusBadge.kt
+index a571603..a6f10b1 100644
+--- a/app/src/main/kotlin/ru/course/cityservices/ui/component/StatusBadge.kt
++++ b/app/src/main/kotlin/ru/course/cityservices/ui/component/StatusBadge.kt
+@@ -24,6 +24,7 @@ fun StatusBadge(
+         RequestStatus.ACCEPTED -> Color(0xFF2E5FA3)
+         RequestStatus.IN_PROGRESS -> Color(0xFFB4762A)
+         RequestStatus.DONE -> Color(0xFF3E7D4E)
++        RequestStatus.REJECTED -> Color(0xFFB00020)
+ 
+         // Незнакомая строка статуса молча красится в красный вместо явной ошибки контракта
+         null -> Color(0xFFB00020)

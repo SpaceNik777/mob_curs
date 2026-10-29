@@ -1,0 +1,1114 @@
+﻿{
+    "coverageRuns":  [
+                         {
+                             "run":  1,
+                             "classFilesInReport":  88,
+                             "counters":  [
+                                              {
+                                                  "type":  "INSTRUCTION",
+                                                  "missed":  7138,
+                                                  "covered":  610,
+                                                  "total":  7748,
+                                                  "percent":  7.873
+                                              },
+                                              {
+                                                  "type":  "BRANCH",
+                                                  "missed":  151,
+                                                  "covered":  21,
+                                                  "total":  172,
+                                                  "percent":  12.2093
+                                              },
+                                              {
+                                                  "type":  "LINE",
+                                                  "missed":  900,
+                                                  "covered":  156,
+                                                  "total":  1056,
+                                                  "percent":  14.7727
+                                              },
+                                              {
+                                                  "type":  "COMPLEXITY",
+                                                  "missed":  303,
+                                                  "covered":  29,
+                                                  "total":  332,
+                                                  "percent":  8.7349
+                                              },
+                                              {
+                                                  "type":  "METHOD",
+                                                  "missed":  233,
+                                                  "covered":  19,
+                                                  "total":  252,
+                                                  "percent":  7.5397
+                                              },
+                                              {
+                                                  "type":  "CLASS",
+                                                  "missed":  49,
+                                                  "covered":  9,
+                                                  "total":  58,
+                                                  "percent":  15.5172
+                                              }
+                                          ],
+                             "packages":  [
+                                              {
+                                                  "package":  "ru/course/cityservices/core",
+                                                  "type":  "BRANCH",
+                                                  "missed":  14,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/core",
+                                                  "type":  "LINE",
+                                                  "missed":  116,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/util",
+                                                  "type":  "BRANCH",
+                                                  "missed":  1,
+                                                  "covered":  9
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/util",
+                                                  "type":  "LINE",
+                                                  "missed":  2,
+                                                  "covered":  7
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/storage",
+                                                  "type":  "BRANCH",
+                                                  "missed":  12,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/storage",
+                                                  "type":  "LINE",
+                                                  "missed":  170,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/screen",
+                                                  "type":  "BRANCH",
+                                                  "missed":  70,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/screen",
+                                                  "type":  "LINE",
+                                                  "missed":  412,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/theme",
+                                                  "type":  "LINE",
+                                                  "missed":  12,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/model",
+                                                  "type":  "LINE",
+                                                  "missed":  7,
+                                                  "covered":  14
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/network",
+                                                  "type":  "BRANCH",
+                                                  "missed":  21,
+                                                  "covered":  3
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/network",
+                                                  "type":  "LINE",
+                                                  "missed":  41,
+                                                  "covered":  110
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/state",
+                                                  "type":  "LINE",
+                                                  "missed":  24,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices",
+                                                  "type":  "BRANCH",
+                                                  "missed":  13,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices",
+                                                  "type":  "LINE",
+                                                  "missed":  61,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/analytic",
+                                                  "type":  "LINE",
+                                                  "missed":  4,
+                                                  "covered":  3
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/domain",
+                                                  "type":  "BRANCH",
+                                                  "missed":  3,
+                                                  "covered":  9
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/domain",
+                                                  "type":  "LINE",
+                                                  "missed":  10,
+                                                  "covered":  22
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/component",
+                                                  "type":  "BRANCH",
+                                                  "missed":  17,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/component",
+                                                  "type":  "LINE",
+                                                  "missed":  41,
+                                                  "covered":  0
+                                              }
+                                          ]
+                         },
+                         {
+                             "run":  2,
+                             "classFilesInReport":  88,
+                             "counters":  [
+                                              {
+                                                  "type":  "INSTRUCTION",
+                                                  "missed":  7138,
+                                                  "covered":  610,
+                                                  "total":  7748,
+                                                  "percent":  7.873
+                                              },
+                                              {
+                                                  "type":  "BRANCH",
+                                                  "missed":  151,
+                                                  "covered":  21,
+                                                  "total":  172,
+                                                  "percent":  12.2093
+                                              },
+                                              {
+                                                  "type":  "LINE",
+                                                  "missed":  900,
+                                                  "covered":  156,
+                                                  "total":  1056,
+                                                  "percent":  14.7727
+                                              },
+                                              {
+                                                  "type":  "COMPLEXITY",
+                                                  "missed":  303,
+                                                  "covered":  29,
+                                                  "total":  332,
+                                                  "percent":  8.7349
+                                              },
+                                              {
+                                                  "type":  "METHOD",
+                                                  "missed":  233,
+                                                  "covered":  19,
+                                                  "total":  252,
+                                                  "percent":  7.5397
+                                              },
+                                              {
+                                                  "type":  "CLASS",
+                                                  "missed":  49,
+                                                  "covered":  9,
+                                                  "total":  58,
+                                                  "percent":  15.5172
+                                              }
+                                          ],
+                             "packages":  [
+                                              {
+                                                  "package":  "ru/course/cityservices/core",
+                                                  "type":  "BRANCH",
+                                                  "missed":  14,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/core",
+                                                  "type":  "LINE",
+                                                  "missed":  116,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/util",
+                                                  "type":  "BRANCH",
+                                                  "missed":  1,
+                                                  "covered":  9
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/util",
+                                                  "type":  "LINE",
+                                                  "missed":  2,
+                                                  "covered":  7
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/storage",
+                                                  "type":  "BRANCH",
+                                                  "missed":  12,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/storage",
+                                                  "type":  "LINE",
+                                                  "missed":  170,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/screen",
+                                                  "type":  "BRANCH",
+                                                  "missed":  70,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/screen",
+                                                  "type":  "LINE",
+                                                  "missed":  412,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/theme",
+                                                  "type":  "LINE",
+                                                  "missed":  12,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/model",
+                                                  "type":  "LINE",
+                                                  "missed":  7,
+                                                  "covered":  14
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/network",
+                                                  "type":  "BRANCH",
+                                                  "missed":  21,
+                                                  "covered":  3
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/network",
+                                                  "type":  "LINE",
+                                                  "missed":  41,
+                                                  "covered":  110
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/state",
+                                                  "type":  "LINE",
+                                                  "missed":  24,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices",
+                                                  "type":  "BRANCH",
+                                                  "missed":  13,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices",
+                                                  "type":  "LINE",
+                                                  "missed":  61,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/analytic",
+                                                  "type":  "LINE",
+                                                  "missed":  4,
+                                                  "covered":  3
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/domain",
+                                                  "type":  "BRANCH",
+                                                  "missed":  3,
+                                                  "covered":  9
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/domain",
+                                                  "type":  "LINE",
+                                                  "missed":  10,
+                                                  "covered":  22
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/component",
+                                                  "type":  "BRANCH",
+                                                  "missed":  17,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/component",
+                                                  "type":  "LINE",
+                                                  "missed":  41,
+                                                  "covered":  0
+                                              }
+                                          ]
+                         },
+                         {
+                             "run":  3,
+                             "classFilesInReport":  88,
+                             "counters":  [
+                                              {
+                                                  "type":  "INSTRUCTION",
+                                                  "missed":  7138,
+                                                  "covered":  610,
+                                                  "total":  7748,
+                                                  "percent":  7.873
+                                              },
+                                              {
+                                                  "type":  "BRANCH",
+                                                  "missed":  151,
+                                                  "covered":  21,
+                                                  "total":  172,
+                                                  "percent":  12.2093
+                                              },
+                                              {
+                                                  "type":  "LINE",
+                                                  "missed":  900,
+                                                  "covered":  156,
+                                                  "total":  1056,
+                                                  "percent":  14.7727
+                                              },
+                                              {
+                                                  "type":  "COMPLEXITY",
+                                                  "missed":  303,
+                                                  "covered":  29,
+                                                  "total":  332,
+                                                  "percent":  8.7349
+                                              },
+                                              {
+                                                  "type":  "METHOD",
+                                                  "missed":  233,
+                                                  "covered":  19,
+                                                  "total":  252,
+                                                  "percent":  7.5397
+                                              },
+                                              {
+                                                  "type":  "CLASS",
+                                                  "missed":  49,
+                                                  "covered":  9,
+                                                  "total":  58,
+                                                  "percent":  15.5172
+                                              }
+                                          ],
+                             "packages":  [
+                                              {
+                                                  "package":  "ru/course/cityservices/core",
+                                                  "type":  "BRANCH",
+                                                  "missed":  14,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/core",
+                                                  "type":  "LINE",
+                                                  "missed":  116,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/util",
+                                                  "type":  "BRANCH",
+                                                  "missed":  1,
+                                                  "covered":  9
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/util",
+                                                  "type":  "LINE",
+                                                  "missed":  2,
+                                                  "covered":  7
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/storage",
+                                                  "type":  "BRANCH",
+                                                  "missed":  12,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/storage",
+                                                  "type":  "LINE",
+                                                  "missed":  170,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/screen",
+                                                  "type":  "BRANCH",
+                                                  "missed":  70,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/screen",
+                                                  "type":  "LINE",
+                                                  "missed":  412,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/theme",
+                                                  "type":  "LINE",
+                                                  "missed":  12,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/model",
+                                                  "type":  "LINE",
+                                                  "missed":  7,
+                                                  "covered":  14
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/network",
+                                                  "type":  "BRANCH",
+                                                  "missed":  21,
+                                                  "covered":  3
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/network",
+                                                  "type":  "LINE",
+                                                  "missed":  41,
+                                                  "covered":  110
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/state",
+                                                  "type":  "LINE",
+                                                  "missed":  24,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices",
+                                                  "type":  "BRANCH",
+                                                  "missed":  13,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices",
+                                                  "type":  "LINE",
+                                                  "missed":  61,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/analytic",
+                                                  "type":  "LINE",
+                                                  "missed":  4,
+                                                  "covered":  3
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/domain",
+                                                  "type":  "BRANCH",
+                                                  "missed":  3,
+                                                  "covered":  9
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/domain",
+                                                  "type":  "LINE",
+                                                  "missed":  10,
+                                                  "covered":  22
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/component",
+                                                  "type":  "BRANCH",
+                                                  "missed":  17,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/component",
+                                                  "type":  "LINE",
+                                                  "missed":  41,
+                                                  "covered":  0
+                                              }
+                                          ]
+                         },
+                         {
+                             "run":  4,
+                             "classFilesInReport":  88,
+                             "counters":  [
+                                              {
+                                                  "type":  "INSTRUCTION",
+                                                  "missed":  7138,
+                                                  "covered":  610,
+                                                  "total":  7748,
+                                                  "percent":  7.873
+                                              },
+                                              {
+                                                  "type":  "BRANCH",
+                                                  "missed":  151,
+                                                  "covered":  21,
+                                                  "total":  172,
+                                                  "percent":  12.2093
+                                              },
+                                              {
+                                                  "type":  "LINE",
+                                                  "missed":  900,
+                                                  "covered":  156,
+                                                  "total":  1056,
+                                                  "percent":  14.7727
+                                              },
+                                              {
+                                                  "type":  "COMPLEXITY",
+                                                  "missed":  303,
+                                                  "covered":  29,
+                                                  "total":  332,
+                                                  "percent":  8.7349
+                                              },
+                                              {
+                                                  "type":  "METHOD",
+                                                  "missed":  233,
+                                                  "covered":  19,
+                                                  "total":  252,
+                                                  "percent":  7.5397
+                                              },
+                                              {
+                                                  "type":  "CLASS",
+                                                  "missed":  49,
+                                                  "covered":  9,
+                                                  "total":  58,
+                                                  "percent":  15.5172
+                                              }
+                                          ],
+                             "packages":  [
+                                              {
+                                                  "package":  "ru/course/cityservices/core",
+                                                  "type":  "BRANCH",
+                                                  "missed":  14,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/core",
+                                                  "type":  "LINE",
+                                                  "missed":  116,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/util",
+                                                  "type":  "BRANCH",
+                                                  "missed":  1,
+                                                  "covered":  9
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/util",
+                                                  "type":  "LINE",
+                                                  "missed":  2,
+                                                  "covered":  7
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/storage",
+                                                  "type":  "BRANCH",
+                                                  "missed":  12,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/storage",
+                                                  "type":  "LINE",
+                                                  "missed":  170,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/screen",
+                                                  "type":  "BRANCH",
+                                                  "missed":  70,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/screen",
+                                                  "type":  "LINE",
+                                                  "missed":  412,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/theme",
+                                                  "type":  "LINE",
+                                                  "missed":  12,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/model",
+                                                  "type":  "LINE",
+                                                  "missed":  7,
+                                                  "covered":  14
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/network",
+                                                  "type":  "BRANCH",
+                                                  "missed":  21,
+                                                  "covered":  3
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/network",
+                                                  "type":  "LINE",
+                                                  "missed":  41,
+                                                  "covered":  110
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/state",
+                                                  "type":  "LINE",
+                                                  "missed":  24,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices",
+                                                  "type":  "BRANCH",
+                                                  "missed":  13,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices",
+                                                  "type":  "LINE",
+                                                  "missed":  61,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/analytic",
+                                                  "type":  "LINE",
+                                                  "missed":  4,
+                                                  "covered":  3
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/domain",
+                                                  "type":  "BRANCH",
+                                                  "missed":  3,
+                                                  "covered":  9
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/domain",
+                                                  "type":  "LINE",
+                                                  "missed":  10,
+                                                  "covered":  22
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/component",
+                                                  "type":  "BRANCH",
+                                                  "missed":  17,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/component",
+                                                  "type":  "LINE",
+                                                  "missed":  41,
+                                                  "covered":  0
+                                              }
+                                          ]
+                         },
+                         {
+                             "run":  5,
+                             "classFilesInReport":  88,
+                             "counters":  [
+                                              {
+                                                  "type":  "INSTRUCTION",
+                                                  "missed":  7138,
+                                                  "covered":  610,
+                                                  "total":  7748,
+                                                  "percent":  7.873
+                                              },
+                                              {
+                                                  "type":  "BRANCH",
+                                                  "missed":  151,
+                                                  "covered":  21,
+                                                  "total":  172,
+                                                  "percent":  12.2093
+                                              },
+                                              {
+                                                  "type":  "LINE",
+                                                  "missed":  900,
+                                                  "covered":  156,
+                                                  "total":  1056,
+                                                  "percent":  14.7727
+                                              },
+                                              {
+                                                  "type":  "COMPLEXITY",
+                                                  "missed":  303,
+                                                  "covered":  29,
+                                                  "total":  332,
+                                                  "percent":  8.7349
+                                              },
+                                              {
+                                                  "type":  "METHOD",
+                                                  "missed":  233,
+                                                  "covered":  19,
+                                                  "total":  252,
+                                                  "percent":  7.5397
+                                              },
+                                              {
+                                                  "type":  "CLASS",
+                                                  "missed":  49,
+                                                  "covered":  9,
+                                                  "total":  58,
+                                                  "percent":  15.5172
+                                              }
+                                          ],
+                             "packages":  [
+                                              {
+                                                  "package":  "ru/course/cityservices/core",
+                                                  "type":  "BRANCH",
+                                                  "missed":  14,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/core",
+                                                  "type":  "LINE",
+                                                  "missed":  116,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/util",
+                                                  "type":  "BRANCH",
+                                                  "missed":  1,
+                                                  "covered":  9
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/util",
+                                                  "type":  "LINE",
+                                                  "missed":  2,
+                                                  "covered":  7
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/storage",
+                                                  "type":  "BRANCH",
+                                                  "missed":  12,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/storage",
+                                                  "type":  "LINE",
+                                                  "missed":  170,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/screen",
+                                                  "type":  "BRANCH",
+                                                  "missed":  70,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/screen",
+                                                  "type":  "LINE",
+                                                  "missed":  412,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/theme",
+                                                  "type":  "LINE",
+                                                  "missed":  12,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/model",
+                                                  "type":  "LINE",
+                                                  "missed":  7,
+                                                  "covered":  14
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/network",
+                                                  "type":  "BRANCH",
+                                                  "missed":  21,
+                                                  "covered":  3
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/network",
+                                                  "type":  "LINE",
+                                                  "missed":  41,
+                                                  "covered":  110
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/state",
+                                                  "type":  "LINE",
+                                                  "missed":  24,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices",
+                                                  "type":  "BRANCH",
+                                                  "missed":  13,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices",
+                                                  "type":  "LINE",
+                                                  "missed":  61,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/analytic",
+                                                  "type":  "LINE",
+                                                  "missed":  4,
+                                                  "covered":  3
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/domain",
+                                                  "type":  "BRANCH",
+                                                  "missed":  3,
+                                                  "covered":  9
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/domain",
+                                                  "type":  "LINE",
+                                                  "missed":  10,
+                                                  "covered":  22
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/component",
+                                                  "type":  "BRANCH",
+                                                  "missed":  17,
+                                                  "covered":  0
+                                              },
+                                              {
+                                                  "package":  "ru/course/cityservices/ui/component",
+                                                  "type":  "LINE",
+                                                  "missed":  41,
+                                                  "covered":  0
+                                              }
+                                          ]
+                         }
+                     ],
+    "tests":  [
+                  {
+                      "class":  "ru.course.cityservices.analytic.AnalyticsTrackerTest",
+                      "test":  "событие успешно записывается",
+                      "executions":  5,
+                      "failures":  5,
+                      "failureRate":  1,
+                      "mixedPassFail":  false,
+                      "durationSeconds":  [
+                                              0.027,
+                                              0.037,
+                                              0.027,
+                                              0.028,
+                                              0.031
+                                          ],
+                      "meanSeconds":  0.03
+                  },
+                  {
+                      "class":  "ru.course.cityservices.domain.RequestValidatorTest",
+                      "test":  "достаточный комментарий принимается",
+                      "executions":  5,
+                      "failures":  0,
+                      "failureRate":  0,
+                      "mixedPassFail":  false,
+                      "durationSeconds":  [
+                                              0.038,
+                                              0.006,
+                                              0.011,
+                                              0.004,
+                                              0.002
+                                          ],
+                      "meanSeconds":  0.012199999999999999
+                  },
+                  {
+                      "class":  "ru.course.cityservices.domain.RequestValidatorTest",
+                      "test":  "переход статусов идёт по цепочке",
+                      "executions":  5,
+                      "failures":  0,
+                      "failureRate":  0,
+                      "mixedPassFail":  false,
+                      "durationSeconds":  [
+                                              0.004,
+                                              0.002,
+                                              0.005,
+                                              0.004,
+                                              0.003
+                                          ],
+                      "meanSeconds":  0.0036
+                  },
+                  {
+                      "class":  "ru.course.cityservices.domain.RequestValidatorTest",
+                      "test":  "короткий комментарий отклоняется",
+                      "executions":  5,
+                      "failures":  0,
+                      "failureRate":  0,
+                      "mixedPassFail":  false,
+                      "durationSeconds":  [
+                                              0,
+                                              0.001,
+                                              0,
+                                              0,
+                                              0
+                                          ],
+                      "meanSeconds":  0.0002
+                  },
+                  {
+                      "class":  "ru.course.cityservices.domain.RequestValidatorTest",
+                      "test":  "полная проверка возвращает обе ошибки сразу",
+                      "executions":  5,
+                      "failures":  0,
+                      "failureRate":  0,
+                      "mixedPassFail":  false,
+                      "durationSeconds":  [
+                                              0.11,
+                                              0.011,
+                                              0.012,
+                                              0.01,
+                                              0.008
+                                          ],
+                      "meanSeconds":  0.030200000000000005
+                  },
+                  {
+                      "class":  "ru.course.cityservices.domain.RequestValidatorTest",
+                      "test":  "пустой адрес отклоняется",
+                      "executions":  5,
+                      "failures":  0,
+                      "failureRate":  0,
+                      "mixedPassFail":  false,
+                      "durationSeconds":  [
+                                              0.001,
+                                              0,
+                                              0.001,
+                                              0,
+                                              0
+                                          ],
+                      "meanSeconds":  0.0004
+                  },
+                  {
+                      "class":  "ru.course.cityservices.domain.RequestValidatorTest",
+                      "test":  "незнакомая строка статуса не маппится",
+                      "executions":  5,
+                      "failures":  0,
+                      "failureRate":  0,
+                      "mixedPassFail":  false,
+                      "durationSeconds":  [
+                                              0.001,
+                                              0.002,
+                                              0.001,
+                                              0.001,
+                                              0.001
+                                          ],
+                      "meanSeconds":  0.0012000000000000001
+                  },
+                  {
+                      "class":  "ru.course.cityservices.domain.RequestValidatorTest",
+                      "test":  "пустой комментарий отклоняется",
+                      "executions":  5,
+                      "failures":  0,
+                      "failureRate":  0,
+                      "mixedPassFail":  false,
+                      "durationSeconds":  [
+                                              0,
+                                              0,
+                                              0.001,
+                                              0.001,
+                                              0
+                                          ],
+                      "meanSeconds":  0.0004
+                  },
+                  {
+                      "class":  "ru.course.cityservices.network.FakeApiTest",
+                      "test":  "пятая заявка падает с тайм-аутом",
+                      "executions":  5,
+                      "failures":  5,
+                      "failureRate":  1,
+                      "mixedPassFail":  false,
+                      "durationSeconds":  [
+                                              1.086,
+                                              1.313,
+                                              1.263,
+                                              1.434,
+                                              1.225
+                                          ],
+                      "meanSeconds":  1.2642
+                  },
+                  {
+                      "class":  "ru.course.cityservices.network.FakeApiTest",
+                      "test":  "каталог содержит восемь услуг",
+                      "executions":  5,
+                      "failures":  0,
+                      "failureRate":  0,
+                      "mixedPassFail":  false,
+                      "durationSeconds":  [
+                                              0.81,
+                                              0.805,
+                                              0.807,
+                                              0.811,
+                                              0.816
+                                          ],
+                      "meanSeconds":  0.80980000000000008
+                  },
+                  {
+                      "class":  "ru.course.cityservices.network.FakeApiTest",
+                      "test":  "четыре заявки подряд создаются успешно",
+                      "executions":  5,
+                      "failures":  5,
+                      "failureRate":  1,
+                      "mixedPassFail":  false,
+                      "durationSeconds":  [
+                                              2.735,
+                                              2.725,
+                                              2.736,
+                                              2.727,
+                                              2.739
+                                          ],
+                      "meanSeconds":  2.7323999999999997
+                  },
+                  {
+                      "class":  "ru.course.cityservices.util.TimeFormatTest",
+                      "test":  "минуты назад",
+                      "executions":  5,
+                      "failures":  0,
+                      "failureRate":  0,
+                      "mixedPassFail":  false,
+                      "durationSeconds":  [
+                                              0.004,
+                                              0.006,
+                                              0.007,
+                                              0.005,
+                                              0.003
+                                          ],
+                      "meanSeconds":  0.005
+                  },
+                  {
+                      "class":  "ru.course.cityservices.util.TimeFormatTest",
+                      "test":  "ровно сутки - вчера",
+                      "executions":  5,
+                      "failures":  0,
+                      "failureRate":  0,
+                      "mixedPassFail":  false,
+                      "durationSeconds":  [
+                                              0,
+                                              0,
+                                              0,
+                                              0,
+                                              0.001
+                                          ],
+                      "meanSeconds":  0.0002
+                  },
+                  {
+                      "class":  "ru.course.cityservices.util.TimeFormatTest",
+                      "test":  "несколько дней назад",
+                      "executions":  5,
+                      "failures":  0,
+                      "failureRate":  0,
+                      "mixedPassFail":  false,
+                      "durationSeconds":  [
+                                              0,
+                                              0,
+                                              0,
+                                              0.001,
+                                              0
+                                          ],
+                      "meanSeconds":  0.0002
+                  },
+                  {
+                      "class":  "ru.course.cityservices.util.TimeFormatTest",
+                      "test":  "часы назад",
+                      "executions":  5,
+                      "failures":  0,
+                      "failureRate":  0,
+                      "mixedPassFail":  false,
+                      "durationSeconds":  [
+                                              0.001,
+                                              0,
+                                              0.001,
+                                              0,
+                                              0
+                                          ],
+                      "meanSeconds":  0.0004
+                  },
+                  {
+                      "class":  "ru.course.cityservices.util.TimeFormatTest",
+                      "test":  "меньше минуты - только что",
+                      "executions":  5,
+                      "failures":  0,
+                      "failureRate":  0,
+                      "mixedPassFail":  false,
+                      "durationSeconds":  [
+                                              0,
+                                              0,
+                                              0,
+                                              0,
+                                              0
+                                          ],
+                      "meanSeconds":  0
+                  }
+              ],
+    "observedFlakyTests":  0,
+    "definition":  "Observed flaky test = same test has both pass and fail across the five fixed-order full-suite executions; failure rate is failures/executions, not a flake probability."
+}

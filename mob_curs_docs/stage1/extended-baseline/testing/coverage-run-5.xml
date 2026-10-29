@@ -1,0 +1,3353 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<report name="app">
+  <package name="ru/course/cityservices/core">
+    <class name="ru/course/cityservices/core/ServiceLocator$logout$1" sourcefilename="ServiceLocator.kt" />
+    <class name="ru/course/cityservices/core/ServiceLocator$submitRequest$1" sourcefilename="ServiceLocator.kt" />
+    <class name="ru/course/cityservices/core/ServiceLocator$login$1" sourcefilename="ServiceLocator.kt" />
+    <class name="ru/course/cityservices/core/ServiceLocator$loadServices$1" sourcefilename="ServiceLocator.kt" />
+    <class name="ru/course/cityservices/core/ServiceLocator" sourcefilename="ServiceLocator.kt">
+      <method name="getApi" desc="()Lru/course/cityservices/network/CityApi;" line="21">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="setApi" desc="(Lru/course/cityservices/network/CityApi;)V" line="21">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getDb" desc="()Lru/course/cityservices/storage/AppDatabase;" line="22">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="setDb" desc="(Lru/course/cityservices/storage/AppDatabase;)V" line="22">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getSessions" desc="()Lru/course/cityservices/storage/SessionStore;" line="23">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="setSessions" desc="(Lru/course/cityservices/storage/SessionStore;)V" line="23">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getAnalytics" desc="()Lru/course/cityservices/analytic/AnalyticsTracker;" line="25">
+        <counter type="INSTRUCTION" missed="2" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="init" desc="(Landroid/content/Context;)V" line="30">
+        <counter type="INSTRUCTION" missed="29" covered="0" />
+        <counter type="LINE" missed="8" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="restoreSession" desc="(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" line="40">
+        <counter type="INSTRUCTION" missed="34" covered="0" />
+        <counter type="BRANCH" missed="2" covered="0" />
+        <counter type="LINE" missed="6" covered="0" />
+        <counter type="COMPLEXITY" missed="2" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="login" desc="(Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" line="51">
+        <counter type="INSTRUCTION" missed="92" covered="0" />
+        <counter type="BRANCH" missed="4" covered="0" />
+        <counter type="LINE" missed="24" covered="0" />
+        <counter type="COMPLEXITY" missed="3" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="logout" desc="(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" line="88">
+        <counter type="INSTRUCTION" missed="18" covered="0" />
+        <counter type="LINE" missed="4" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="loadServices" desc="(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" line="94">
+        <counter type="INSTRUCTION" missed="36" covered="0" />
+        <counter type="LINE" missed="13" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="submitRequest" desc="(JLjava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" line="115">
+        <counter type="INSTRUCTION" missed="135" covered="0" />
+        <counter type="BRANCH" missed="2" covered="0" />
+        <counter type="LINE" missed="26" covered="0" />
+        <counter type="COMPLEXITY" missed="2" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="refreshRequests" desc="(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" line="156">
+        <counter type="INSTRUCTION" missed="195" covered="0" />
+        <counter type="BRANCH" missed="6" covered="0" />
+        <counter type="LINE" missed="29" covered="0" />
+        <counter type="COMPLEXITY" missed="4" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="loadLocalRequests" desc="(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" line="204">
+        <counter type="INSTRUCTION" missed="6" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="&lt;clinit&gt;" desc="()V" line="25">
+        <counter type="INSTRUCTION" missed="7" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="572" covered="0" />
+      <counter type="BRANCH" missed="14" covered="0" />
+      <counter type="LINE" missed="116" covered="0" />
+      <counter type="COMPLEXITY" missed="23" covered="0" />
+      <counter type="METHOD" missed="16" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/core/ServiceLocator$restoreSession$1" sourcefilename="ServiceLocator.kt" />
+    <class name="ru/course/cityservices/core/ServiceLocator$refreshRequests$1" sourcefilename="ServiceLocator.kt" />
+    <sourcefile name="ServiceLocator.kt">
+      <line nr="21" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="22" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="23" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="25" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="27" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="30" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="31" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="32" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="33" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="34" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="35" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="36" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="37" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="40" mi="15" ci="0" mb="2" cb="0" />
+      <line nr="42" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="43" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="44" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="45" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="48" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="51" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="52" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="53" mi="16" ci="0" mb="0" cb="0" />
+      <line nr="55" mi="3" ci="0" mb="2" cb="0" />
+      <line nr="56" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="57" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="58" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="59" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="62" mi="17" ci="0" mb="0" cb="0" />
+      <line nr="63" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="64" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="65" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="67" mi="8" ci="0" mb="0" cb="0" />
+      <line nr="69" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="71" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="72" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="73" mi="9" ci="0" mb="2" cb="0" />
+      <line nr="76" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="78" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="79" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="80" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="81" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="84" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="85" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="88" mi="7" ci="0" mb="0" cb="0" />
+      <line nr="89" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="91" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="92" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="94" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="95" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="96" mi="7" ci="0" mb="0" cb="0" />
+      <line nr="98" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="99" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="101" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="102" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="103" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="106" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="107" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="108" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="110" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="111" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="115" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="116" mi="2" ci="0" mb="2" cb="0" />
+      <line nr="117" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="120" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="121" mi="21" ci="0" mb="0" cb="0" />
+      <line nr="122" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="123" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="124" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="125" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="128" mi="28" ci="0" mb="0" cb="0" />
+      <line nr="129" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="130" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="131" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="134" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="135" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="139" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="140" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="141" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="142" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="143" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="144" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="145" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="146" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="149" mi="32" ci="0" mb="0" cb="0" />
+      <line nr="150" mi="7" ci="0" mb="0" cb="0" />
+      <line nr="152" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="156" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="157" mi="5" ci="0" mb="2" cb="0" />
+      <line nr="159" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="160" mi="9" ci="0" mb="0" cb="0" />
+      <line nr="161" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="162" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="164" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="165" mi="7" ci="0" mb="0" cb="0" />
+      <line nr="167" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="168" mi="2" ci="0" mb="2" cb="0" />
+      <line nr="170" mi="41" ci="0" mb="0" cb="0" />
+      <line nr="173" mi="6" ci="0" mb="2" cb="0" />
+      <line nr="174" mi="37" ci="0" mb="0" cb="0" />
+      <line nr="175" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="176" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="177" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="178" mi="7" ci="0" mb="0" cb="0" />
+      <line nr="179" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="180" mi="7" ci="0" mb="0" cb="0" />
+      <line nr="181" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="184" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="185" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="186" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="190" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="192" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="194" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="195" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="196" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="198" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="204" mi="6" ci="0" mb="0" cb="0" />
+      <counter type="INSTRUCTION" missed="572" covered="0" />
+      <counter type="BRANCH" missed="14" covered="0" />
+      <counter type="LINE" missed="116" covered="0" />
+      <counter type="COMPLEXITY" missed="23" covered="0" />
+      <counter type="METHOD" missed="16" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="572" covered="0" />
+    <counter type="BRANCH" missed="14" covered="0" />
+    <counter type="LINE" missed="116" covered="0" />
+    <counter type="COMPLEXITY" missed="23" covered="0" />
+    <counter type="METHOD" missed="16" covered="0" />
+    <counter type="CLASS" missed="1" covered="0" />
+  </package>
+  <package name="ru/course/cityservices/util">
+    <class name="ru/course/cityservices/util/TimeFormat" sourcefilename="TimeFormat.kt">
+      <method name="relative" desc="(Lkotlin/time/Instant;Lkotlin/time/Instant;)Ljava/lang/String;" line="16">
+        <counter type="INSTRUCTION" missed="0" covered="56" />
+        <counter type="BRANCH" missed="1" covered="9" />
+        <counter type="LINE" missed="0" covered="7" />
+        <counter type="COMPLEXITY" missed="1" covered="5" />
+        <counter type="METHOD" missed="0" covered="1" />
+      </method>
+      <method name="relative$default" desc="(Lru/course/cityservices/util/TimeFormat;Lkotlin/time/Instant;Lkotlin/time/Instant;ILjava/lang/Object;)Ljava/lang/String;" line="12">
+        <counter type="INSTRUCTION" missed="11" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="11" covered="56" />
+      <counter type="BRANCH" missed="1" covered="9" />
+      <counter type="LINE" missed="2" covered="7" />
+      <counter type="COMPLEXITY" missed="2" covered="5" />
+      <counter type="METHOD" missed="1" covered="1" />
+      <counter type="CLASS" missed="0" covered="1" />
+    </class>
+    <sourcefile name="TimeFormat.kt">
+      <line nr="12" mi="8" ci="0" mb="0" cb="0" />
+      <line nr="14" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="16" mi="0" ci="4" mb="0" cb="0" />
+      <line nr="18" mi="0" ci="2" mb="0" cb="0" />
+      <line nr="19" mi="0" ci="13" mb="1" cb="3" />
+      <line nr="20" mi="0" ci="12" mb="0" cb="2" />
+      <line nr="21" mi="0" ci="12" mb="0" cb="2" />
+      <line nr="22" mi="0" ci="10" mb="0" cb="2" />
+      <line nr="24" mi="0" ci="3" mb="0" cb="0" />
+      <counter type="INSTRUCTION" missed="11" covered="56" />
+      <counter type="BRANCH" missed="1" covered="9" />
+      <counter type="LINE" missed="2" covered="7" />
+      <counter type="COMPLEXITY" missed="2" covered="5" />
+      <counter type="METHOD" missed="1" covered="1" />
+      <counter type="CLASS" missed="0" covered="1" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="11" covered="56" />
+    <counter type="BRANCH" missed="1" covered="9" />
+    <counter type="LINE" missed="2" covered="7" />
+    <counter type="COMPLEXITY" missed="2" covered="5" />
+    <counter type="METHOD" missed="1" covered="1" />
+    <counter type="CLASS" missed="0" covered="1" />
+  </package>
+  <package name="ru/course/cityservices/storage">
+    <class name="ru/course/cityservices/storage/SessionStore$clear$1" sourcefilename="SessionStore.kt" />
+    <class name="ru/course/cityservices/storage/AppDatabase_Impl" sourcefilename="AppDatabase_Impl.kt">
+      <method name="&lt;init&gt;" desc="()V" line="27">
+        <counter type="INSTRUCTION" missed="8" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="createOpenDelegate" desc="()Landroidx/room/RoomOpenDelegate;" line="35">
+        <counter type="INSTRUCTION" missed="8" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="createInvalidationTracker" desc="()Landroidx/room/InvalidationTracker;" line="89">
+        <counter type="INSTRUCTION" missed="26" covered="0" />
+        <counter type="LINE" missed="3" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="clearAllTables" desc="()V" line="95">
+        <counter type="INSTRUCTION" missed="12" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getRequiredTypeConverterClasses" desc="()Ljava/util/Map;" line="99">
+        <counter type="INSTRUCTION" missed="14" covered="0" />
+        <counter type="LINE" missed="3" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getRequiredAutoMigrationSpecClasses" desc="()Ljava/util/Set;" line="105">
+        <counter type="INSTRUCTION" missed="7" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="createAutoMigrations" desc="(Ljava/util/Map;)Ljava/util/List;" line="110">
+        <counter type="INSTRUCTION" missed="7" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="requestDao" desc="()Lru/course/cityservices/storage/RequestDao;" line="114">
+        <counter type="INSTRUCTION" missed="5" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="_requestDao$lambda$0" desc="(Lru/course/cityservices/storage/AppDatabase_Impl;)Lru/course/cityservices/storage/RequestDao_Impl;" line="31">
+        <counter type="INSTRUCTION" missed="6" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="93" covered="0" />
+      <counter type="LINE" missed="18" covered="0" />
+      <counter type="COMPLEXITY" missed="9" covered="0" />
+      <counter type="METHOD" missed="9" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/storage/SessionStore$Companion" sourcefilename="SessionStore.kt">
+      <method name="getUSER_ID" desc="()Landroidx/datastore/preferences/core/Preferences$Key;" line="41">
+        <counter type="INSTRUCTION" missed="2" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getUSERNAME" desc="()Landroidx/datastore/preferences/core/Preferences$Key;" line="43">
+        <counter type="INSTRUCTION" missed="2" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getDISPLAY_NAME" desc="()Landroidx/datastore/preferences/core/Preferences$Key;" line="45">
+        <counter type="INSTRUCTION" missed="2" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="6" covered="0" />
+      <counter type="LINE" missed="3" covered="0" />
+      <counter type="COMPLEXITY" missed="3" covered="0" />
+      <counter type="METHOD" missed="3" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/storage/AppDatabase" sourcefilename="AppDatabase.kt">
+      <method name="&lt;init&gt;" desc="()V" line="8">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="3" covered="0" />
+      <counter type="LINE" missed="1" covered="0" />
+      <counter type="COMPLEXITY" missed="1" covered="0" />
+      <counter type="METHOD" missed="1" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/storage/SessionStore$save$2" sourcefilename="SessionStore.kt">
+      <method name="invokeSuspend" desc="(Ljava/lang/Object;)Ljava/lang/Object;" line="21">
+        <counter type="INSTRUCTION" missed="21" covered="0" />
+        <counter type="LINE" missed="4" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="21" covered="0" />
+      <counter type="LINE" missed="4" covered="0" />
+      <counter type="COMPLEXITY" missed="1" covered="0" />
+      <counter type="METHOD" missed="1" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/storage/SessionStore$save$1" sourcefilename="SessionStore.kt" />
+    <class name="ru/course/cityservices/storage/InstantConverter" sourcefilename="InstantConverter.kt">
+      <method name="&lt;init&gt;" desc="()V" line="6">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="fromInstant" desc="(Lkotlin/time/Instant;)J" line="9">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="toInstant" desc="(J)Lkotlin/time/Instant;" line="12">
+        <counter type="INSTRUCTION" missed="4" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="10" covered="0" />
+      <counter type="LINE" missed="3" covered="0" />
+      <counter type="COMPLEXITY" missed="3" covered="0" />
+      <counter type="METHOD" missed="3" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/storage/RequestDao_Impl" sourcefilename="RequestDao_Impl.kt">
+      <method name="&lt;init&gt;" desc="(Landroidx/room/RoomDatabase;)V" line="21">
+        <counter type="INSTRUCTION" missed="20" covered="0" />
+        <counter type="LINE" missed="7" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="insert" desc="(Lru/course/cityservices/model/RequestResponse;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" line="49">
+        <counter type="INSTRUCTION" missed="11" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="all" desc="(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" line="54">
+        <counter type="INSTRUCTION" missed="12" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="forUser" desc="(JLkotlin/coroutines/Continuation;)Ljava/lang/Object;" line="95">
+        <counter type="INSTRUCTION" missed="13" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="clear" desc="(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" line="138">
+        <counter type="INSTRUCTION" missed="12" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="insert$lambda$0" desc="(Lru/course/cityservices/storage/RequestDao_Impl;Lru/course/cityservices/model/RequestResponse;Landroidx/sqlite/SQLiteConnection;)Lkotlin/Unit;" line="50">
+        <counter type="INSTRUCTION" missed="7" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="all$lambda$0" desc="(Ljava/lang/String;Lru/course/cityservices/storage/RequestDao_Impl;Landroidx/sqlite/SQLiteConnection;)Ljava/util/List;" line="56">
+        <counter type="INSTRUCTION" missed="114" covered="0" />
+        <counter type="BRANCH" missed="2" covered="0" />
+        <counter type="LINE" missed="33" covered="0" />
+        <counter type="COMPLEXITY" missed="2" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="forUser$lambda$0" desc="(Ljava/lang/String;JLru/course/cityservices/storage/RequestDao_Impl;Landroidx/sqlite/SQLiteConnection;)Ljava/util/List;" line="97">
+        <counter type="INSTRUCTION" missed="120" covered="0" />
+        <counter type="BRANCH" missed="2" covered="0" />
+        <counter type="LINE" missed="35" covered="0" />
+        <counter type="COMPLEXITY" missed="2" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="clear$lambda$0" desc="(Ljava/lang/String;Landroidx/sqlite/SQLiteConnection;)Lkotlin/Unit;" line="140">
+        <counter type="INSTRUCTION" missed="12" covered="0" />
+        <counter type="LINE" missed="5" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="321" covered="0" />
+      <counter type="BRANCH" missed="4" covered="0" />
+      <counter type="LINE" missed="89" covered="0" />
+      <counter type="COMPLEXITY" missed="11" covered="0" />
+      <counter type="METHOD" missed="9" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/storage/SessionStoreKt" sourcefilename="SessionStore.kt">
+      <method name="getSessionStore" desc="(Landroid/content/Context;)Landroidx/datastore/core/DataStore;" line="11">
+        <counter type="INSTRUCTION" missed="8" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="8" covered="0" />
+      <counter type="LINE" missed="1" covered="0" />
+      <counter type="COMPLEXITY" missed="1" covered="0" />
+      <counter type="METHOD" missed="1" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/storage/SessionStore" sourcefilename="SessionStore.kt">
+      <method name="&lt;init&gt;" desc="(Landroid/content/Context;)V" line="17">
+        <counter type="INSTRUCTION" missed="6" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="save" desc="(Ljava/lang/String;JLjava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" line="20">
+        <counter type="INSTRUCTION" missed="30" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="load" desc="(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" line="27">
+        <counter type="INSTRUCTION" missed="47" covered="0" />
+        <counter type="BRANCH" missed="6" covered="0" />
+        <counter type="LINE" missed="5" covered="0" />
+        <counter type="COMPLEXITY" missed="4" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="clear" desc="(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" line="36">
+        <counter type="INSTRUCTION" missed="13" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="&lt;clinit&gt;" desc="()V" line="41">
+        <counter type="INSTRUCTION" missed="10" covered="0" />
+        <counter type="LINE" missed="3" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="106" covered="0" />
+      <counter type="BRANCH" missed="6" covered="0" />
+      <counter type="LINE" missed="13" covered="0" />
+      <counter type="COMPLEXITY" missed="8" covered="0" />
+      <counter type="METHOD" missed="5" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/storage/SessionStore$load$1" sourcefilename="SessionStore.kt" />
+    <class name="ru/course/cityservices/storage/AppDatabase_Impl$createOpenDelegate$_openDelegate$1" sourcefilename="AppDatabase_Impl.kt">
+      <method name="&lt;init&gt;" desc="(Lru/course/cityservices/storage/AppDatabase_Impl;)V" line="35">
+        <counter type="INSTRUCTION" missed="6" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="createAllTables" desc="(Landroidx/sqlite/SQLiteConnection;)V" line="37">
+        <counter type="INSTRUCTION" missed="10" covered="0" />
+        <counter type="LINE" missed="4" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="dropAllTables" desc="(Landroidx/sqlite/SQLiteConnection;)V" line="43">
+        <counter type="INSTRUCTION" missed="4" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="onCreate" desc="(Landroidx/sqlite/SQLiteConnection;)V" line="47">
+        <counter type="INSTRUCTION" missed="1" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="onOpen" desc="(Landroidx/sqlite/SQLiteConnection;)V" line="50">
+        <counter type="INSTRUCTION" missed="5" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="onPreMigrate" desc="(Landroidx/sqlite/SQLiteConnection;)V" line="54">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="onPostMigrate" desc="(Landroidx/sqlite/SQLiteConnection;)V" line="58">
+        <counter type="INSTRUCTION" missed="1" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="onValidateSchema" desc="(Landroidx/sqlite/SQLiteConnection;)Landroidx/room/RoomOpenDelegate$ValidationResult;" line="61">
+        <counter type="INSTRUCTION" missed="137" covered="0" />
+        <counter type="BRANCH" missed="2" covered="0" />
+        <counter type="LINE" missed="17" covered="0" />
+        <counter type="COMPLEXITY" missed="2" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="167" covered="0" />
+      <counter type="BRANCH" missed="2" covered="0" />
+      <counter type="LINE" missed="30" covered="0" />
+      <counter type="COMPLEXITY" missed="9" covered="0" />
+      <counter type="METHOD" missed="8" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/storage/SessionData" sourcefilename="SessionStore.kt">
+      <method name="&lt;init&gt;" desc="(Ljava/lang/String;JLjava/lang/String;)V" line="13">
+        <counter type="INSTRUCTION" missed="12" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getUsername" desc="()Ljava/lang/String;" line="13">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getUserId" desc="()J" line="13">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getDisplayName" desc="()Ljava/lang/String;" line="13">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="21" covered="0" />
+      <counter type="LINE" missed="1" covered="0" />
+      <counter type="COMPLEXITY" missed="4" covered="0" />
+      <counter type="METHOD" missed="4" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/storage/RequestDao_Impl$Companion" sourcefilename="RequestDao_Impl.kt">
+      <method name="getRequiredConverters" desc="()Ljava/util/List;" line="150">
+        <counter type="INSTRUCTION" missed="2" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="2" covered="0" />
+      <counter type="LINE" missed="1" covered="0" />
+      <counter type="COMPLEXITY" missed="1" covered="0" />
+      <counter type="METHOD" missed="1" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/storage/RequestDao" sourcefilename="RequestDao.kt" />
+    <class name="ru/course/cityservices/storage/RequestDao_Impl$1" sourcefilename="RequestDao_Impl.kt">
+      <method name="&lt;init&gt;" desc="(Lru/course/cityservices/storage/RequestDao_Impl;)V" line="33">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="createQuery" desc="()Ljava/lang/String;" line="34">
+        <counter type="INSTRUCTION" missed="2" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="bind" desc="(Landroidx/sqlite/SQLiteStatement;Lru/course/cityservices/model/RequestResponse;)V" line="37">
+        <counter type="INSTRUCTION" missed="42" covered="0" />
+        <counter type="LINE" missed="9" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="47" covered="0" />
+      <counter type="LINE" missed="11" covered="0" />
+      <counter type="COMPLEXITY" missed="3" covered="0" />
+      <counter type="METHOD" missed="3" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <sourcefile name="RequestDao_Impl.kt">
+      <line nr="21" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="23" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="30" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="31" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="32" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="33" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="34" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="37" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="38" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="39" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="40" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="41" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="42" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="43" mi="7" ci="0" mb="0" cb="0" />
+      <line nr="44" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="45" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="47" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="49" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="50" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="51" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="54" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="55" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="56" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="57" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="58" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="59" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="60" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="61" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="62" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="63" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="64" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="65" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="66" mi="3" ci="0" mb="2" cb="0" />
+      <line nr="67" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="68" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="69" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="70" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="71" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="72" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="73" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="74" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="75" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="76" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="77" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="78" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="79" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="80" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="81" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="82" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="83" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="84" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="85" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="87" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="89" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="90" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="95" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="96" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="97" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="98" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="99" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="100" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="101" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="102" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="103" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="104" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="105" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="106" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="107" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="108" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="109" mi="3" ci="0" mb="2" cb="0" />
+      <line nr="110" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="111" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="112" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="113" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="114" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="115" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="116" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="117" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="118" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="119" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="120" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="121" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="122" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="123" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="124" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="125" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="126" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="127" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="128" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="130" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="132" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="133" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="138" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="139" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="140" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="141" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="142" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="144" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="146" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="150" mi="2" ci="0" mb="0" cb="0" />
+      <counter type="INSTRUCTION" missed="370" covered="0" />
+      <counter type="BRANCH" missed="4" covered="0" />
+      <counter type="LINE" missed="100" covered="0" />
+      <counter type="COMPLEXITY" missed="15" covered="0" />
+      <counter type="METHOD" missed="13" covered="0" />
+      <counter type="CLASS" missed="3" covered="0" />
+    </sourcefile>
+    <sourcefile name="AppDatabase.kt">
+      <line nr="8" mi="3" ci="0" mb="0" cb="0" />
+      <counter type="INSTRUCTION" missed="3" covered="0" />
+      <counter type="LINE" missed="1" covered="0" />
+      <counter type="COMPLEXITY" missed="1" covered="0" />
+      <counter type="METHOD" missed="1" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </sourcefile>
+    <sourcefile name="AppDatabase_Impl.kt">
+      <line nr="27" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="30" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="31" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="35" mi="12" ci="0" mb="0" cb="0" />
+      <line nr="37" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="38" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="39" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="40" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="43" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="44" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="47" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="50" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="51" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="54" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="55" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="58" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="61" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="62" mi="13" ci="0" mb="0" cb="0" />
+      <line nr="63" mi="13" ci="0" mb="0" cb="0" />
+      <line nr="64" mi="13" ci="0" mb="0" cb="0" />
+      <line nr="65" mi="13" ci="0" mb="0" cb="0" />
+      <line nr="66" mi="13" ci="0" mb="0" cb="0" />
+      <line nr="67" mi="13" ci="0" mb="0" cb="0" />
+      <line nr="68" mi="13" ci="0" mb="0" cb="0" />
+      <line nr="69" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="70" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="71" mi="8" ci="0" mb="0" cb="0" />
+      <line nr="72" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="73" mi="4" ci="0" mb="2" cb="0" />
+      <line nr="74" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="77" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="80" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="82" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="85" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="89" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="90" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="91" mi="16" ci="0" mb="0" cb="0" />
+      <line nr="95" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="96" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="99" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="100" mi="7" ci="0" mb="0" cb="0" />
+      <line nr="101" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="105" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="106" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="110" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="111" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="114" mi="5" ci="0" mb="0" cb="0" />
+      <counter type="INSTRUCTION" missed="260" covered="0" />
+      <counter type="BRANCH" missed="2" covered="0" />
+      <counter type="LINE" missed="47" covered="0" />
+      <counter type="COMPLEXITY" missed="18" covered="0" />
+      <counter type="METHOD" missed="17" covered="0" />
+      <counter type="CLASS" missed="2" covered="0" />
+    </sourcefile>
+    <sourcefile name="RequestDao.kt" />
+    <sourcefile name="SessionStore.kt">
+      <line nr="11" mi="8" ci="0" mb="0" cb="0" />
+      <line nr="13" mi="21" ci="0" mb="0" cb="0" />
+      <line nr="17" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="20" mi="27" ci="0" mb="0" cb="0" />
+      <line nr="21" mi="7" ci="0" mb="0" cb="0" />
+      <line nr="22" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="23" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="24" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="25" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="27" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="28" mi="9" ci="0" mb="0" cb="0" />
+      <line nr="29" mi="12" ci="0" mb="2" cb="0" />
+      <line nr="30" mi="10" ci="0" mb="2" cb="0" />
+      <line nr="32" mi="14" ci="0" mb="2" cb="0" />
+      <line nr="36" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="37" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="41" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="43" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="45" mi="6" ci="0" mb="0" cb="0" />
+      <counter type="INSTRUCTION" missed="162" covered="0" />
+      <counter type="BRANCH" missed="6" covered="0" />
+      <counter type="LINE" missed="19" covered="0" />
+      <counter type="COMPLEXITY" missed="17" covered="0" />
+      <counter type="METHOD" missed="14" covered="0" />
+      <counter type="CLASS" missed="5" covered="0" />
+    </sourcefile>
+    <sourcefile name="InstantConverter.kt">
+      <line nr="6" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="9" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="12" mi="4" ci="0" mb="0" cb="0" />
+      <counter type="INSTRUCTION" missed="10" covered="0" />
+      <counter type="LINE" missed="3" covered="0" />
+      <counter type="COMPLEXITY" missed="3" covered="0" />
+      <counter type="METHOD" missed="3" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="805" covered="0" />
+    <counter type="BRANCH" missed="12" covered="0" />
+    <counter type="LINE" missed="170" covered="0" />
+    <counter type="COMPLEXITY" missed="54" covered="0" />
+    <counter type="METHOD" missed="48" covered="0" />
+    <counter type="CLASS" missed="12" covered="0" />
+  </package>
+  <package name="ru/course/cityservices/ui/screen">
+    <class name="ru/course/cityservices/ui/screen/ServiceDetailScreenKt$ServiceDetailScreen$1$4$1$1$1" sourcefilename="ServiceDetailScreen.kt">
+      <method name="invokeSuspend" desc="(Ljava/lang/Object;)Ljava/lang/Object;" line="103">
+        <counter type="INSTRUCTION" missed="35" covered="0" />
+        <counter type="BRANCH" missed="2" covered="0" />
+        <counter type="LINE" missed="8" covered="0" />
+        <counter type="COMPLEXITY" missed="2" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="35" covered="0" />
+      <counter type="BRANCH" missed="2" covered="0" />
+      <counter type="LINE" missed="8" covered="0" />
+      <counter type="COMPLEXITY" missed="2" covered="0" />
+      <counter type="METHOD" missed="1" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/ui/screen/ServiceDetailScreenKt" sourcefilename="ServiceDetailScreen.kt">
+      <method name="ServiceDetailScreen" desc="(Lru/course/cityservices/model/ServiceResponse;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V" line="33">
+        <counter type="INSTRUCTION" missed="554" covered="0" />
+        <counter type="BRANCH" missed="14" covered="0" />
+        <counter type="LINE" missed="50" covered="0" />
+        <counter type="COMPLEXITY" missed="8" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="ServiceDetailScreen$lambda$1" desc="(Landroidx/compose/runtime/MutableState;)Ljava/lang/String;" line="35">
+        <counter type="INSTRUCTION" missed="10" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="ServiceDetailScreen$lambda$2" desc="(Landroidx/compose/runtime/MutableState;Ljava/lang/String;)V" line="35">
+        <counter type="INSTRUCTION" missed="11" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="ServiceDetailScreen$lambda$4" desc="(Landroidx/compose/runtime/MutableState;)Ljava/lang/String;" line="36">
+        <counter type="INSTRUCTION" missed="10" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="ServiceDetailScreen$lambda$5" desc="(Landroidx/compose/runtime/MutableState;Ljava/lang/String;)V" line="36">
+        <counter type="INSTRUCTION" missed="11" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="ServiceDetailScreen$lambda$7" desc="(Landroidx/compose/runtime/MutableState;)Ljava/lang/String;" line="37">
+        <counter type="INSTRUCTION" missed="10" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="ServiceDetailScreen$lambda$8" desc="(Landroidx/compose/runtime/MutableState;Ljava/lang/String;)V" line="37">
+        <counter type="INSTRUCTION" missed="11" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="ServiceDetailScreen$lambda$10" desc="(Landroidx/compose/runtime/MutableState;)Z" line="38">
+        <counter type="INSTRUCTION" missed="10" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="ServiceDetailScreen$lambda$11" desc="(Landroidx/compose/runtime/MutableState;Z)V" line="38">
+        <counter type="INSTRUCTION" missed="12" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="ServiceDetailScreen$lambda$12$0$0" desc="(Landroidx/compose/runtime/MutableState;Ljava/lang/String;)Lkotlin/Unit;" line="60">
+        <counter type="INSTRUCTION" missed="5" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="ServiceDetailScreen$lambda$12$1$0" desc="(Landroidx/compose/runtime/MutableState;Ljava/lang/String;)Lkotlin/Unit;" line="70">
+        <counter type="INSTRUCTION" missed="5" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="ServiceDetailScreen$lambda$12$3$0$0" desc="(Lkotlinx/coroutines/CoroutineScope;Landroidx/compose/runtime/MutableState;Landroidx/compose/runtime/MutableState;Landroidx/compose/runtime/MutableState;Lru/course/cityservices/model/ServiceResponse;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/MutableState;)Lkotlin/Unit;" line="96">
+        <counter type="INSTRUCTION" missed="36" covered="0" />
+        <counter type="BRANCH" missed="2" covered="0" />
+        <counter type="LINE" missed="7" covered="0" />
+        <counter type="COMPLEXITY" missed="2" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="ServiceDetailScreen$lambda$12$3$1" desc="(Landroidx/compose/runtime/MutableState;Landroidx/compose/foundation/layout/RowScope;Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;" line="115">
+        <counter type="INSTRUCTION" missed="31" covered="0" />
+        <counter type="BRANCH" missed="2" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="2" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="716" covered="0" />
+      <counter type="BRANCH" missed="18" covered="0" />
+      <counter type="LINE" missed="59" covered="0" />
+      <counter type="COMPLEXITY" missed="22" covered="0" />
+      <counter type="METHOD" missed="13" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/ui/screen/ServicesScreenKt$ServicesScreen$lambda$5$5$0$$inlined$items$default$2" sourcefilename="LazyDsl.kt" />
+    <class name="ru/course/cityservices/ui/screen/ServicesScreenKt$ServicesScreen$lambda$5$5$0$$inlined$items$default$3" sourcefilename="LazyDsl.kt" />
+    <class name="ru/course/cityservices/ui/screen/ServicesScreenKt$ServicesScreen$lambda$5$5$0$$inlined$items$default$1" sourcefilename="LazyDsl.kt" />
+    <class name="ru/course/cityservices/ui/screen/NotificationsScreenKt$NotificationsScreen$lambda$0$2$0$$inlined$items$default$1" sourcefilename="LazyDsl.kt" />
+    <class name="ru/course/cityservices/ui/screen/NotificationsScreenKt" sourcefilename="NotificationsScreen.kt">
+      <method name="NotificationsScreen" desc="(Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V" line="26">
+        <counter type="INSTRUCTION" missed="248" covered="0" />
+        <counter type="BRANCH" missed="2" covered="0" />
+        <counter type="LINE" missed="34" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="NotificationsScreen$lambda$0$2$0" desc="(Landroidx/compose/runtime/snapshots/SnapshotStateList;Landroidx/compose/foundation/lazy/LazyListScope;)Lkotlin/Unit;" line="61">
+        <counter type="INSTRUCTION" missed="15" covered="0" />
+        <counter type="LINE" missed="10" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="255" covered="0" />
+      <counter type="BRANCH" missed="2" covered="0" />
+      <counter type="LINE" missed="36" covered="0" />
+      <counter type="COMPLEXITY" missed="2" covered="0" />
+      <counter type="METHOD" missed="2" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/ui/screen/ComposableSingletons$NotificationsScreenKt" sourcefilename="NotificationsScreen.kt">
+      <method name="lambda_1625702302$lambda$0" desc="(Landroidx/compose/foundation/layout/RowScope;Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;" line="39">
+        <counter type="INSTRUCTION" missed="26" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="&lt;clinit&gt;" desc="()V" line="38">
+        <counter type="INSTRUCTION" missed="7" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="33" covered="0" />
+      <counter type="LINE" missed="3" covered="0" />
+      <counter type="COMPLEXITY" missed="2" covered="0" />
+      <counter type="METHOD" missed="2" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/ui/screen/LoginScreenKt" sourcefilename="LoginScreen.kt">
+      <method name="LoginScreen" desc="(Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V" line="44">
+        <counter type="INSTRUCTION" missed="587" covered="0" />
+        <counter type="BRANCH" missed="6" covered="0" />
+        <counter type="LINE" missed="55" covered="0" />
+        <counter type="COMPLEXITY" missed="4" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="LoginScreen$lambda$1" desc="(Landroidx/compose/runtime/MutableState;)Ljava/lang/String;" line="47">
+        <counter type="INSTRUCTION" missed="10" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="LoginScreen$lambda$2" desc="(Landroidx/compose/runtime/MutableState;Ljava/lang/String;)V" line="47">
+        <counter type="INSTRUCTION" missed="11" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="LoginScreen$lambda$4" desc="(Landroidx/compose/runtime/MutableState;)Ljava/lang/String;" line="48">
+        <counter type="INSTRUCTION" missed="10" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="LoginScreen$lambda$5" desc="(Landroidx/compose/runtime/MutableState;Ljava/lang/String;)V" line="48">
+        <counter type="INSTRUCTION" missed="11" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="LoginScreen$lambda$7" desc="(Landroidx/compose/runtime/MutableState;)Ljava/lang/String;" line="49">
+        <counter type="INSTRUCTION" missed="10" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="LoginScreen$lambda$8" desc="(Landroidx/compose/runtime/MutableState;Ljava/lang/String;)V" line="49">
+        <counter type="INSTRUCTION" missed="11" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="LoginScreen$lambda$10" desc="(Landroidx/compose/runtime/MutableState;)Z" line="50">
+        <counter type="INSTRUCTION" missed="10" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="LoginScreen$lambda$11" desc="(Landroidx/compose/runtime/MutableState;Z)V" line="50">
+        <counter type="INSTRUCTION" missed="12" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="LoginScreen$lambda$12$0$0" desc="(Landroidx/compose/runtime/MutableState;Ljava/lang/String;)Lkotlin/Unit;" line="71">
+        <counter type="INSTRUCTION" missed="5" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="LoginScreen$lambda$12$1$0" desc="(Landroidx/compose/runtime/MutableState;Ljava/lang/String;)Lkotlin/Unit;" line="81">
+        <counter type="INSTRUCTION" missed="5" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="LoginScreen$lambda$12$2$0$0" desc="(Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/MutableState;Landroidx/compose/runtime/MutableState;Ljava/lang/String;)Lkotlin/Unit;" line="100">
+        <counter type="INSTRUCTION" missed="16" covered="0" />
+        <counter type="BRANCH" missed="2" covered="0" />
+        <counter type="LINE" missed="3" covered="0" />
+        <counter type="COMPLEXITY" missed="2" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="LoginScreen$lambda$12$2$0" desc="(Lru/course/cityservices/ui/screen/LoginViewModel;Landroidx/compose/runtime/MutableState;Landroidx/compose/runtime/MutableState;Landroidx/compose/runtime/MutableState;Landroidx/compose/runtime/MutableState;Lkotlin/jvm/functions/Function0;)Lkotlin/Unit;" line="93">
+        <counter type="INSTRUCTION" missed="32" covered="0" />
+        <counter type="BRANCH" missed="4" covered="0" />
+        <counter type="LINE" missed="6" covered="0" />
+        <counter type="COMPLEXITY" missed="3" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="LoginScreen$lambda$12$3" desc="(Landroidx/compose/runtime/MutableState;Landroidx/compose/foundation/layout/RowScope;Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;" line="108">
+        <counter type="INSTRUCTION" missed="71" covered="0" />
+        <counter type="BRANCH" missed="4" covered="0" />
+        <counter type="LINE" missed="8" covered="0" />
+        <counter type="COMPLEXITY" missed="3" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="LoginScreen$lambda$12$5$0" desc="(Landroidx/compose/runtime/MutableState;Landroidx/compose/runtime/MutableState;)Lkotlin/Unit;" line="130">
+        <counter type="INSTRUCTION" missed="8" covered="0" />
+        <counter type="LINE" missed="3" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="809" covered="0" />
+      <counter type="BRANCH" missed="16" covered="0" />
+      <counter type="LINE" missed="75" covered="0" />
+      <counter type="COMPLEXITY" missed="23" covered="0" />
+      <counter type="METHOD" missed="15" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/ui/screen/ServicesScreenKt$ServicesScreen$lambda$5$5$0$$inlined$items$default$4" sourcefilename="LazyDsl.kt" />
+    <class name="ru/course/cityservices/ui/screen/RequestsScreenKt$RequestsScreen$1$1" sourcefilename="RequestsScreen.kt">
+      <method name="invokeSuspend" desc="(Ljava/lang/Object;)Ljava/lang/Object;" line="74">
+        <counter type="INSTRUCTION" missed="5" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="5" covered="0" />
+      <counter type="LINE" missed="2" covered="0" />
+      <counter type="COMPLEXITY" missed="1" covered="0" />
+      <counter type="METHOD" missed="1" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/ui/screen/NotificationsScreenKt$NotificationsScreen$lambda$0$2$0$$inlined$items$default$4" sourcefilename="LazyDsl.kt" />
+    <class name="ru/course/cityservices/ui/screen/NotificationsScreenKt$NotificationsScreen$lambda$0$2$0$$inlined$items$default$3" sourcefilename="LazyDsl.kt" />
+    <class name="ru/course/cityservices/ui/screen/ComposableSingletons$ServiceDetailScreenKt" sourcefilename="ServiceDetailScreen.kt">
+      <method name="lambda__1621166931$lambda$0" desc="(Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;" line="62">
+        <counter type="INSTRUCTION" missed="26" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="lambda__180402588$lambda$0" desc="(Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;" line="72">
+        <counter type="INSTRUCTION" missed="26" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="lambda_1599197417$lambda$0" desc="(Landroidx/compose/foundation/layout/RowScope;Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;" line="91">
+        <counter type="INSTRUCTION" missed="26" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="&lt;clinit&gt;" desc="()V" line="61">
+        <counter type="INSTRUCTION" missed="19" covered="0" />
+        <counter type="LINE" missed="3" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="97" covered="0" />
+      <counter type="LINE" missed="9" covered="0" />
+      <counter type="COMPLEXITY" missed="4" covered="0" />
+      <counter type="METHOD" missed="4" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/ui/screen/NotificationsScreenKt$NotificationsScreen$1$3$1$1$2" sourcefilename="NotificationsScreen.kt">
+      <method name="invoke" desc="(Landroidx/compose/foundation/layout/ColumnScope;Landroidx/compose/runtime/Composer;I)V" line="68">
+        <counter type="INSTRUCTION" missed="109" covered="0" />
+        <counter type="BRANCH" missed="2" covered="0" />
+        <counter type="LINE" missed="11" covered="0" />
+        <counter type="COMPLEXITY" missed="2" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="109" covered="0" />
+      <counter type="BRANCH" missed="2" covered="0" />
+      <counter type="LINE" missed="11" covered="0" />
+      <counter type="COMPLEXITY" missed="2" covered="0" />
+      <counter type="METHOD" missed="1" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/ui/screen/NotificationsScreenKt$NotificationsScreen$lambda$0$2$0$$inlined$items$default$2" sourcefilename="LazyDsl.kt" />
+    <class name="ru/course/cityservices/ui/screen/RequestsScreenKt" sourcefilename="RequestsScreen.kt">
+      <method name="RequestsScreen" desc="(Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V" line="69">
+        <counter type="INSTRUCTION" missed="432" covered="0" />
+        <counter type="BRANCH" missed="10" covered="0" />
+        <counter type="LINE" missed="47" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="RequestCard" desc="(Lru/course/cityservices/model/RequestResponse;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V" line="145">
+        <counter type="INSTRUCTION" missed="42" covered="0" />
+        <counter type="BRANCH" missed="2" covered="0" />
+        <counter type="LINE" missed="8" covered="0" />
+        <counter type="COMPLEXITY" missed="2" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="StatusFilterChips" desc="(Ljava/util/List;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V" line="185">
+        <counter type="INSTRUCTION" missed="118" covered="0" />
+        <counter type="BRANCH" missed="4" covered="0" />
+        <counter type="LINE" missed="13" covered="0" />
+        <counter type="COMPLEXITY" missed="3" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="RequestsScreen$lambda$1" desc="(Landroidx/compose/runtime/MutableState;)Ljava/lang/String;" line="71">
+        <counter type="INSTRUCTION" missed="10" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="RequestsScreen$lambda$2" desc="(Landroidx/compose/runtime/MutableState;Ljava/lang/String;)V" line="71">
+        <counter type="INSTRUCTION" missed="11" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="RequestsScreen$lambda$4$2$0" desc="(Landroidx/compose/runtime/MutableState;Ljava/lang/String;)Lkotlin/Unit;" line="98">
+        <counter type="INSTRUCTION" missed="5" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="RequestsScreen$lambda$4$7$0" desc="(Ljava/util/List;Landroidx/compose/foundation/lazy/LazyListScope;)Lkotlin/Unit;" line="133">
+        <counter type="INSTRUCTION" missed="8" covered="0" />
+        <counter type="LINE" missed="4" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="RequestCard$lambda$0" desc="(Lru/course/cityservices/model/RequestResponse;Landroidx/compose/foundation/layout/ColumnScope;Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;" line="152">
+        <counter type="INSTRUCTION" missed="208" covered="0" />
+        <counter type="LINE" missed="22" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="StatusFilterChips$lambda$0$0$0$0" desc="(Lkotlin/jvm/functions/Function1;Ljava/lang/String;)Lkotlin/Unit;" line="194">
+        <counter type="INSTRUCTION" missed="6" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="StatusFilterChips$lambda$0$0$1" desc="(Ljava/lang/String;Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;" line="196">
+        <counter type="INSTRUCTION" missed="26" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="864" covered="0" />
+      <counter type="BRANCH" missed="16" covered="0" />
+      <counter type="LINE" missed="94" covered="0" />
+      <counter type="COMPLEXITY" missed="13" covered="0" />
+      <counter type="METHOD" missed="10" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/ui/screen/ServicesViewModel$load$1" sourcefilename="ServicesScreen.kt">
+      <method name="invokeSuspend" desc="(Ljava/lang/Object;)Ljava/lang/Object;" line="43">
+        <counter type="INSTRUCTION" missed="24" covered="0" />
+        <counter type="BRANCH" missed="2" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="2" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="24" covered="0" />
+      <counter type="BRANCH" missed="2" covered="0" />
+      <counter type="LINE" missed="2" covered="0" />
+      <counter type="COMPLEXITY" missed="2" covered="0" />
+      <counter type="METHOD" missed="1" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/ui/screen/RequestsScreenKt$RequestsScreen$lambda$4$7$0$$inlined$items$default$2" sourcefilename="LazyDsl.kt" />
+    <class name="ru/course/cityservices/ui/screen/RequestsScreenKt$RequestsScreen$lambda$4$7$0$$inlined$items$default$1" sourcefilename="LazyDsl.kt" />
+    <class name="ru/course/cityservices/ui/screen/RequestsScreenKt$RequestsScreen$lambda$4$7$0$$inlined$items$default$4" sourcefilename="LazyDsl.kt" />
+    <class name="ru/course/cityservices/ui/screen/RequestsScreenKt$RequestsScreen$lambda$4$7$0$$inlined$items$default$3" sourcefilename="LazyDsl.kt" />
+    <class name="ru/course/cityservices/ui/screen/RequestsViewModel$load$1" sourcefilename="RequestsScreen.kt">
+      <method name="invokeSuspend" desc="(Ljava/lang/Object;)Ljava/lang/Object;" line="53">
+        <counter type="INSTRUCTION" missed="55" covered="0" />
+        <counter type="LINE" missed="6" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="55" covered="0" />
+      <counter type="LINE" missed="6" covered="0" />
+      <counter type="COMPLEXITY" missed="1" covered="0" />
+      <counter type="METHOD" missed="1" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/ui/screen/ComposableSingletons$RequestsScreenKt" sourcefilename="RequestsScreen.kt">
+      <method name="lambda_1316874562$lambda$0" desc="(Landroidx/compose/foundation/layout/RowScope;Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;" line="89">
+        <counter type="INSTRUCTION" missed="26" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="&lt;clinit&gt;" desc="()V" line="88">
+        <counter type="INSTRUCTION" missed="7" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="33" covered="0" />
+      <counter type="LINE" missed="3" covered="0" />
+      <counter type="COMPLEXITY" missed="2" covered="0" />
+      <counter type="METHOD" missed="2" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/ui/screen/NotificationsScreenKt$NotificationsScreen$1$3$1$1$1$1" sourcefilename="NotificationsScreen.kt">
+      <method name="invoke" desc="()V" line="66">
+        <counter type="INSTRUCTION" missed="5" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="5" covered="0" />
+      <counter type="LINE" missed="1" covered="0" />
+      <counter type="COMPLEXITY" missed="1" covered="0" />
+      <counter type="METHOD" missed="1" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/ui/screen/RequestsScreenKt$RequestsScreen$lambda$4$$inlined$sortedByDescending$1" sourcefilename="Comparisons.kt" />
+    <class name="ru/course/cityservices/ui/screen/RequestsViewModel" sourcefilename="RequestsScreen.kt">
+      <method name="&lt;init&gt;" desc="()V" line="43">
+        <counter type="INSTRUCTION" missed="18" covered="0" />
+        <counter type="LINE" missed="3" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getRequests" desc="()Ljava/util/List;" line="45">
+        <counter type="INSTRUCTION" missed="11" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="setRequests" desc="(Ljava/util/List;)V" line="45">
+        <counter type="INSTRUCTION" missed="12" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getLoading" desc="()Z" line="48">
+        <counter type="INSTRUCTION" missed="11" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="setLoading" desc="(Z)V" line="48">
+        <counter type="INSTRUCTION" missed="13" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="load" desc="()V" line="52">
+        <counter type="INSTRUCTION" missed="16" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="81" covered="0" />
+      <counter type="LINE" missed="5" covered="0" />
+      <counter type="COMPLEXITY" missed="6" covered="0" />
+      <counter type="METHOD" missed="6" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/ui/screen/LoginViewModel" sourcefilename="LoginScreen.kt">
+      <method name="&lt;init&gt;" desc="()V" line="34">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="login" desc="(Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)V" line="37">
+        <counter type="INSTRUCTION" missed="18" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="21" covered="0" />
+      <counter type="LINE" missed="3" covered="0" />
+      <counter type="COMPLEXITY" missed="2" covered="0" />
+      <counter type="METHOD" missed="2" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/ui/screen/ComposableSingletons$LoginScreenKt" sourcefilename="LoginScreen.kt">
+      <method name="lambda__1822477193$lambda$0" desc="(Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;" line="73">
+        <counter type="INSTRUCTION" missed="26" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="lambda_232819438$lambda$0" desc="(Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;" line="83">
+        <counter type="INSTRUCTION" missed="26" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="lambda_1549503439$lambda$0" desc="(Landroidx/compose/foundation/layout/RowScope;Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;" line="134">
+        <counter type="INSTRUCTION" missed="26" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="&lt;clinit&gt;" desc="()V" line="72">
+        <counter type="INSTRUCTION" missed="19" covered="0" />
+        <counter type="LINE" missed="3" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="97" covered="0" />
+      <counter type="LINE" missed="9" covered="0" />
+      <counter type="COMPLEXITY" missed="4" covered="0" />
+      <counter type="METHOD" missed="4" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/ui/screen/ServicesScreenKt" sourcefilename="ServicesScreen.kt">
+      <method name="ServicesScreen" desc="(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V" line="54">
+        <counter type="INSTRUCTION" missed="591" covered="0" />
+        <counter type="BRANCH" missed="10" covered="0" />
+        <counter type="LINE" missed="67" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="ServicesScreen$lambda$1" desc="(Landroidx/compose/runtime/MutableState;)Z" line="55">
+        <counter type="INSTRUCTION" missed="10" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="ServicesScreen$lambda$2" desc="(Landroidx/compose/runtime/MutableState;Z)V" line="55">
+        <counter type="INSTRUCTION" missed="12" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="ServicesScreen$lambda$5$1$0" desc="(ILandroidx/compose/foundation/layout/RowScope;Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;" line="102">
+        <counter type="INSTRUCTION" missed="31" covered="0" />
+        <counter type="BRANCH" missed="2" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="2" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="ServicesScreen$lambda$5$5$0" desc="(Ljava/util/List;Lkotlin/jvm/functions/Function1;Landroidx/compose/foundation/lazy/LazyListScope;)Lkotlin/Unit;" line="143">
+        <counter type="INSTRUCTION" missed="12" covered="0" />
+        <counter type="LINE" missed="8" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="650" covered="0" />
+      <counter type="BRANCH" missed="12" covered="0" />
+      <counter type="LINE" missed="71" covered="0" />
+      <counter type="COMPLEXITY" missed="6" covered="0" />
+      <counter type="METHOD" missed="5" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/ui/screen/LoginViewModel$login$1" sourcefilename="LoginScreen.kt">
+      <method name="invokeSuspend" desc="(Ljava/lang/Object;)Ljava/lang/Object;" line="38">
+        <counter type="INSTRUCTION" missed="23" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="23" covered="0" />
+      <counter type="LINE" missed="2" covered="0" />
+      <counter type="COMPLEXITY" missed="1" covered="0" />
+      <counter type="METHOD" missed="1" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/ui/screen/ComposableSingletons$ServicesScreenKt" sourcefilename="ServicesScreen.kt">
+      <method name="lambda_1108303881$lambda$0" desc="(Landroidx/compose/foundation/layout/RowScope;Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;" line="85">
+        <counter type="INSTRUCTION" missed="26" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="lambda__901980109$lambda$0" desc="(Landroidx/compose/foundation/layout/RowScope;Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;" line="95">
+        <counter type="INSTRUCTION" missed="26" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="&lt;clinit&gt;" desc="()V" line="84">
+        <counter type="INSTRUCTION" missed="13" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="65" covered="0" />
+      <counter type="LINE" missed="6" covered="0" />
+      <counter type="COMPLEXITY" missed="3" covered="0" />
+      <counter type="METHOD" missed="3" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/ui/screen/ServicesScreenKt$ServicesScreen$1$1" sourcefilename="ServicesScreen.kt">
+      <method name="invokeSuspend" desc="(Ljava/lang/Object;)Ljava/lang/Object;" line="58">
+        <counter type="INSTRUCTION" missed="18" covered="0" />
+        <counter type="LINE" missed="4" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="18" covered="0" />
+      <counter type="LINE" missed="4" covered="0" />
+      <counter type="COMPLEXITY" missed="1" covered="0" />
+      <counter type="METHOD" missed="1" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/ui/screen/ServicesViewModel" sourcefilename="ServicesScreen.kt">
+      <method name="&lt;init&gt;" desc="()V" line="36">
+        <counter type="INSTRUCTION" missed="10" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getServices" desc="()Ljava/util/List;" line="38">
+        <counter type="INSTRUCTION" missed="11" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="setServices" desc="(Ljava/util/List;)V" line="38">
+        <counter type="INSTRUCTION" missed="12" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="load" desc="()V" line="42">
+        <counter type="INSTRUCTION" missed="16" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="49" covered="0" />
+      <counter type="LINE" missed="4" covered="0" />
+      <counter type="COMPLEXITY" missed="4" covered="0" />
+      <counter type="METHOD" missed="4" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/ui/screen/ServicesScreenKt$ServicesScreen$2$6$1$1$1$1" sourcefilename="ServicesScreen.kt">
+      <method name="invoke" desc="(Lru/course/cityservices/model/ServiceResponse;)V" line="149">
+        <counter type="INSTRUCTION" missed="18" covered="0" />
+        <counter type="LINE" missed="5" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="18" covered="0" />
+      <counter type="LINE" missed="5" covered="0" />
+      <counter type="COMPLEXITY" missed="1" covered="0" />
+      <counter type="METHOD" missed="1" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <sourcefile name="ServiceDetailScreen.kt">
+      <line nr="33" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="34" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="35" mi="42" ci="0" mb="0" cb="0" />
+      <line nr="36" mi="42" ci="0" mb="0" cb="0" />
+      <line nr="37" mi="42" ci="0" mb="0" cb="0" />
+      <line nr="38" mi="41" ci="0" mb="0" cb="0" />
+      <line nr="40" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="41" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="42" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="43" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="45" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="46" mi="18" ci="0" mb="0" cb="0" />
+      <line nr="47" mi="9" ci="0" mb="0" cb="0" />
+      <line nr="49" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="50" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="51" mi="19" ci="0" mb="0" cb="0" />
+      <line nr="52" mi="9" ci="0" mb="0" cb="0" />
+      <line nr="54" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="55" mi="24" ci="0" mb="0" cb="0" />
+      <line nr="56" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="57" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="58" mi="25" ci="0" mb="0" cb="0" />
+      <line nr="59" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="60" mi="21" ci="0" mb="0" cb="0" />
+      <line nr="61" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="62" mi="24" ci="0" mb="0" cb="0" />
+      <line nr="63" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="64" mi="9" ci="0" mb="0" cb="0" />
+      <line nr="66" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="67" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="68" mi="23" ci="0" mb="0" cb="0" />
+      <line nr="69" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="70" mi="21" ci="0" mb="0" cb="0" />
+      <line nr="71" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="72" mi="24" ci="0" mb="0" cb="0" />
+      <line nr="73" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="74" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="76" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="78" mi="29" ci="0" mb="2" cb="0" />
+      <line nr="79" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="80" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="81" mi="24" ci="0" mb="0" cb="0" />
+      <line nr="83" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="84" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="86" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="87" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="88" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="89" mi="23" ci="0" mb="2" cb="0" />
+      <line nr="90" mi="7" ci="0" mb="0" cb="0" />
+      <line nr="91" mi="24" ci="0" mb="0" cb="0" />
+      <line nr="92" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="93" mi="13" ci="0" mb="0" cb="0" />
+      <line nr="94" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="95" mi="49" ci="0" mb="8" cb="0" />
+      <line nr="96" mi="5" ci="0" mb="2" cb="0" />
+      <line nr="97" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="98" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="100" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="101" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="103" mi="20" ci="0" mb="0" cb="0" />
+      <line nr="104" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="105" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="106" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="107" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="109" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="110" mi="11" ci="0" mb="2" cb="0" />
+      <line nr="111" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="112" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="113" mi="12" ci="0" mb="2" cb="0" />
+      <line nr="114" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="115" mi="29" ci="0" mb="2" cb="0" />
+      <line nr="116" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="117" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="118" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="119" mi="4" ci="0" mb="0" cb="0" />
+      <counter type="INSTRUCTION" missed="848" covered="0" />
+      <counter type="BRANCH" missed="20" covered="0" />
+      <counter type="LINE" missed="75" covered="0" />
+      <counter type="COMPLEXITY" missed="28" covered="0" />
+      <counter type="METHOD" missed="18" covered="0" />
+      <counter type="CLASS" missed="3" covered="0" />
+    </sourcefile>
+    <sourcefile name="LazyDsl.kt" />
+    <sourcefile name="ServicesScreen.kt">
+      <line nr="36" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="38" mi="30" ci="0" mb="0" cb="0" />
+      <line nr="42" mi="15" ci="0" mb="0" cb="0" />
+      <line nr="43" mi="22" ci="0" mb="2" cb="0" />
+      <line nr="44" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="45" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="54" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="55" mi="41" ci="0" mb="0" cb="0" />
+      <line nr="57" mi="27" ci="0" mb="0" cb="0" />
+      <line nr="58" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="59" mi="7" ci="0" mb="0" cb="0" />
+      <line nr="60" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="61" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="64" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="65" mi="13" ci="0" mb="2" cb="0" />
+      <line nr="67" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="68" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="69" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="70" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="72" mi="14" ci="0" mb="0" cb="0" />
+      <line nr="73" mi="20" ci="0" mb="0" cb="0" />
+      <line nr="74" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="75" mi="19" ci="0" mb="0" cb="0" />
+      <line nr="76" mi="9" ci="0" mb="0" cb="0" />
+      <line nr="78" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="79" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="80" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="81" mi="21" ci="0" mb="0" cb="0" />
+      <line nr="83" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="84" mi="28" ci="0" mb="0" cb="0" />
+      <line nr="85" mi="24" ci="0" mb="0" cb="0" />
+      <line nr="86" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="87" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="89" mi="14" ci="0" mb="0" cb="0" />
+      <line nr="90" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="91" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="92" mi="28" ci="0" mb="0" cb="0" />
+      <line nr="93" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="94" mi="7" ci="0" mb="0" cb="0" />
+      <line nr="95" mi="24" ci="0" mb="0" cb="0" />
+      <line nr="96" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="97" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="98" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="99" mi="17" ci="0" mb="0" cb="0" />
+      <line nr="100" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="101" mi="17" ci="0" mb="0" cb="0" />
+      <line nr="102" mi="29" ci="0" mb="2" cb="0" />
+      <line nr="103" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="104" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="106" mi="25" ci="0" mb="2" cb="0" />
+      <line nr="107" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="108" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="109" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="110" mi="19" ci="0" mb="0" cb="0" />
+      <line nr="111" mi="9" ci="0" mb="0" cb="0" />
+      <line nr="113" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="115" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="117" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="118" mi="12" ci="0" mb="2" cb="0" />
+      <line nr="119" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="120" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="121" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="122" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="123" mi="7" ci="0" mb="0" cb="0" />
+      <line nr="125" mi="13" ci="0" mb="0" cb="0" />
+      <line nr="126" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="129" mi="12" ci="0" mb="2" cb="0" />
+      <line nr="130" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="131" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="132" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="133" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="134" mi="7" ci="0" mb="0" cb="0" />
+      <line nr="136" mi="26" ci="0" mb="0" cb="0" />
+      <line nr="137" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="140" mi="9" ci="0" mb="0" cb="0" />
+      <line nr="141" mi="60" ci="0" mb="2" cb="0" />
+      <line nr="143" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="144" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="145" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="146" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="147" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="149" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="150" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="151" mi="7" ci="0" mb="0" cb="0" />
+      <line nr="154" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="155" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="156" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="157" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="158" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="161" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="162" mi="4" ci="0" mb="0" cb="0" />
+      <counter type="INSTRUCTION" missed="824" covered="0" />
+      <counter type="BRANCH" missed="14" covered="0" />
+      <counter type="LINE" missed="91" covered="0" />
+      <counter type="COMPLEXITY" missed="17" covered="0" />
+      <counter type="METHOD" missed="15" covered="0" />
+      <counter type="CLASS" missed="6" covered="0" />
+    </sourcefile>
+    <sourcefile name="NotificationsScreen.kt">
+      <line nr="26" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="27" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="28" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="29" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="30" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="32" mi="14" ci="0" mb="0" cb="0" />
+      <line nr="33" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="34" mi="25" ci="0" mb="0" cb="0" />
+      <line nr="35" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="36" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="38" mi="27" ci="0" mb="0" cb="0" />
+      <line nr="39" mi="24" ci="0" mb="0" cb="0" />
+      <line nr="40" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="41" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="42" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="47" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="49" mi="12" ci="0" mb="2" cb="0" />
+      <line nr="50" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="51" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="52" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="53" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="54" mi="7" ci="0" mb="0" cb="0" />
+      <line nr="56" mi="26" ci="0" mb="0" cb="0" />
+      <line nr="57" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="58" mi="9" ci="0" mb="0" cb="0" />
+      <line nr="59" mi="50" ci="0" mb="0" cb="0" />
+      <line nr="61" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="62" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="63" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="64" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="65" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="66" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="67" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="68" mi="20" ci="0" mb="0" cb="0" />
+      <line nr="69" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="70" mi="9" ci="0" mb="0" cb="0" />
+      <line nr="71" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="72" mi="20" ci="0" mb="2" cb="0" />
+      <line nr="74" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="75" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="76" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="77" mi="21" ci="0" mb="0" cb="0" />
+      <line nr="79" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="80" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="81" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="82" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="84" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="85" mi="4" ci="0" mb="0" cb="0" />
+      <counter type="INSTRUCTION" missed="402" covered="0" />
+      <counter type="BRANCH" missed="4" covered="0" />
+      <counter type="LINE" missed="48" covered="0" />
+      <counter type="COMPLEXITY" missed="7" covered="0" />
+      <counter type="METHOD" missed="6" covered="0" />
+      <counter type="CLASS" missed="4" covered="0" />
+    </sourcefile>
+    <sourcefile name="Comparisons.kt" />
+    <sourcefile name="RequestsScreen.kt">
+      <line nr="43" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="45" mi="30" ci="0" mb="0" cb="0" />
+      <line nr="48" mi="32" ci="0" mb="0" cb="0" />
+      <line nr="52" mi="15" ci="0" mb="0" cb="0" />
+      <line nr="53" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="57" mi="17" ci="0" mb="0" cb="0" />
+      <line nr="60" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="62" mi="18" ci="0" mb="0" cb="0" />
+      <line nr="63" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="64" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="65" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="69" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="70" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="71" mi="39" ci="0" mb="0" cb="0" />
+      <line nr="73" mi="29" ci="0" mb="0" cb="0" />
+      <line nr="74" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="75" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="77" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="78" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="79" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="80" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="82" mi="14" ci="0" mb="0" cb="0" />
+      <line nr="83" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="84" mi="25" ci="0" mb="0" cb="0" />
+      <line nr="85" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="86" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="88" mi="27" ci="0" mb="0" cb="0" />
+      <line nr="89" mi="24" ci="0" mb="0" cb="0" />
+      <line nr="90" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="91" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="92" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="95" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="96" mi="14" ci="0" mb="0" cb="0" />
+      <line nr="97" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="98" mi="27" ci="0" mb="0" cb="0" />
+      <line nr="100" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="103" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="104" mi="17" ci="0" mb="4" cb="0" />
+      <line nr="105" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="107" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="108" mi="15" ci="0" mb="4" cb="0" />
+      <line nr="109" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="110" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="111" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="112" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="113" mi="7" ci="0" mb="0" cb="0" />
+      <line nr="115" mi="13" ci="0" mb="0" cb="0" />
+      <line nr="116" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="119" mi="12" ci="0" mb="2" cb="0" />
+      <line nr="120" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="121" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="122" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="123" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="124" mi="7" ci="0" mb="0" cb="0" />
+      <line nr="126" mi="26" ci="0" mb="0" cb="0" />
+      <line nr="127" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="130" mi="9" ci="0" mb="0" cb="0" />
+      <line nr="131" mi="50" ci="0" mb="0" cb="0" />
+      <line nr="133" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="134" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="135" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="136" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="139" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="140" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="145" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="146" mi="4" ci="0" mb="2" cb="0" />
+      <line nr="147" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="148" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="149" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="150" mi="12" ci="0" mb="0" cb="0" />
+      <line nr="151" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="152" mi="17" ci="0" mb="0" cb="0" />
+      <line nr="153" mi="14" ci="0" mb="0" cb="0" />
+      <line nr="154" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="155" mi="25" ci="0" mb="0" cb="0" />
+      <line nr="156" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="157" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="159" mi="8" ci="0" mb="0" cb="0" />
+      <line nr="160" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="161" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="162" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="163" mi="18" ci="0" mb="0" cb="0" />
+      <line nr="164" mi="9" ci="0" mb="0" cb="0" />
+      <line nr="166" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="167" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="168" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="169" mi="21" ci="0" mb="0" cb="0" />
+      <line nr="171" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="172" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="173" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="174" mi="21" ci="0" mb="0" cb="0" />
+      <line nr="176" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="177" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="178" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="185" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="186" mi="4" ci="0" mb="2" cb="0" />
+      <line nr="187" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="188" mi="13" ci="0" mb="0" cb="0" />
+      <line nr="189" mi="12" ci="0" mb="0" cb="0" />
+      <line nr="191" mi="13" ci="0" mb="0" cb="0" />
+      <line nr="192" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="193" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="194" mi="35" ci="0" mb="2" cb="0" />
+      <line nr="195" mi="21" ci="0" mb="0" cb="0" />
+      <line nr="196" mi="24" ci="0" mb="0" cb="0" />
+      <line nr="197" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="199" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="200" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="201" mi="4" ci="0" mb="0" cb="0" />
+      <counter type="INSTRUCTION" missed="1038" covered="0" />
+      <counter type="BRANCH" missed="16" covered="0" />
+      <counter type="LINE" missed="109" covered="0" />
+      <counter type="COMPLEXITY" missed="23" covered="0" />
+      <counter type="METHOD" missed="20" covered="0" />
+      <counter type="CLASS" missed="5" covered="0" />
+    </sourcefile>
+    <sourcefile name="LoginScreen.kt">
+      <line nr="34" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="37" mi="17" ci="0" mb="0" cb="0" />
+      <line nr="38" mi="21" ci="0" mb="0" cb="0" />
+      <line nr="39" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="40" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="44" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="45" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="47" mi="42" ci="0" mb="0" cb="0" />
+      <line nr="48" mi="42" ci="0" mb="0" cb="0" />
+      <line nr="49" mi="42" ci="0" mb="0" cb="0" />
+      <line nr="50" mi="41" ci="0" mb="0" cb="0" />
+      <line nr="52" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="53" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="54" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="55" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="56" mi="8" ci="0" mb="0" cb="0" />
+      <line nr="58" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="59" mi="17" ci="0" mb="0" cb="0" />
+      <line nr="60" mi="9" ci="0" mb="0" cb="0" />
+      <line nr="62" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="63" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="64" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="65" mi="21" ci="0" mb="0" cb="0" />
+      <line nr="67" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="68" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="69" mi="23" ci="0" mb="0" cb="0" />
+      <line nr="70" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="71" mi="21" ci="0" mb="0" cb="0" />
+      <line nr="72" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="73" mi="24" ci="0" mb="0" cb="0" />
+      <line nr="74" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="75" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="77" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="78" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="79" mi="20" ci="0" mb="0" cb="0" />
+      <line nr="80" mi="7" ci="0" mb="0" cb="0" />
+      <line nr="81" mi="21" ci="0" mb="0" cb="0" />
+      <line nr="82" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="83" mi="24" ci="0" mb="0" cb="0" />
+      <line nr="84" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="85" mi="9" ci="0" mb="0" cb="0" />
+      <line nr="86" mi="16" ci="0" mb="0" cb="0" />
+      <line nr="87" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="89" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="90" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="91" mi="8" ci="0" mb="0" cb="0" />
+      <line nr="92" mi="30" ci="0" mb="2" cb="0" />
+      <line nr="93" mi="10" ci="0" mb="4" cb="0" />
+      <line nr="94" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="96" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="97" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="99" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="100" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="102" mi="11" ci="0" mb="2" cb="0" />
+      <line nr="103" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="105" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="106" mi="17" ci="0" mb="2" cb="0" />
+      <line nr="107" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="108" mi="12" ci="0" mb="2" cb="0" />
+      <line nr="109" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="110" mi="8" ci="0" mb="0" cb="0" />
+      <line nr="111" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="113" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="114" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="115" mi="29" ci="0" mb="2" cb="0" />
+      <line nr="116" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="118" mi="25" ci="0" mb="2" cb="0" />
+      <line nr="119" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="120" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="121" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="122" mi="24" ci="0" mb="0" cb="0" />
+      <line nr="124" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="126" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="127" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="128" mi="23" ci="0" mb="0" cb="0" />
+      <line nr="129" mi="15" ci="0" mb="0" cb="0" />
+      <line nr="130" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="131" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="132" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="133" mi="7" ci="0" mb="0" cb="0" />
+      <line nr="134" mi="24" ci="0" mb="0" cb="0" />
+      <line nr="135" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="136" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="137" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="138" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="139" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="140" mi="21" ci="0" mb="0" cb="0" />
+      <line nr="142" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="143" mi="4" ci="0" mb="0" cb="0" />
+      <counter type="INSTRUCTION" missed="950" covered="0" />
+      <counter type="BRANCH" missed="16" covered="0" />
+      <counter type="LINE" missed="89" covered="0" />
+      <counter type="COMPLEXITY" missed="30" covered="0" />
+      <counter type="METHOD" missed="22" covered="0" />
+      <counter type="CLASS" missed="4" covered="0" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="4062" covered="0" />
+    <counter type="BRANCH" missed="70" covered="0" />
+    <counter type="LINE" missed="412" covered="0" />
+    <counter type="COMPLEXITY" missed="105" covered="0" />
+    <counter type="METHOD" missed="81" covered="0" />
+    <counter type="CLASS" missed="22" covered="0" />
+  </package>
+  <package name="ru/course/cityservices/ui/theme">
+    <class name="ru/course/cityservices/ui/theme/ThemeKt" sourcefilename="Theme.kt">
+      <method name="CityServicesTheme" desc="(Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V" line="19">
+        <counter type="INSTRUCTION" missed="20" covered="0" />
+        <counter type="LINE" missed="5" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="&lt;clinit&gt;" desc="()V" line="8">
+        <counter type="INSTRUCTION" missed="63" covered="0" />
+        <counter type="LINE" missed="7" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="83" covered="0" />
+      <counter type="LINE" missed="12" covered="0" />
+      <counter type="COMPLEXITY" missed="2" covered="0" />
+      <counter type="METHOD" missed="2" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <sourcefile name="Theme.kt">
+      <line nr="8" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="9" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="10" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="12" mi="51" ci="0" mb="0" cb="0" />
+      <line nr="13" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="14" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="15" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="19" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="20" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="21" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="22" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="24" mi="4" ci="0" mb="0" cb="0" />
+      <counter type="INSTRUCTION" missed="83" covered="0" />
+      <counter type="LINE" missed="12" covered="0" />
+      <counter type="COMPLEXITY" missed="2" covered="0" />
+      <counter type="METHOD" missed="2" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="83" covered="0" />
+    <counter type="LINE" missed="12" covered="0" />
+    <counter type="COMPLEXITY" missed="2" covered="0" />
+    <counter type="METHOD" missed="2" covered="0" />
+    <counter type="CLASS" missed="1" covered="0" />
+  </package>
+  <package name="ru/course/cityservices/model">
+    <class name="ru/course/cityservices/model/ServiceResponse" sourcefilename="Models.kt">
+      <method name="&lt;init&gt;" desc="(JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V" line="7">
+        <counter type="INSTRUCTION" missed="0" covered="15" />
+        <counter type="LINE" missed="0" covered="5" />
+        <counter type="COMPLEXITY" missed="0" covered="1" />
+        <counter type="METHOD" missed="0" covered="1" />
+      </method>
+      <method name="getId" desc="()J" line="8">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getTitle" desc="()Ljava/lang/String;" line="9">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getDescription" desc="()Ljava/lang/String;" line="10">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getCategory" desc="()Ljava/lang/String;" line="11">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="12" covered="15" />
+      <counter type="LINE" missed="0" covered="5" />
+      <counter type="COMPLEXITY" missed="4" covered="1" />
+      <counter type="METHOD" missed="4" covered="1" />
+      <counter type="CLASS" missed="0" covered="1" />
+    </class>
+    <class name="ru/course/cityservices/model/RequestResponse" sourcefilename="Models.kt">
+      <method name="&lt;init&gt;" desc="(JJJLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/time/Instant;)V" line="14">
+        <counter type="INSTRUCTION" missed="0" covered="24" />
+        <counter type="LINE" missed="0" covered="9" />
+        <counter type="COMPLEXITY" missed="0" covered="1" />
+        <counter type="METHOD" missed="0" covered="1" />
+      </method>
+      <method name="getId" desc="()J" line="16">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getUserId" desc="()J" line="17">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getServiceId" desc="()J" line="18">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getStatus" desc="()Ljava/lang/String;" line="19">
+        <counter type="INSTRUCTION" missed="0" covered="3" />
+        <counter type="LINE" missed="0" covered="1" />
+        <counter type="COMPLEXITY" missed="0" covered="1" />
+        <counter type="METHOD" missed="0" covered="1" />
+      </method>
+      <method name="getComment" desc="()Ljava/lang/String;" line="20">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getAddress" desc="()Ljava/lang/String;" line="21">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getCreatedAt" desc="()Lkotlin/time/Instant;" line="22">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="18" covered="27" />
+      <counter type="LINE" missed="0" covered="9" />
+      <counter type="COMPLEXITY" missed="6" covered="2" />
+      <counter type="METHOD" missed="6" covered="2" />
+      <counter type="CLASS" missed="0" covered="1" />
+    </class>
+    <class name="ru/course/cityservices/model/NotificationItem" sourcefilename="Models.kt">
+      <method name="&lt;init&gt;" desc="(JJLjava/lang/String;Lkotlin/time/Instant;Z)V" line="25">
+        <counter type="INSTRUCTION" missed="18" covered="0" />
+        <counter type="LINE" missed="6" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="&lt;init&gt;" desc="(JJLjava/lang/String;Lkotlin/time/Instant;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V" line="25">
+        <counter type="INSTRUCTION" missed="13" covered="0" />
+        <counter type="LINE" missed="3" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getId" desc="()J" line="26">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getRequestId" desc="()J" line="27">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getText" desc="()Ljava/lang/String;" line="28">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getCreatedAt" desc="()Lkotlin/time/Instant;" line="29">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="isRead" desc="()Z" line="30">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="setRead" desc="(Z)V" line="30">
+        <counter type="INSTRUCTION" missed="4" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="50" covered="0" />
+      <counter type="LINE" missed="7" covered="0" />
+      <counter type="COMPLEXITY" missed="8" covered="0" />
+      <counter type="METHOD" missed="8" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <sourcefile name="Models.kt">
+      <line nr="7" mi="0" ci="3" mb="0" cb="0" />
+      <line nr="8" mi="3" ci="3" mb="0" cb="0" />
+      <line nr="9" mi="3" ci="3" mb="0" cb="0" />
+      <line nr="10" mi="3" ci="3" mb="0" cb="0" />
+      <line nr="11" mi="3" ci="3" mb="0" cb="0" />
+      <line nr="14" mi="0" ci="2" mb="0" cb="0" />
+      <line nr="15" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="16" mi="3" ci="3" mb="0" cb="0" />
+      <line nr="17" mi="3" ci="3" mb="0" cb="0" />
+      <line nr="18" mi="3" ci="3" mb="0" cb="0" />
+      <line nr="19" mi="0" ci="6" mb="0" cb="0" />
+      <line nr="20" mi="3" ci="3" mb="0" cb="0" />
+      <line nr="21" mi="3" ci="3" mb="0" cb="0" />
+      <line nr="22" mi="3" ci="3" mb="0" cb="0" />
+      <line nr="25" mi="13" ci="0" mb="0" cb="0" />
+      <line nr="26" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="27" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="28" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="29" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="30" mi="12" ci="0" mb="0" cb="0" />
+      <line nr="31" mi="1" ci="0" mb="0" cb="0" />
+      <counter type="INSTRUCTION" missed="80" covered="42" />
+      <counter type="LINE" missed="7" covered="14" />
+      <counter type="COMPLEXITY" missed="18" covered="3" />
+      <counter type="METHOD" missed="18" covered="3" />
+      <counter type="CLASS" missed="1" covered="2" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="80" covered="42" />
+    <counter type="LINE" missed="7" covered="14" />
+    <counter type="COMPLEXITY" missed="18" covered="3" />
+    <counter type="METHOD" missed="18" covered="3" />
+    <counter type="CLASS" missed="1" covered="2" />
+  </package>
+  <package name="ru/course/cityservices/network">
+    <class name="ru/course/cityservices/network/FakeApi$login$1" sourcefilename="FakeApi.kt" />
+    <class name="ru/course/cityservices/network/AuthResponse" sourcefilename="CityApi.kt">
+      <method name="&lt;init&gt;" desc="(ZJLjava/lang/String;Ljava/lang/String;)V" line="25">
+        <counter type="INSTRUCTION" missed="15" covered="0" />
+        <counter type="LINE" missed="5" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="&lt;init&gt;" desc="(ZJLjava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" line="25">
+        <counter type="INSTRUCTION" missed="12" covered="0" />
+        <counter type="LINE" missed="3" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getSuccess" desc="()Z" line="26">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getUserId" desc="()J" line="27">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getDisplayName" desc="()Ljava/lang/String;" line="28">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getError" desc="()Ljava/lang/String;" line="29">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="39" covered="0" />
+      <counter type="LINE" missed="6" covered="0" />
+      <counter type="COMPLEXITY" missed="6" covered="0" />
+      <counter type="METHOD" missed="6" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/network/FakeApi" sourcefilename="FakeApi.kt">
+      <method name="&lt;init&gt;" desc="()V" line="22">
+        <counter type="INSTRUCTION" missed="0" covered="114" />
+        <counter type="LINE" missed="0" covered="49" />
+        <counter type="COMPLEXITY" missed="0" covered="1" />
+        <counter type="METHOD" missed="0" covered="1" />
+      </method>
+      <method name="seedDemoRequests" desc="()V" line="93">
+        <counter type="INSTRUCTION" missed="0" covered="132" />
+        <counter type="LINE" missed="0" covered="34" />
+        <counter type="COMPLEXITY" missed="0" covered="1" />
+        <counter type="METHOD" missed="0" covered="1" />
+      </method>
+      <method name="login" desc="(Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" line="134">
+        <counter type="INSTRUCTION" missed="83" covered="0" />
+        <counter type="BRANCH" missed="6" covered="0" />
+        <counter type="LINE" missed="21" covered="0" />
+        <counter type="COMPLEXITY" missed="4" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getServices" desc="(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" line="167">
+        <counter type="INSTRUCTION" missed="5" covered="27" />
+        <counter type="BRANCH" missed="1" covered="1" />
+        <counter type="LINE" missed="1" covered="4" />
+        <counter type="COMPLEXITY" missed="1" covered="1" />
+        <counter type="METHOD" missed="0" covered="1" />
+      </method>
+      <method name="getRequests" desc="(JLkotlin/coroutines/Continuation;)Ljava/lang/Object;" line="178">
+        <counter type="INSTRUCTION" missed="49" covered="0" />
+        <counter type="BRANCH" missed="4" covered="0" />
+        <counter type="LINE" missed="6" covered="0" />
+        <counter type="COMPLEXITY" missed="3" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="createRequest" desc="(JJLjava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" line="195">
+        <counter type="INSTRUCTION" missed="0" covered="96" />
+        <counter type="BRANCH" missed="0" covered="2" />
+        <counter type="LINE" missed="0" covered="22" />
+        <counter type="COMPLEXITY" missed="0" covered="2" />
+        <counter type="METHOD" missed="0" covered="1" />
+      </method>
+      <method name="advanceStatuses" desc="()V" line="231">
+        <counter type="INSTRUCTION" missed="85" covered="0" />
+        <counter type="BRANCH" missed="10" covered="0" />
+        <counter type="LINE" missed="7" covered="0" />
+        <counter type="COMPLEXITY" missed="6" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="222" covered="369" />
+      <counter type="BRANCH" missed="21" covered="3" />
+      <counter type="LINE" missed="35" covered="109" />
+      <counter type="COMPLEXITY" missed="14" covered="5" />
+      <counter type="METHOD" missed="3" covered="4" />
+      <counter type="CLASS" missed="0" covered="1" />
+    </class>
+    <class name="ru/course/cityservices/network/CityApi" sourcefilename="CityApi.kt" />
+    <class name="ru/course/cityservices/network/FakeApi$getRequests$1" sourcefilename="FakeApi.kt" />
+    <class name="ru/course/cityservices/network/FakeApi$DemoUser" sourcefilename="FakeApi.kt">
+      <method name="&lt;init&gt;" desc="(JLjava/lang/String;Ljava/lang/String;)V" line="26">
+        <counter type="INSTRUCTION" missed="0" covered="12" />
+        <counter type="LINE" missed="0" covered="1" />
+        <counter type="COMPLEXITY" missed="0" covered="1" />
+        <counter type="METHOD" missed="0" covered="1" />
+      </method>
+      <method name="getId" desc="()J" line="26">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getDisplayName" desc="()Ljava/lang/String;" line="26">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getPassword" desc="()Ljava/lang/String;" line="26">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="9" covered="12" />
+      <counter type="LINE" missed="0" covered="1" />
+      <counter type="COMPLEXITY" missed="3" covered="1" />
+      <counter type="METHOD" missed="3" covered="1" />
+      <counter type="CLASS" missed="0" covered="1" />
+    </class>
+    <class name="ru/course/cityservices/network/FakeApi$getServices$1" sourcefilename="FakeApi.kt" />
+    <class name="ru/course/cityservices/network/FakeApi$createRequest$1" sourcefilename="FakeApi.kt" />
+    <class name="ru/course/cityservices/network/FakeApi$Companion" sourcefilename="FakeApi.kt" />
+    <sourcefile name="FakeApi.kt">
+      <line nr="22" mi="0" ci="3" mb="0" cb="0" />
+      <line nr="26" mi="9" ci="12" mb="0" cb="0" />
+      <line nr="28" mi="0" ci="3" mb="0" cb="0" />
+      <line nr="29" mi="0" ci="8" mb="0" cb="0" />
+      <line nr="32" mi="0" ci="3" mb="0" cb="0" />
+      <line nr="33" mi="0" ci="24" mb="0" cb="0" />
+      <line nr="34" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="35" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="36" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="37" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="39" mi="0" ci="4" mb="0" cb="0" />
+      <line nr="40" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="41" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="42" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="43" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="45" mi="0" ci="4" mb="0" cb="0" />
+      <line nr="46" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="47" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="48" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="49" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="51" mi="0" ci="4" mb="0" cb="0" />
+      <line nr="52" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="53" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="54" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="55" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="57" mi="0" ci="4" mb="0" cb="0" />
+      <line nr="58" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="59" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="60" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="61" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="63" mi="0" ci="4" mb="0" cb="0" />
+      <line nr="64" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="65" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="66" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="67" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="69" mi="0" ci="4" mb="0" cb="0" />
+      <line nr="70" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="71" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="72" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="73" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="75" mi="0" ci="4" mb="0" cb="0" />
+      <line nr="76" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="77" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="78" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="79" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="85" mi="0" ci="6" mb="0" cb="0" />
+      <line nr="86" mi="0" ci="3" mb="0" cb="0" />
+      <line nr="88" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="89" mi="0" ci="2" mb="0" cb="0" />
+      <line nr="90" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="93" mi="0" ci="3" mb="0" cb="0" />
+      <line nr="95" mi="0" ci="11" mb="0" cb="0" />
+      <line nr="96" mi="0" ci="9" mb="0" cb="0" />
+      <line nr="97" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="98" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="99" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="100" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="101" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="102" mi="0" ci="7" mb="0" cb="0" />
+      <line nr="104" mi="0" ci="11" mb="0" cb="0" />
+      <line nr="105" mi="0" ci="9" mb="0" cb="0" />
+      <line nr="106" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="107" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="108" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="109" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="110" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="111" mi="0" ci="7" mb="0" cb="0" />
+      <line nr="113" mi="0" ci="11" mb="0" cb="0" />
+      <line nr="114" mi="0" ci="9" mb="0" cb="0" />
+      <line nr="115" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="116" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="117" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="118" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="119" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="120" mi="0" ci="7" mb="0" cb="0" />
+      <line nr="122" mi="0" ci="11" mb="0" cb="0" />
+      <line nr="123" mi="0" ci="9" mb="0" cb="0" />
+      <line nr="124" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="125" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="126" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="127" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="128" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="129" mi="0" ci="7" mb="0" cb="0" />
+      <line nr="131" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="134" mi="16" ci="0" mb="0" cb="0" />
+      <line nr="135" mi="9" ci="0" mb="0" cb="0" />
+      <line nr="137" mi="5" ci="0" mb="2" cb="0" />
+      <line nr="138" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="139" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="140" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="141" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="142" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="146" mi="12" ci="0" mb="2" cb="0" />
+      <line nr="147" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="148" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="149" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="150" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="151" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="154" mi="5" ci="0" mb="2" cb="0" />
+      <line nr="155" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="156" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="157" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="158" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="159" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="163" mi="12" ci="0" mb="0" cb="0" />
+      <line nr="167" mi="0" ci="10" mb="0" cb="0" />
+      <line nr="168" mi="0" ci="9" mb="0" cb="0" />
+      <line nr="170" mi="0" ci="5" mb="1" cb="1" />
+      <line nr="171" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="174" mi="0" ci="3" mb="0" cb="0" />
+      <line nr="178" mi="13" ci="0" mb="0" cb="0" />
+      <line nr="179" mi="9" ci="0" mb="0" cb="0" />
+      <line nr="181" mi="5" ci="0" mb="2" cb="0" />
+      <line nr="182" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="185" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="186" mi="15" ci="0" mb="2" cb="0" />
+      <line nr="195" mi="0" ci="22" mb="0" cb="0" />
+      <line nr="196" mi="0" ci="9" mb="0" cb="0" />
+      <line nr="198" mi="0" ci="5" mb="0" cb="2" />
+      <line nr="202" mi="0" ci="11" mb="0" cb="0" />
+      <line nr="203" mi="0" ci="9" mb="0" cb="0" />
+      <line nr="204" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="205" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="206" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="207" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="208" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="209" mi="0" ci="2" mb="0" cb="0" />
+      <line nr="212" mi="0" ci="5" mb="0" cb="0" />
+      <line nr="215" mi="0" ci="4" mb="0" cb="0" />
+      <line nr="216" mi="0" ci="9" mb="0" cb="0" />
+      <line nr="217" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="218" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="219" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="220" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="221" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="222" mi="0" ci="2" mb="0" cb="0" />
+      <line nr="224" mi="0" ci="6" mb="0" cb="0" />
+      <line nr="226" mi="0" ci="2" mb="0" cb="0" />
+      <line nr="231" mi="22" ci="0" mb="0" cb="0" />
+      <line nr="233" mi="12" ci="0" mb="2" cb="0" />
+      <line nr="234" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="235" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="236" mi="18" ci="0" mb="8" cb="0" />
+      <line nr="237" mi="21" ci="0" mb="0" cb="0" />
+      <line nr="240" mi="1" ci="0" mb="0" cb="0" />
+      <counter type="INSTRUCTION" missed="231" covered="381" />
+      <counter type="BRANCH" missed="21" covered="3" />
+      <counter type="LINE" missed="35" covered="110" />
+      <counter type="COMPLEXITY" missed="17" covered="6" />
+      <counter type="METHOD" missed="6" covered="5" />
+      <counter type="CLASS" missed="0" covered="2" />
+    </sourcefile>
+    <sourcefile name="CityApi.kt">
+      <line nr="25" mi="12" ci="0" mb="0" cb="0" />
+      <line nr="26" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="27" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="28" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="29" mi="8" ci="0" mb="0" cb="0" />
+      <line nr="30" mi="1" ci="0" mb="0" cb="0" />
+      <counter type="INSTRUCTION" missed="39" covered="0" />
+      <counter type="LINE" missed="6" covered="0" />
+      <counter type="COMPLEXITY" missed="6" covered="0" />
+      <counter type="METHOD" missed="6" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="270" covered="381" />
+    <counter type="BRANCH" missed="21" covered="3" />
+    <counter type="LINE" missed="41" covered="110" />
+    <counter type="COMPLEXITY" missed="23" covered="6" />
+    <counter type="METHOD" missed="12" covered="5" />
+    <counter type="CLASS" missed="1" covered="2" />
+  </package>
+  <package name="ru/course/cityservices/state">
+    <class name="ru/course/cityservices/state/AppState" sourcefilename="AppState.kt">
+      <method name="isLoggedIn" desc="()Z" line="19">
+        <counter type="INSTRUCTION" missed="10" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="setLoggedIn" desc="(Z)V" line="19">
+        <counter type="INSTRUCTION" missed="12" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getUsername" desc="()Ljava/lang/String;" line="20">
+        <counter type="INSTRUCTION" missed="10" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="setUsername" desc="(Ljava/lang/String;)V" line="20">
+        <counter type="INSTRUCTION" missed="11" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getUserId" desc="()J" line="21">
+        <counter type="INSTRUCTION" missed="10" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="setUserId" desc="(J)V" line="21">
+        <counter type="INSTRUCTION" missed="11" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getNewUserId" desc="()Lkotlinx/coroutines/flow/StateFlow;" line="25">
+        <counter type="INSTRUCTION" missed="2" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="setNewUserId" desc="(Lkotlinx/coroutines/flow/StateFlow;)V" line="25">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getServices" desc="()Ljava/util/List;" line="27">
+        <counter type="INSTRUCTION" missed="10" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="setServices" desc="(Ljava/util/List;)V" line="27">
+        <counter type="INSTRUCTION" missed="11" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getSelectedService" desc="()Lru/course/cityservices/model/ServiceResponse;" line="28">
+        <counter type="INSTRUCTION" missed="10" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="setSelectedService" desc="(Lru/course/cityservices/model/ServiceResponse;)V" line="28">
+        <counter type="INSTRUCTION" missed="11" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getLastError" desc="()Ljava/lang/String;" line="29">
+        <counter type="INSTRUCTION" missed="10" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="setLastError" desc="(Ljava/lang/String;)V" line="29">
+        <counter type="INSTRUCTION" missed="11" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getNotifications" desc="()Landroidx/compose/runtime/snapshots/SnapshotStateList;" line="31">
+        <counter type="INSTRUCTION" missed="2" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="login" desc="(Ljava/lang/String;JLjava/lang/String;)V" line="34">
+        <counter type="INSTRUCTION" missed="19" covered="0" />
+        <counter type="LINE" missed="7" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="reset" desc="()V" line="43">
+        <counter type="INSTRUCTION" missed="21" covered="0" />
+        <counter type="LINE" missed="8" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="&lt;clinit&gt;" desc="()V" line="19">
+        <counter type="INSTRUCTION" missed="44" covered="0" />
+        <counter type="LINE" missed="9" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="218" covered="0" />
+      <counter type="LINE" missed="24" covered="0" />
+      <counter type="COMPLEXITY" missed="18" covered="0" />
+      <counter type="METHOD" missed="18" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <sourcefile name="AppState.kt">
+      <line nr="19" mi="29" ci="0" mb="0" cb="0" />
+      <line nr="20" mi="27" ci="0" mb="0" cb="0" />
+      <line nr="21" mi="24" ci="0" mb="0" cb="0" />
+      <line nr="24" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="25" mi="8" ci="0" mb="0" cb="0" />
+      <line nr="27" mi="27" ci="0" mb="0" cb="0" />
+      <line nr="28" mi="27" ci="0" mb="0" cb="0" />
+      <line nr="29" mi="27" ci="0" mb="0" cb="0" />
+      <line nr="31" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="34" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="35" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="36" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="37" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="38" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="39" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="40" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="43" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="44" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="45" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="46" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="47" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="48" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="49" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="50" mi="1" ci="0" mb="0" cb="0" />
+      <counter type="INSTRUCTION" missed="218" covered="0" />
+      <counter type="LINE" missed="24" covered="0" />
+      <counter type="COMPLEXITY" missed="18" covered="0" />
+      <counter type="METHOD" missed="18" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="218" covered="0" />
+    <counter type="LINE" missed="24" covered="0" />
+    <counter type="COMPLEXITY" missed="18" covered="0" />
+    <counter type="METHOD" missed="18" covered="0" />
+    <counter type="CLASS" missed="1" covered="0" />
+  </package>
+  <package name="ru/course/cityservices">
+    <class name="ru/course/cityservices/CityServicesAppKt$CityServicesApp$2$1" sourcefilename="CityServicesApp.kt">
+      <method name="invokeSuspend" desc="(Ljava/lang/Object;)Ljava/lang/Object;" line="43">
+        <counter type="INSTRUCTION" missed="25" covered="0" />
+        <counter type="BRANCH" missed="2" covered="0" />
+        <counter type="LINE" missed="4" covered="0" />
+        <counter type="COMPLEXITY" missed="2" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="25" covered="0" />
+      <counter type="BRANCH" missed="2" covered="0" />
+      <counter type="LINE" missed="4" covered="0" />
+      <counter type="COMPLEXITY" missed="2" covered="0" />
+      <counter type="METHOD" missed="1" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/ComposableSingletons$MainActivityKt" sourcefilename="MainActivity.kt">
+      <method name="lambda_908582246$lambda$0" desc="(Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;" line="20">
+        <counter type="INSTRUCTION" missed="4" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="lambda_2071766577$lambda$0" desc="(Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;" line="19">
+        <counter type="INSTRUCTION" missed="4" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="&lt;clinit&gt;" desc="()V" line="18">
+        <counter type="INSTRUCTION" missed="13" covered="0" />
+        <counter type="LINE" missed="2" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="21" covered="0" />
+      <counter type="LINE" missed="5" covered="0" />
+      <counter type="COMPLEXITY" missed="3" covered="0" />
+      <counter type="METHOD" missed="3" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/MainActivity" sourcefilename="MainActivity.kt">
+      <method name="&lt;init&gt;" desc="()V" line="10">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="onCreate" desc="(Landroid/os/Bundle;)V" line="13">
+        <counter type="INSTRUCTION" missed="23" covered="0" />
+        <counter type="LINE" missed="5" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="26" covered="0" />
+      <counter type="LINE" missed="6" covered="0" />
+      <counter type="COMPLEXITY" missed="2" covered="0" />
+      <counter type="METHOD" missed="2" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/CityServicesAppKt" sourcefilename="CityServicesApp.kt">
+      <method name="CityServicesApp" desc="(Landroidx/compose/runtime/Composer;I)V" line="29">
+        <counter type="INSTRUCTION" missed="113" covered="0" />
+        <counter type="LINE" missed="7" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="SplashScreen" desc="(Landroidx/compose/runtime/Composer;I)V" line="97">
+        <counter type="INSTRUCTION" missed="39" covered="0" />
+        <counter type="LINE" missed="7" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="CityServicesApp$lambda$1" desc="(Landroidx/compose/runtime/MutableState;)Ljava/lang/String;" line="30">
+        <counter type="INSTRUCTION" missed="10" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="CityServicesApp$lambda$2" desc="(Landroidx/compose/runtime/MutableState;Ljava/lang/String;)V" line="30">
+        <counter type="INSTRUCTION" missed="11" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="CityServicesApp$lambda$5$0$0$0" desc="(Landroidx/compose/runtime/MutableState;)Lkotlin/Unit;" line="57">
+        <counter type="INSTRUCTION" missed="5" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="CityServicesApp$lambda$5$0$1$0" desc="(Landroidx/compose/runtime/MutableState;Lru/course/cityservices/model/ServiceResponse;)Lkotlin/Unit;" line="62">
+        <counter type="INSTRUCTION" missed="8" covered="0" />
+        <counter type="LINE" missed="3" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="CityServicesApp$lambda$5$0$2$0" desc="(Landroidx/compose/runtime/MutableState;)Lkotlin/Unit;" line="65">
+        <counter type="INSTRUCTION" missed="5" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="CityServicesApp$lambda$5$0$3$0" desc="(Landroidx/compose/runtime/MutableState;)Lkotlin/Unit;" line="66">
+        <counter type="INSTRUCTION" missed="5" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="CityServicesApp$lambda$5$0$4$0" desc="(Lkotlinx/coroutines/CoroutineScope;Landroidx/compose/runtime/MutableState;)Lkotlin/Unit;" line="68">
+        <counter type="INSTRUCTION" missed="17" covered="0" />
+        <counter type="LINE" missed="3" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="CityServicesApp$lambda$5$0$5$0" desc="(Landroidx/compose/runtime/MutableState;)Lkotlin/Unit;" line="79">
+        <counter type="INSTRUCTION" missed="5" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="CityServicesApp$lambda$5$0$6$0" desc="(Landroidx/compose/runtime/MutableState;)Lkotlin/Unit;" line="80">
+        <counter type="INSTRUCTION" missed="5" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="CityServicesApp$lambda$5$0$7$0" desc="(Landroidx/compose/runtime/MutableState;)Lkotlin/Unit;" line="88">
+        <counter type="INSTRUCTION" missed="5" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="CityServicesApp$lambda$5$0$8$0" desc="(Landroidx/compose/runtime/MutableState;)Lkotlin/Unit;" line="90">
+        <counter type="INSTRUCTION" missed="5" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="CityServicesApp$lambda$5" desc="(Lkotlinx/coroutines/CoroutineScope;Landroidx/compose/runtime/MutableState;Landroidx/compose/foundation/layout/PaddingValues;Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;" line="53">
+        <counter type="INSTRUCTION" missed="298" covered="0" />
+        <counter type="BRANCH" missed="9" covered="0" />
+        <counter type="LINE" missed="24" covered="0" />
+        <counter type="COMPLEXITY" missed="8" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="531" covered="0" />
+      <counter type="BRANCH" missed="9" covered="0" />
+      <counter type="LINE" missed="44" covered="0" />
+      <counter type="COMPLEXITY" missed="21" covered="0" />
+      <counter type="METHOD" missed="14" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/CityServicesAppKt$CityServicesApp$1$1" sourcefilename="CityServicesApp.kt">
+      <method name="invokeSuspend" desc="(Ljava/lang/Object;)Ljava/lang/Object;" line="35">
+        <counter type="INSTRUCTION" missed="20" covered="0" />
+        <counter type="BRANCH" missed="2" covered="0" />
+        <counter type="LINE" missed="3" covered="0" />
+        <counter type="COMPLEXITY" missed="2" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="20" covered="0" />
+      <counter type="BRANCH" missed="2" covered="0" />
+      <counter type="LINE" missed="3" covered="0" />
+      <counter type="COMPLEXITY" missed="2" covered="0" />
+      <counter type="METHOD" missed="1" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/CityServicesAppKt$CityServicesApp$3$1$5$1$1" sourcefilename="CityServicesApp.kt">
+      <method name="invokeSuspend" desc="(Ljava/lang/Object;)Ljava/lang/Object;" line="68">
+        <counter type="INSTRUCTION" missed="10" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="10" covered="0" />
+      <counter type="LINE" missed="1" covered="0" />
+      <counter type="COMPLEXITY" missed="1" covered="0" />
+      <counter type="METHOD" missed="1" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <sourcefile name="CityServicesApp.kt">
+      <line nr="29" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="30" mi="43" ci="0" mb="0" cb="0" />
+      <line nr="31" mi="7" ci="0" mb="0" cb="0" />
+      <line nr="34" mi="27" ci="0" mb="0" cb="0" />
+      <line nr="35" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="37" mi="8" ci="0" mb="2" cb="0" />
+      <line nr="38" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="42" mi="35" ci="0" mb="0" cb="0" />
+      <line nr="43" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="44" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="46" mi="4" ci="0" mb="2" cb="0" />
+      <line nr="47" mi="9" ci="0" mb="0" cb="0" />
+      <line nr="52" mi="14" ci="0" mb="0" cb="0" />
+      <line nr="53" mi="14" ci="0" mb="0" cb="0" />
+      <line nr="54" mi="5" ci="0" mb="7" cb="0" />
+      <line nr="55" mi="12" ci="0" mb="0" cb="0" />
+      <line nr="57" mi="34" ci="0" mb="0" cb="0" />
+      <line nr="59" mi="13" ci="0" mb="0" cb="0" />
+      <line nr="60" mi="17" ci="0" mb="0" cb="0" />
+      <line nr="62" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="63" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="64" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="65" mi="24" ci="0" mb="0" cb="0" />
+      <line nr="66" mi="26" ci="0" mb="0" cb="0" />
+      <line nr="67" mi="24" ci="0" mb="0" cb="0" />
+      <line nr="68" mi="22" ci="0" mb="0" cb="0" />
+      <line nr="69" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="70" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="73" mi="9" ci="0" mb="0" cb="0" />
+      <line nr="74" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="76" mi="11" ci="0" mb="2" cb="0" />
+      <line nr="77" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="78" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="79" mi="24" ci="0" mb="0" cb="0" />
+      <line nr="80" mi="27" ci="0" mb="0" cb="0" />
+      <line nr="82" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="84" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="85" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="88" mi="34" ci="0" mb="0" cb="0" />
+      <line nr="90" mi="34" ci="0" mb="0" cb="0" />
+      <line nr="91" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="92" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="93" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="94" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="97" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="98" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="99" mi="7" ci="0" mb="0" cb="0" />
+      <line nr="100" mi="7" ci="0" mb="0" cb="0" />
+      <line nr="102" mi="13" ci="0" mb="0" cb="0" />
+      <line nr="103" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="104" mi="4" ci="0" mb="0" cb="0" />
+      <counter type="INSTRUCTION" missed="586" covered="0" />
+      <counter type="BRANCH" missed="13" covered="0" />
+      <counter type="LINE" missed="51" covered="0" />
+      <counter type="COMPLEXITY" missed="26" covered="0" />
+      <counter type="METHOD" missed="17" covered="0" />
+      <counter type="CLASS" missed="4" covered="0" />
+    </sourcefile>
+    <sourcefile name="MainActivity.kt">
+      <line nr="10" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="13" mi="7" ci="0" mb="0" cb="0" />
+      <line nr="14" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="16" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="18" mi="15" ci="0" mb="0" cb="0" />
+      <line nr="19" mi="8" ci="0" mb="0" cb="0" />
+      <line nr="20" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="21" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="22" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="23" mi="1" ci="0" mb="0" cb="0" />
+      <counter type="INSTRUCTION" missed="47" covered="0" />
+      <counter type="LINE" missed="10" covered="0" />
+      <counter type="COMPLEXITY" missed="5" covered="0" />
+      <counter type="METHOD" missed="5" covered="0" />
+      <counter type="CLASS" missed="2" covered="0" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="633" covered="0" />
+    <counter type="BRANCH" missed="13" covered="0" />
+    <counter type="LINE" missed="61" covered="0" />
+    <counter type="COMPLEXITY" missed="31" covered="0" />
+    <counter type="METHOD" missed="22" covered="0" />
+    <counter type="CLASS" missed="6" covered="0" />
+  </package>
+  <package name="ru/course/cityservices/analytic">
+    <class name="ru/course/cityservices/analytic/AnalyticsTracker" sourcefilename="AnalyticsTracker.kt">
+      <method name="&lt;init&gt;" desc="()V" line="7">
+        <counter type="INSTRUCTION" missed="0" covered="9" />
+        <counter type="LINE" missed="0" covered="2" />
+        <counter type="COMPLEXITY" missed="0" covered="1" />
+        <counter type="METHOD" missed="0" covered="1" />
+      </method>
+      <method name="track" desc="(Ljava/lang/String;Ljava/util/Map;)V" line="12">
+        <counter type="INSTRUCTION" missed="16" covered="0" />
+        <counter type="LINE" missed="3" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="track$default" desc="(Lru/course/cityservices/analytic/AnalyticsTracker;Ljava/lang/String;Ljava/util/Map;ILjava/lang/Object;)V" line="11">
+        <counter type="INSTRUCTION" missed="5" covered="5" />
+        <counter type="LINE" missed="0" covered="1" />
+        <counter type="COMPLEXITY" missed="0" covered="1" />
+        <counter type="METHOD" missed="0" covered="1" />
+      </method>
+      <method name="recentEvents" desc="()Ljava/util/List;" line="17">
+        <counter type="INSTRUCTION" missed="5" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="26" covered="14" />
+      <counter type="LINE" missed="4" covered="3" />
+      <counter type="COMPLEXITY" missed="2" covered="2" />
+      <counter type="METHOD" missed="2" covered="2" />
+      <counter type="CLASS" missed="0" covered="1" />
+    </class>
+    <class name="ru/course/cityservices/analytic/AnalyticsTracker$Companion" sourcefilename="AnalyticsTracker.kt" />
+    <sourcefile name="AnalyticsTracker.kt">
+      <line nr="7" mi="0" ci="3" mb="0" cb="0" />
+      <line nr="9" mi="0" ci="6" mb="0" cb="0" />
+      <line nr="11" mi="5" ci="5" mb="0" cb="0" />
+      <line nr="12" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="14" mi="9" ci="0" mb="0" cb="0" />
+      <line nr="15" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="17" mi="5" ci="0" mb="0" cb="0" />
+      <counter type="INSTRUCTION" missed="26" covered="14" />
+      <counter type="LINE" missed="4" covered="3" />
+      <counter type="COMPLEXITY" missed="2" covered="2" />
+      <counter type="METHOD" missed="2" covered="2" />
+      <counter type="CLASS" missed="0" covered="1" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="26" covered="14" />
+    <counter type="LINE" missed="4" covered="3" />
+    <counter type="COMPLEXITY" missed="2" covered="2" />
+    <counter type="METHOD" missed="2" covered="2" />
+    <counter type="CLASS" missed="0" covered="1" />
+  </package>
+  <package name="ru/course/cityservices/domain">
+    <class name="ru/course/cityservices/domain/RequestValidator" sourcefilename="RequestValidator.kt">
+      <method name="validateComment" desc="(Ljava/lang/String;)Ljava/lang/String;" line="7">
+        <counter type="INSTRUCTION" missed="0" covered="15" />
+        <counter type="BRANCH" missed="0" covered="4" />
+        <counter type="LINE" missed="0" covered="6" />
+        <counter type="COMPLEXITY" missed="0" covered="3" />
+        <counter type="METHOD" missed="0" covered="1" />
+      </method>
+      <method name="validateAddress" desc="(Ljava/lang/String;)Ljava/lang/String;" line="15">
+        <counter type="INSTRUCTION" missed="1" covered="8" />
+        <counter type="BRANCH" missed="1" covered="1" />
+        <counter type="LINE" missed="1" covered="3" />
+        <counter type="COMPLEXITY" missed="1" covered="1" />
+        <counter type="METHOD" missed="0" covered="1" />
+      </method>
+      <method name="validate" desc="(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;" line="25">
+        <counter type="INSTRUCTION" missed="0" covered="18" />
+        <counter type="LINE" missed="0" covered="1" />
+        <counter type="COMPLEXITY" missed="0" covered="1" />
+        <counter type="METHOD" missed="0" covered="1" />
+      </method>
+      <counter type="INSTRUCTION" missed="1" covered="41" />
+      <counter type="BRANCH" missed="1" covered="5" />
+      <counter type="LINE" missed="1" covered="10" />
+      <counter type="COMPLEXITY" missed="1" covered="5" />
+      <counter type="METHOD" missed="0" covered="3" />
+      <counter type="CLASS" missed="0" covered="1" />
+    </class>
+    <class name="ru/course/cityservices/domain/StatusRules" sourcefilename="DomainModels.kt">
+      <method name="allowedTransitions" desc="(Lru/course/cityservices/domain/RequestStatus;)Ljava/util/List;" line="51">
+        <counter type="INSTRUCTION" missed="4" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="isTerminal" desc="(Lru/course/cityservices/domain/RequestStatus;)Z" line="53">
+        <counter type="INSTRUCTION" missed="7" covered="0" />
+        <counter type="BRANCH" missed="2" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="2" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="11" covered="0" />
+      <counter type="BRANCH" missed="2" covered="0" />
+      <counter type="LINE" missed="2" covered="0" />
+      <counter type="COMPLEXITY" missed="3" covered="0" />
+      <counter type="METHOD" missed="2" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/domain/ServiceRequest" sourcefilename="DomainModels.kt">
+      <method name="&lt;init&gt;" desc="(JJLjava/lang/String;Ljava/lang/String;JLru/course/cityservices/domain/RequestStatus;)V" line="36">
+        <counter type="INSTRUCTION" missed="21" covered="0" />
+        <counter type="LINE" missed="7" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getId" desc="()J" line="37">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getServiceId" desc="()J" line="38">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getComment" desc="()Ljava/lang/String;" line="39">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getAddress" desc="()Ljava/lang/String;" line="40">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getCreatedAt" desc="()J" line="41">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="getStatus" desc="()Lru/course/cityservices/domain/RequestStatus;" line="42">
+        <counter type="INSTRUCTION" missed="3" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="39" covered="0" />
+      <counter type="LINE" missed="7" covered="0" />
+      <counter type="COMPLEXITY" missed="7" covered="0" />
+      <counter type="METHOD" missed="7" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/domain/RequestStatus$Companion" sourcefilename="DomainModels.kt">
+      <method name="fromTitle" desc="(Ljava/lang/String;)Lru/course/cityservices/domain/RequestStatus;" line="29">
+        <counter type="INSTRUCTION" missed="0" covered="10" />
+        <counter type="LINE" missed="0" covered="1" />
+        <counter type="COMPLEXITY" missed="0" covered="1" />
+        <counter type="METHOD" missed="0" covered="1" />
+      </method>
+      <counter type="INSTRUCTION" missed="0" covered="10" />
+      <counter type="LINE" missed="0" covered="1" />
+      <counter type="COMPLEXITY" missed="0" covered="1" />
+      <counter type="METHOD" missed="0" covered="1" />
+      <counter type="CLASS" missed="0" covered="1" />
+    </class>
+    <class name="ru/course/cityservices/domain/RequestStatus" sourcefilename="DomainModels.kt">
+      <method name="&lt;init&gt;" desc="(Ljava/lang/String;ILjava/lang/String;)V" line="3">
+        <counter type="INSTRUCTION" missed="0" covered="8" />
+        <counter type="LINE" missed="0" covered="1" />
+        <counter type="COMPLEXITY" missed="0" covered="1" />
+        <counter type="METHOD" missed="0" covered="1" />
+      </method>
+      <method name="getTitle" desc="()Ljava/lang/String;" line="3">
+        <counter type="INSTRUCTION" missed="0" covered="3" />
+        <counter type="LINE" missed="0" covered="1" />
+        <counter type="COMPLEXITY" missed="0" covered="1" />
+        <counter type="METHOD" missed="0" covered="1" />
+      </method>
+      <method name="next" desc="()Lru/course/cityservices/domain/RequestStatus;" line="16">
+        <counter type="INSTRUCTION" missed="0" covered="15" />
+        <counter type="BRANCH" missed="0" covered="4" />
+        <counter type="LINE" missed="0" covered="6" />
+        <counter type="COMPLEXITY" missed="0" covered="4" />
+        <counter type="METHOD" missed="0" covered="1" />
+      </method>
+      <method name="&lt;clinit&gt;" desc="()V" line="4">
+        <counter type="INSTRUCTION" missed="0" covered="40" />
+        <counter type="LINE" missed="0" covered="4" />
+        <counter type="COMPLEXITY" missed="0" covered="1" />
+        <counter type="METHOD" missed="0" covered="1" />
+      </method>
+      <counter type="INSTRUCTION" missed="0" covered="66" />
+      <counter type="BRANCH" missed="0" covered="4" />
+      <counter type="LINE" missed="0" covered="11" />
+      <counter type="COMPLEXITY" missed="0" covered="7" />
+      <counter type="METHOD" missed="0" covered="4" />
+      <counter type="CLASS" missed="0" covered="1" />
+    </class>
+    <sourcefile name="DomainModels.kt">
+      <line nr="3" mi="0" ci="11" mb="0" cb="0" />
+      <line nr="4" mi="0" ci="7" mb="0" cb="0" />
+      <line nr="6" mi="0" ci="7" mb="0" cb="0" />
+      <line nr="8" mi="0" ci="7" mb="0" cb="0" />
+      <line nr="10" mi="0" ci="19" mb="0" cb="0" />
+      <line nr="16" mi="0" ci="6" mb="0" cb="4" />
+      <line nr="17" mi="0" ci="2" mb="0" cb="0" />
+      <line nr="18" mi="0" ci="2" mb="0" cb="0" />
+      <line nr="19" mi="0" ci="2" mb="0" cb="0" />
+      <line nr="20" mi="0" ci="2" mb="0" cb="0" />
+      <line nr="21" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="29" mi="0" ci="10" mb="0" cb="0" />
+      <line nr="36" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="37" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="38" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="39" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="40" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="41" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="42" mi="6" ci="0" mb="0" cb="0" />
+      <line nr="51" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="53" mi="7" ci="0" mb="2" cb="0" />
+      <counter type="INSTRUCTION" missed="50" covered="76" />
+      <counter type="BRANCH" missed="2" covered="4" />
+      <counter type="LINE" missed="9" covered="12" />
+      <counter type="COMPLEXITY" missed="10" covered="8" />
+      <counter type="METHOD" missed="9" covered="5" />
+      <counter type="CLASS" missed="2" covered="2" />
+    </sourcefile>
+    <sourcefile name="RequestValidator.kt">
+      <line nr="7" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="8" mi="0" ci="6" mb="0" cb="2" />
+      <line nr="9" mi="0" ci="4" mb="0" cb="2" />
+      <line nr="10" mi="0" ci="2" mb="0" cb="0" />
+      <line nr="12" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="13" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="15" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="16" mi="0" ci="6" mb="1" cb="1" />
+      <line nr="18" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="19" mi="0" ci="1" mb="0" cb="0" />
+      <line nr="25" mi="0" ci="18" mb="0" cb="0" />
+      <counter type="INSTRUCTION" missed="1" covered="41" />
+      <counter type="BRANCH" missed="1" covered="5" />
+      <counter type="LINE" missed="1" covered="10" />
+      <counter type="COMPLEXITY" missed="1" covered="5" />
+      <counter type="METHOD" missed="0" covered="3" />
+      <counter type="CLASS" missed="0" covered="1" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="51" covered="117" />
+    <counter type="BRANCH" missed="3" covered="9" />
+    <counter type="LINE" missed="10" covered="22" />
+    <counter type="COMPLEXITY" missed="11" covered="13" />
+    <counter type="METHOD" missed="9" covered="8" />
+    <counter type="CLASS" missed="2" covered="3" />
+  </package>
+  <package name="ru/course/cityservices/ui/component">
+    <class name="ru/course/cityservices/ui/component/StatusBadgeKt" sourcefilename="StatusBadge.kt">
+      <method name="StatusBadge" desc="(Ljava/lang/String;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V" line="19">
+        <counter type="INSTRUCTION" missed="94" covered="0" />
+        <counter type="BRANCH" missed="7" covered="0" />
+        <counter type="LINE" missed="18" covered="0" />
+        <counter type="COMPLEXITY" missed="6" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="94" covered="0" />
+      <counter type="BRANCH" missed="7" covered="0" />
+      <counter type="LINE" missed="18" covered="0" />
+      <counter type="COMPLEXITY" missed="6" covered="0" />
+      <counter type="METHOD" missed="1" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <class name="ru/course/cityservices/ui/component/ServiceCardKt" sourcefilename="ServiceCard.kt">
+      <method name="ServiceCard" desc="(Lru/course/cityservices/model/ServiceResponse;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V" line="20">
+        <counter type="INSTRUCTION" missed="80" covered="0" />
+        <counter type="BRANCH" missed="10" covered="0" />
+        <counter type="LINE" missed="7" covered="0" />
+        <counter type="COMPLEXITY" missed="6" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="ServiceCard$lambda$0$0" desc="(Lkotlin/jvm/functions/Function1;Lru/course/cityservices/model/ServiceResponse;)Lkotlin/Unit;" line="24">
+        <counter type="INSTRUCTION" missed="6" covered="0" />
+        <counter type="LINE" missed="1" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <method name="ServiceCard$lambda$1" desc="(Lru/course/cityservices/model/ServiceResponse;Landroidx/compose/foundation/layout/ColumnScope;Landroidx/compose/runtime/Composer;I)Lkotlin/Unit;" line="26">
+        <counter type="INSTRUCTION" missed="147" covered="0" />
+        <counter type="LINE" missed="16" covered="0" />
+        <counter type="COMPLEXITY" missed="1" covered="0" />
+        <counter type="METHOD" missed="1" covered="0" />
+      </method>
+      <counter type="INSTRUCTION" missed="233" covered="0" />
+      <counter type="BRANCH" missed="10" covered="0" />
+      <counter type="LINE" missed="23" covered="0" />
+      <counter type="COMPLEXITY" missed="8" covered="0" />
+      <counter type="METHOD" missed="3" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </class>
+    <sourcefile name="StatusBadge.kt">
+      <line nr="19" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="20" mi="4" ci="0" mb="2" cb="0" />
+      <line nr="21" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="22" mi="3" ci="0" mb="5" cb="0" />
+      <line nr="23" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="24" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="25" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="26" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="29" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="32" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="33" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="34" mi="15" ci="0" mb="0" cb="0" />
+      <line nr="35" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="36" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="37" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="38" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="39" mi="23" ci="0" mb="0" cb="0" />
+      <line nr="41" mi="4" ci="0" mb="0" cb="0" />
+      <counter type="INSTRUCTION" missed="94" covered="0" />
+      <counter type="BRANCH" missed="7" covered="0" />
+      <counter type="LINE" missed="18" covered="0" />
+      <counter type="COMPLEXITY" missed="6" covered="0" />
+      <counter type="METHOD" missed="1" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </sourcefile>
+    <sourcefile name="ServiceCard.kt">
+      <line nr="20" mi="4" ci="0" mb="0" cb="0" />
+      <line nr="21" mi="4" ci="0" mb="2" cb="0" />
+      <line nr="22" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="23" mi="16" ci="0" mb="0" cb="0" />
+      <line nr="24" mi="45" ci="0" mb="8" cb="0" />
+      <line nr="25" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="26" mi="17" ci="0" mb="0" cb="0" />
+      <line nr="27" mi="3" ci="0" mb="0" cb="0" />
+      <line nr="28" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="29" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="30" mi="21" ci="0" mb="0" cb="0" />
+      <line nr="32" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="33" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="34" mi="18" ci="0" mb="0" cb="0" />
+      <line nr="35" mi="9" ci="0" mb="0" cb="0" />
+      <line nr="37" mi="10" ci="0" mb="0" cb="0" />
+      <line nr="38" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="39" mi="5" ci="0" mb="0" cb="0" />
+      <line nr="40" mi="11" ci="0" mb="0" cb="0" />
+      <line nr="41" mi="21" ci="0" mb="0" cb="0" />
+      <line nr="43" mi="1" ci="0" mb="0" cb="0" />
+      <line nr="44" mi="2" ci="0" mb="0" cb="0" />
+      <line nr="45" mi="4" ci="0" mb="0" cb="0" />
+      <counter type="INSTRUCTION" missed="233" covered="0" />
+      <counter type="BRANCH" missed="10" covered="0" />
+      <counter type="LINE" missed="23" covered="0" />
+      <counter type="COMPLEXITY" missed="8" covered="0" />
+      <counter type="METHOD" missed="3" covered="0" />
+      <counter type="CLASS" missed="1" covered="0" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="327" covered="0" />
+    <counter type="BRANCH" missed="17" covered="0" />
+    <counter type="LINE" missed="41" covered="0" />
+    <counter type="COMPLEXITY" missed="14" covered="0" />
+    <counter type="METHOD" missed="4" covered="0" />
+    <counter type="CLASS" missed="2" covered="0" />
+  </package>
+  <counter type="INSTRUCTION" missed="7138" covered="610" />
+  <counter type="BRANCH" missed="151" covered="21" />
+  <counter type="LINE" missed="900" covered="156" />
+  <counter type="COMPLEXITY" missed="303" covered="29" />
+  <counter type="METHOD" missed="233" covered="19" />
+  <counter type="CLASS" missed="49" covered="9" />
+</report>

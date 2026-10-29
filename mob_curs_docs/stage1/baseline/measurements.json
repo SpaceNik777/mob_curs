@@ -1,6 +1,6 @@
 {
-  "measured_at_utc": "2026-10-28T22:39:38.773090+00:00",
-  "commit": "b43f23e52f4c92879777d76bf25da39b65b327a2",
+  "measured_at_utc": "2026-10-28T22:55:47.425701+00:00",
+  "commit": "dfb9704407b33641cd2cee13cbc43e0484c68cf4",
   "source_sha256": {
     "app/src/main/kotlin/ru/course/cityservices/CityServicesApp.kt": "4651ee16131c4dc58f7843d10052efea6c963b7f579c9ff65f30cd9ed8d69241",
     "app/src/main/kotlin/ru/course/cityservices/MainActivity.kt": "7315d67f0662ca7d3952cda682e13ff206715ce0c43a819500aff24a1fe6936c",
@@ -260,7 +260,7 @@
         },
         {
           "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/RequestsScreen.kt",
-          "line": 57,
+          "line": 62,
           "match": "ServiceLocator.loadLocalRequests("
         },
         {
@@ -275,7 +275,7 @@
         },
         {
           "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/ServicesScreen.kt",
-          "line": 43,
+          "line": 59,
           "match": "ServiceLocator.loadServices("
         }
       ]
@@ -306,7 +306,7 @@
         },
         {
           "path": "app/src/main/kotlin/ru/course/cityservices/core/ServiceLocator.kt",
-          "line": 42,
+          "line": 56,
           "match": "AppState.login("
         },
         {
@@ -326,7 +326,7 @@
         },
         {
           "path": "app/src/main/kotlin/ru/course/cityservices/core/ServiceLocator.kt",
-          "line": 99,
+          "line": 108,
           "match": "AppState.lastError ="
         },
         {
@@ -336,12 +336,12 @@
         },
         {
           "path": "app/src/main/kotlin/ru/course/cityservices/core/ServiceLocator.kt",
-          "line": 99,
+          "line": 192,
           "match": "AppState.lastError ="
         },
         {
           "path": "app/src/main/kotlin/ru/course/cityservices/core/ServiceLocator.kt",
-          "line": 99,
+          "line": 196,
           "match": "AppState.lastError ="
         }
       ]
@@ -387,7 +387,7 @@
         },
         {
           "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/RequestsScreen.kt",
-          "line": 57,
+          "line": 62,
           "match": "ServiceLocator.loadLocalRequests("
         },
         {
@@ -402,7 +402,7 @@
         },
         {
           "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/ServicesScreen.kt",
-          "line": 43,
+          "line": 59,
           "match": "ServiceLocator.loadServices("
         }
       ]
@@ -448,7 +448,7 @@
         },
         {
           "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/RequestsScreen.kt",
-          "line": 57,
+          "line": 62,
           "match": "ServiceLocator.loadLocalRequests("
         },
         {
@@ -463,7 +463,7 @@
         },
         {
           "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/ServicesScreen.kt",
-          "line": 43,
+          "line": 59,
           "match": "ServiceLocator.loadServices("
         }
       ]

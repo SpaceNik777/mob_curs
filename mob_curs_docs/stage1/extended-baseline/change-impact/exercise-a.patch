@@ -1,0 +1,181 @@
+diff --git a/app/src/main/kotlin/ru/course/cityservices/core/ServiceLocator.kt b/app/src/main/kotlin/ru/course/cityservices/core/ServiceLocator.kt
+index 637bd65..0b61969 100644
+--- a/app/src/main/kotlin/ru/course/cityservices/core/ServiceLocator.kt
++++ b/app/src/main/kotlin/ru/course/cityservices/core/ServiceLocator.kt
+@@ -32,7 +32,7 @@ object ServiceLocator {
+             context = context.applicationContext,
+             klass = AppDatabase::class.java,
+             name = "city-services.db",
+-        ).build()
++        ).addMigrations(AppDatabase.MIGRATION_1_2).build()
+         sessions = SessionStore(context = context.applicationContext)
+     }
+ 
+@@ -110,7 +110,12 @@ object ServiceLocator {
+             null
+         }
+ 
+-    suspend fun submitRequest(serviceId: Long, comment: String, address: String): String? {
++    suspend fun submitRequest(
++        serviceId: Long,
++        comment: String,
++        address: String,
++        locationHint: String? = null,
++    ): String? {
+         // Валидатор подключен частично - комментарий проверяется, адрес нет (RequestValidator.validateAddress не вызывается)
+         val commentError = RequestValidator.validateComment(comment = comment)
+         if (commentError != null) {
+@@ -121,6 +126,7 @@ object ServiceLocator {
+             val created = api.createRequest(
+                 comment = comment,
+                 address = address,
++                locationHint = locationHint,
+                 serviceId = serviceId,
+                 userId = AppState.userId,
+             )
+@@ -143,6 +149,7 @@ object ServiceLocator {
+                 status = "Создана",
+                 comment = comment,
+                 address = address,
++                locationHint = locationHint,
+                 createdAt = Clock.System.now()
+             )
+ 
+diff --git a/app/src/main/kotlin/ru/course/cityservices/model/Models.kt b/app/src/main/kotlin/ru/course/cityservices/model/Models.kt
+index d2bee75..e41cd14 100644
+--- a/app/src/main/kotlin/ru/course/cityservices/model/Models.kt
++++ b/app/src/main/kotlin/ru/course/cityservices/model/Models.kt
+@@ -20,6 +20,7 @@ data class RequestResponse(
+     val comment: String,
+     val address: String,
+     val createdAt: Instant,
++    val locationHint: String? = null,
+ )
+ 
+ data class NotificationItem(
+diff --git a/app/src/main/kotlin/ru/course/cityservices/network/CityApi.kt b/app/src/main/kotlin/ru/course/cityservices/network/CityApi.kt
+index b4a374d..bdc733f 100644
+--- a/app/src/main/kotlin/ru/course/cityservices/network/CityApi.kt
++++ b/app/src/main/kotlin/ru/course/cityservices/network/CityApi.kt
+@@ -18,7 +18,8 @@ interface CityApi {
+         userId: Long,
+         serviceId: Long,
+         comment: String,
+-        address: String
++        address: String,
++        locationHint: String? = null,
+     ): RequestResponse
+ }
+ 
+diff --git a/app/src/main/kotlin/ru/course/cityservices/network/FakeApi.kt b/app/src/main/kotlin/ru/course/cityservices/network/FakeApi.kt
+index ecf4638..e8d17d6 100644
+--- a/app/src/main/kotlin/ru/course/cityservices/network/FakeApi.kt
++++ b/app/src/main/kotlin/ru/course/cityservices/network/FakeApi.kt
+@@ -190,7 +190,8 @@ class FakeApi : CityApi {
+         userId: Long,
+         serviceId: Long,
+         comment: String,
+-        address: String
++        address: String,
++        locationHint: String?,
+     ): RequestResponse {
+         delay(duration = CREATE_DELAY.milliseconds)
+         calls++
+@@ -206,6 +207,7 @@ class FakeApi : CityApi {
+                 status = "Создана",
+                 comment = comment,
+                 address = address,
++                locationHint = locationHint,
+                 createdAt = Clock.System.now(),
+             )
+ 
+@@ -219,6 +221,7 @@ class FakeApi : CityApi {
+             status = "Создана",
+             comment = comment,
+             address = address,
++            locationHint = locationHint,
+             createdAt = Clock.System.now(),
+         )
+         serverRequests += created
+diff --git a/app/src/main/kotlin/ru/course/cityservices/storage/AppDatabase.kt b/app/src/main/kotlin/ru/course/cityservices/storage/AppDatabase.kt
+index bcd8cc9..ac666b9 100644
+--- a/app/src/main/kotlin/ru/course/cityservices/storage/AppDatabase.kt
++++ b/app/src/main/kotlin/ru/course/cityservices/storage/AppDatabase.kt
+@@ -3,14 +3,24 @@ package ru.course.cityservices.storage
+ import androidx.room.Database
+ import androidx.room.RoomDatabase
+ import androidx.room.TypeConverters
++import androidx.room.migration.Migration
++import androidx.sqlite.db.SupportSQLiteDatabase
+ import ru.course.cityservices.model.RequestResponse
+ 
+ @Database(
+     entities = [RequestResponse::class],
+-    version = 1,
++    version = 2,
+ )
+ @TypeConverters(InstantConverter::class)
+ abstract class AppDatabase : RoomDatabase() {
+ 
+     abstract fun requestDao(): RequestDao
++
++    companion object {
++        val MIGRATION_1_2 = object : Migration(1, 2) {
++            override fun migrate(db: SupportSQLiteDatabase) {
++                db.execSQL("ALTER TABLE requests ADD COLUMN locationHint TEXT")
++            }
++        }
++    }
+ }
+diff --git a/app/src/main/kotlin/ru/course/cityservices/ui/screen/RequestsScreen.kt b/app/src/main/kotlin/ru/course/cityservices/ui/screen/RequestsScreen.kt
+index a6b4f4a..c183aec 100644
+--- a/app/src/main/kotlin/ru/course/cityservices/ui/screen/RequestsScreen.kt
++++ b/app/src/main/kotlin/ru/course/cityservices/ui/screen/RequestsScreen.kt
+@@ -168,6 +168,11 @@ private fun RequestCard(
+                 style = MaterialTheme.typography.bodySmall,
+                 color = MaterialTheme.colorScheme.onSurfaceVariant,
+             )
++            Text(
++                text = request.locationHint?.let { "Ориентир: $it" } ?: "Ориентир не указан",
++                style = MaterialTheme.typography.bodySmall,
++                color = MaterialTheme.colorScheme.onSurfaceVariant,
++            )
+             Text(
+                 text = TimeFormat.relative(instant = request.createdAt),
+                 style = MaterialTheme.typography.labelSmall,
+diff --git a/app/src/main/kotlin/ru/course/cityservices/ui/screen/ServiceDetailScreen.kt b/app/src/main/kotlin/ru/course/cityservices/ui/screen/ServiceDetailScreen.kt
+index 3a979e2..e5460d9 100644
+--- a/app/src/main/kotlin/ru/course/cityservices/ui/screen/ServiceDetailScreen.kt
++++ b/app/src/main/kotlin/ru/course/cityservices/ui/screen/ServiceDetailScreen.kt
+@@ -34,6 +34,7 @@ fun ServiceDetailScreen(
+     val scope = rememberCoroutineScope()
+     var comment by remember { mutableStateOf(value = "") }
+     var address by remember { mutableStateOf(value = "") }
++    var locationHint by remember { mutableStateOf(value = "") }
+     var error by remember { mutableStateOf<String?>(value = null) }
+     var sending by remember { mutableStateOf(value = false) }
+ 
+@@ -75,6 +76,15 @@ fun ServiceDetailScreen(
+         )
+         Spacer(modifier = Modifier.height(height = 12.dp))
+ 
++        OutlinedTextField(
++            modifier = Modifier.fillMaxWidth(),
++            value = locationHint,
++            onValueChange = { value -> locationHint = value },
++            label = { Text(text = "Ориентир (необязательно)") },
++            singleLine = true,
++        )
++        Spacer(modifier = Modifier.height(height = 12.dp))
++
+         error?.let { text ->
+             Text(
+                 text = text,
+@@ -105,6 +115,7 @@ fun ServiceDetailScreen(
+                             serviceId = service.id,
+                             comment = comment,
+                             address = address,
++                            locationHint = locationHint.trim().takeIf { it.isNotEmpty() },
+                         )
+                         sending = false
+                         if (result == null) onCreated() else error = result

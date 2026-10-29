@@ -1,0 +1,133 @@
+{
+  "baseline_commit": "dfb9704407b33641cd2cee13cbc43e0484c68cf4",
+  "baseline_kotlin_sha256": "08ad1e71a4bedadb1c4c7006b9b85a39393841568e22b02735bf7893326a3826",
+  "scope": "app/src/main/kotlin/ru/course/cityservices/**/*.kt",
+  "line_metric": "git diff --no-index --ignore-space-at-eol --numstat; ignore CRLF/LF-only changes; include comments",
+  "subsystem_metric": "distinct first package directory under ru/course/cityservices; UI screen/component count as one ui subsystem",
+  "independent_exercises": true,
+  "baseline_validation": {
+    "task": ":app:compileDebugKotlin",
+    "result": "BUILD SUCCESSFUL",
+    "jdk": "Azul 21.0.13",
+    "reported_seconds": 27,
+    "executed_tasks": 7
+  },
+  "exercises": {
+    "exercise-a": {
+      "changed_files": 7,
+      "added_lines": 43,
+      "deleted_lines": 5,
+      "changed_lines": 48,
+      "net_lines": 38,
+      "subsystems": [
+        "core",
+        "model",
+        "network",
+        "storage",
+        "ui"
+      ],
+      "subsystem_count": 5,
+      "files": [
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/core/ServiceLocator.kt",
+          "subsystem": "core",
+          "added": 9,
+          "deleted": 2
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/model/Models.kt",
+          "subsystem": "model",
+          "added": 1,
+          "deleted": 0
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/network/CityApi.kt",
+          "subsystem": "network",
+          "added": 2,
+          "deleted": 1
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/network/FakeApi.kt",
+          "subsystem": "network",
+          "added": 4,
+          "deleted": 1
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/storage/AppDatabase.kt",
+          "subsystem": "storage",
+          "added": 11,
+          "deleted": 1
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/RequestsScreen.kt",
+          "subsystem": "ui",
+          "added": 5,
+          "deleted": 0
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/screen/ServiceDetailScreen.kt",
+          "subsystem": "ui",
+          "added": 11,
+          "deleted": 0
+        }
+      ],
+      "patch": "exercise-a.patch",
+      "patch_sha256": "738593412c85a2543622214ca1a38664b02abd621fe3736eaccde7047bc82b22",
+      "validation": {
+        "task": ":app:compileDebugKotlin",
+        "result": "BUILD SUCCESSFUL",
+        "jdk": "Azul 21.0.13",
+        "executed_tasks": 7,
+        "reported_seconds": 39,
+        "runtime_tested": false,
+        "migration_runtime_tested": false,
+        "warning": "Room schema export directory not configured (existing baseline configuration)"
+      }
+    },
+    "exercise-b": {
+      "changed_files": 3,
+      "added_lines": 16,
+      "deleted_lines": 10,
+      "changed_lines": 26,
+      "net_lines": 6,
+      "subsystems": [
+        "domain",
+        "network",
+        "ui"
+      ],
+      "subsystem_count": 3,
+      "files": [
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/domain/DomainModels.kt",
+          "subsystem": "domain",
+          "added": 9,
+          "deleted": 5
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/network/FakeApi.kt",
+          "subsystem": "network",
+          "added": 6,
+          "deleted": 5
+        },
+        {
+          "path": "app/src/main/kotlin/ru/course/cityservices/ui/component/StatusBadge.kt",
+          "subsystem": "ui",
+          "added": 1,
+          "deleted": 0
+        }
+      ],
+      "patch": "exercise-b.patch",
+      "patch_sha256": "249d41eb2aaae6a4c1cd8d2bcb01539da7abe6f656271660935cc6ceb2934c8c",
+      "validation": {
+        "task": ":app:compileDebugKotlin",
+        "result": "BUILD SUCCESSFUL",
+        "jdk": "Azul 21.0.13",
+        "executed_tasks": 7,
+        "reported_seconds": 38,
+        "runtime_tested": false,
+        "migration_runtime_tested": false,
+        "warning": "Room schema export directory not configured (existing baseline configuration)"
+      }
+    }
+  }
+}

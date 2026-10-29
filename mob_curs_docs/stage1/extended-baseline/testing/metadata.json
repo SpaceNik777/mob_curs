@@ -1,0 +1,13 @@
+﻿{
+    "revision":  "dfb9704407b33641cd2cee13cbc43e0484c68cf4",
+    "repetitions":  5,
+    "jacoco":  "0.8.14",
+    "java":  [
+                 "openjdk version \"21.0.13\" 2026-10-20 LTS",
+                 "OpenJDK Runtime Environment Zulu21.54+107-CA (build 21.0.13+9-LTS)",
+                 "OpenJDK 64-Bit Server VM Zulu21.54+107-CA (build 21.0.13+9-LTS, mixed mode, sharing)"
+             ],
+    "scope":  "All debug compileDebugKotlin class files, including Room generated classes; no package exclusions",
+    "snapshot":  "git archive HEAD",
+    "command":  "gradlew.bat --console=plain --no-build-cache -I \u003cevidence\u003e/coverage.init.gradle :app:baselineCoverage"
+}

@@ -1,0 +1,56 @@
+{
+  "implementation": "Actual Android instrumentation of baseline Kotlin app; not a replica",
+  "productionChanges": "None. app/src/main files hash-verified against isolated copy before build; see results/production-source-sha256.json",
+  "temporaryBuildChanges": [
+    "applicationId ru.course.cityservices.baseline",
+    "AndroidJUnitRunner",
+    "androidTest runner 1.7.0, ext junit 1.3.0, uiautomator 2.3.0",
+    "BaselineRuntimeTest.kt under androidTest only"
+  ],
+  "environment": {
+    "device": "emulator-5554",
+    "androidApi": 34,
+    "build": "debug, no minification",
+    "jdk": 21,
+    "compileSdk": 37,
+    "targetSdk": 37,
+    "instrumentationRuns": 3
+  },
+  "scenarioSemantics": {
+    "timeoutAfterCommit": "Fake CityApi commits one request, throws IOException before returning response; real submitRequest writes fallback local row, real refreshRequests imports committed row. Two IDs for one intent. No second submit required.",
+    "preCommitFailure": "Fake CityApi throws before commit, then recovers; five real refreshRequests calls. One local row persists with status Created (Russian production string), zero server requests, create call count remains one. This is loss of automatic delivery/retry, NOT deletion of the pending row or permanent data loss.",
+    "multiuser": "Real Room DAO seeded with five user1 and five user2 records; real loadLocalRequests called while AppState userId=1; counts foreign-user rows returned. No API used for this scenario.",
+    "concurrentRefresh": "Fifty trials per run. Reset real in-memory Room row to Created; fake API returns same ID with changed status. Release two Dispatchers.IO calls to real refreshRequests from common CompletableDeferred gate; count real AppState notifications. No hooks into DAO or production refresh logic. Race probability depends on scheduler.",
+    "historyDao": "On-disk production Room initialized by MainActivity; 100 or 1000 deterministic records inserted individually before timing; 10 sequential loadLocalRequests calls per dataset per run. Includes real DAO read and mapping; excludes seeding and UI.",
+    "historyUi": "Real MainActivity/CityServicesApp/RequestsScreen. From before clicking My Requests to UiAutomator observing newest fixture comment. Includes click overhead, local DAO read, composition, accessibility observation; does not require all 1000 rows to be simultaneously rendered. Fake API swapped after catalog appears to prevent polling changing fixture.",
+    "instrumentedLaunch": "From startActivity call to visible login demo-fill control. Instrumentation process already running; not cold process launch. Production MainActivity initializes locator and restores session normally.",
+    "loginCatalog": "Demo credentials UI, real production FakeApi login and catalog delays; waits for My Requests and first service title containing Cleanup in Russian. UiAutomator observation includes automation latency.",
+    "coldLaunch": "After instrumentation runs, clear ONLY isolated baseline app once; five force-stop + am start -W launches. Host stopwatch starts before am start. Login readiness is observed by uiautomator XML dump containing isolated package and RUT demo hint. This is an upper-bound observed readiness including adb/UI dump latency, not an exact first-frame timestamp. am start output retained separately; TotalTime is NOT UI readiness.",
+    "scroll": "Reset gfxinfo before entering 1000-row history, wait newest row, execute 20 upward UiDevice swipes (20 steps each), dump gfxinfo framestats. Includes screen entry plus scrolling, not scroll-only. Raw output repeats overall and per-window summary; do not sum duplicate summary blocks.",
+    "memory": "Same instrumentation/target process, Debug.MemoryInfo PSS plus Runtime used heap before and after 20 services-history-services cycles; samples every five cycles. Begins after 1000-row scroll. No forced GC, no heap dump. Not evidence sufficient to establish or exclude a memory leak. Not release standalone process PSS."
+  },
+  "summary": {
+    "timeoutExcessDuplicatesPerRun": [1, 1, 1],
+    "undeliveredIntentsAfterFiveRefreshesPerRun": [1, 1, 1],
+    "foreignRowsVisiblePerRun": [5, 5, 5],
+    "concurrentRefreshDuplicateTrials": 144,
+    "concurrentRefreshTotalTrials": 150,
+    "concurrentRefreshNotifications": 294,
+    "history100UiReadyMs": [350.8314, 520.0002, 519.1947],
+    "history1000UiReadyMs": [489.5091, 848.8666, 559.6244],
+    "gfxTotalFramesPerRun": [409, 415, 411],
+    "gfxJankyFramesPerRun": [65, 46, 51],
+    "gfxJankPercentPerRun": [15.89, 11.08, 12.41],
+    "pssBeforeKb": [87976, 86571, 85496],
+    "pssAfter20CyclesKb": [82852, 84245, 86296],
+    "pssDeltaKb": [-5124, -2326, 800],
+    "coldObservedLoginReadyMedianMs": 4826.5707
+  },
+  "limitations": [
+    "Single emulator, debug build, instrumentation overhead; not representative device fleet or release performance.",
+    "Fault injection uses test CityApi implementing production interface, not real HTTP packet loss.",
+    "Three scenario measurements and thirty DAO reads per dataset; no confidence interval claim.",
+    "No permanent data loss claim: unsubmitted local pending row survives recovery refreshes.",
+    "Original production package/data not cleared, uninstalled or modified. Only isolated baseline package installed and cleared. No commit/push."
+  ]
+}

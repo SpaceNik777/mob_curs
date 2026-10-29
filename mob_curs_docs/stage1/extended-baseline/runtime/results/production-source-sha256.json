@@ -1,0 +1,102 @@
+[
+    {
+        "path":  "app/src/main/AndroidManifest.xml",
+        "sha256":  "944CF254A71E0A43A51C773E34F74ACF44D3A86C5A82F841C75664BC85779E0A"
+    },
+    {
+        "path":  "app/src/main/kotlin/ru/course/cityservices/CityServicesApp.kt",
+        "sha256":  "4651EE16131C4DC58F7843D10052EFEA6C963B7F579C9FF65F30CD9ED8D69241"
+    },
+    {
+        "path":  "app/src/main/kotlin/ru/course/cityservices/MainActivity.kt",
+        "sha256":  "7315D67F0662CA7D3952CDA682E13FF206715CE0C43A819500AFF24A1FE6936C"
+    },
+    {
+        "path":  "app/src/main/kotlin/ru/course/cityservices/analytic/AnalyticsTracker.kt",
+        "sha256":  "226A4EC7077D5D5AAFF4603D6E1BFCBD5857FA7753E38D4C821EA132B876F493"
+    },
+    {
+        "path":  "app/src/main/kotlin/ru/course/cityservices/core/ServiceLocator.kt",
+        "sha256":  "16C1FAB8B2F33BD69899C985DDFEFBDCDF08AEDC68B9E66932120090DB86E873"
+    },
+    {
+        "path":  "app/src/main/kotlin/ru/course/cityservices/domain/DomainModels.kt",
+        "sha256":  "119BEBBEE8A04C49963FFF318026CD96F363FB09B599BDB1CBCE9BF623CC5628"
+    },
+    {
+        "path":  "app/src/main/kotlin/ru/course/cityservices/domain/RequestValidator.kt",
+        "sha256":  "70ACDBD271CE0A8F902126529DCEFE9A3D54FFF65C8BC4E9E5E155E1BC00318B"
+    },
+    {
+        "path":  "app/src/main/kotlin/ru/course/cityservices/model/Models.kt",
+        "sha256":  "CF5E530756C7BEA93A8C5B26542A8EB084D5AFC164E469209B6E1EDB02E59277"
+    },
+    {
+        "path":  "app/src/main/kotlin/ru/course/cityservices/network/CityApi.kt",
+        "sha256":  "E924525423080718FD5FD02FA284F5CFCF239C9C0444D5D7F0DA1BA63B98EBFA"
+    },
+    {
+        "path":  "app/src/main/kotlin/ru/course/cityservices/network/FakeApi.kt",
+        "sha256":  "46307F4AC64A4CD0C2A8A04CA6B1880673ECFEADCB146F3700174D78FD561757"
+    },
+    {
+        "path":  "app/src/main/kotlin/ru/course/cityservices/state/AppState.kt",
+        "sha256":  "6BB1FE8461A1C7546136653748827B3703DD1C6AA5A14E1732716D236CEFA14E"
+    },
+    {
+        "path":  "app/src/main/kotlin/ru/course/cityservices/storage/AppDatabase.kt",
+        "sha256":  "4A6E5D65F933F38CDC62AA2F9295BAAEC1CB6B6DCC88701223ACC208881F5A22"
+    },
+    {
+        "path":  "app/src/main/kotlin/ru/course/cityservices/storage/InstantConverter.kt",
+        "sha256":  "4C672C2D5E5FEBC11C06681CAA9D26EF24B0F6F1ADB4EC0A2C5A851A893B4B59"
+    },
+    {
+        "path":  "app/src/main/kotlin/ru/course/cityservices/storage/RequestDao.kt",
+        "sha256":  "F41DD63E6B6C5FD1E3DB23A091FFE3F353D681F3A95009F0ED955A6C3247DA29"
+    },
+    {
+        "path":  "app/src/main/kotlin/ru/course/cityservices/storage/SessionStore.kt",
+        "sha256":  "68EEC061CFF1708AADA3260A070CB184F578B62948409ACCDFD4F3785DB4257B"
+    },
+    {
+        "path":  "app/src/main/kotlin/ru/course/cityservices/ui/component/ServiceCard.kt",
+        "sha256":  "46DBFFF5AE18E157C949F1D85892D0865AD7BDDD5E38C8E44D08F2EC518F1CEA"
+    },
+    {
+        "path":  "app/src/main/kotlin/ru/course/cityservices/ui/component/StatusBadge.kt",
+        "sha256":  "11C6117110A4A3ABC53EA3B35595E3BD3D99DC7A9960B90E911A011D270E003B"
+    },
+    {
+        "path":  "app/src/main/kotlin/ru/course/cityservices/ui/screen/LoginScreen.kt",
+        "sha256":  "2DBA3F2A87620DA71EEF625D598959974E3163E9EBC6C6DA57216D5459718005"
+    },
+    {
+        "path":  "app/src/main/kotlin/ru/course/cityservices/ui/screen/NotificationsScreen.kt",
+        "sha256":  "81242CD026F820ADB2A94DA014CBDF809D851C021E4A59E4AC1A697A9B5F2293"
+    },
+    {
+        "path":  "app/src/main/kotlin/ru/course/cityservices/ui/screen/RequestsScreen.kt",
+        "sha256":  "E69B5D8406695F3AC9E19BFEB4CCA594FEB9949EF9E1653020E73A394AD8A277"
+    },
+    {
+        "path":  "app/src/main/kotlin/ru/course/cityservices/ui/screen/ServiceDetailScreen.kt",
+        "sha256":  "6C195BE842F21933DBDEA7A79A1D1899492F70D0BBE1DDE6F71A90E4939A0A6F"
+    },
+    {
+        "path":  "app/src/main/kotlin/ru/course/cityservices/ui/screen/ServicesScreen.kt",
+        "sha256":  "3571C3B873AFE666B98F99D0F99B41A0166A2267A90AE84E9BFCF7020671782E"
+    },
+    {
+        "path":  "app/src/main/kotlin/ru/course/cityservices/ui/theme/Theme.kt",
+        "sha256":  "AFE7046D2C7E5D30C71DEBE2BB58DF26BDCA5D9A2E896358862F60B0AC1ED084"
+    },
+    {
+        "path":  "app/src/main/kotlin/ru/course/cityservices/util/TimeFormat.kt",
+        "sha256":  "B830839FB91ECB043CBE538B6CFAE5F43484EE66AB42F8B3F3396F1BE03B1732"
+    },
+    {
+        "path":  "app/src/main/res/values/styles.xml",
+        "sha256":  "06CB902C558A55635856D7A5C48DF7B01E8B5246E3A06C41090957BDDAD27598"
+    }
+]

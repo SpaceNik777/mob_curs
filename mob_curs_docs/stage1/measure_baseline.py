@@ -25,7 +25,48 @@ args = parser.parse_args()
 
 
 def clean(text):
-    return re.sub(r"/\*.*?\*/|//[^\n]*", "", text, flags=re.S)
+    # Preserve offsets and newlines; Kotlin block comments may be nested.
+    result = list(text)
+    i = 0
+    quote = None
+    while i < len(text):
+        if quote:
+            if text.startswith(quote, i):
+                i += len(quote)
+                quote = None
+            elif text[i] == "\\" and quote != '"""':
+                i += 2
+            else:
+                i += 1
+        elif text.startswith('//', i) or text.startswith('/*', i):
+            start = i
+            if text.startswith('//', i):
+                end = text.find('\n', i)
+                i = len(text) if end < 0 else end
+            else:
+                depth = 1
+                i += 2
+                while i < len(text) and depth:
+                    if text.startswith('/*', i):
+                        depth += 1
+                        i += 2
+                    elif text.startswith('*/', i):
+                        depth -= 1
+                        i += 2
+                    else:
+                        i += 1
+            for index in range(start, i):
+                if result[index] != '\n':
+                    result[index] = ' '
+        elif text.startswith('"""', i):
+            quote = '"""'
+            i += 3
+        elif text[i] in {'"', "'"}:
+            quote = text[i]
+            i += 1
+        else:
+            i += 1
+    return ''.join(result)
 
 
 contents = {p.relative_to(ROOT).as_posix(): clean(p.read_text(encoding="utf-8")) for p in SOURCE.rglob("*.kt")}
@@ -46,10 +87,17 @@ patterns = {
 }
 indicators = {}
 for name,(scope,pattern) in patterns.items():
-    matches = [{"path":p,"line":raw_contents[p][:raw_contents[p].find(m.group(0))].count("\n")+1,"match":m.group(0)}
+    matches = [{"path":p,"line":t[:m.start()].count("\n")+1,"match":m.group(0)}
                for p,t in scope.items() for m in re.finditer(pattern,t,re.M)]
     indicators[name] = {"occurrences":len(matches),"files":len({m['path'] for m in matches}),"evidence":matches}
 summary = json.loads((HERE / "analysis.json").read_text(encoding="utf-8"))
+for name, item in summary["files"].items():
+    path = ROOT / item["path"]
+    current = path.read_text(encoding="utf-8")
+    if len(current.splitlines()) != item["lines"] or re.findall(r"^import\s+([\w.*]+)",current,re.M) != item["imports"]:
+        raise RuntimeError(f"Stale analysis.json: rerun analyze.py before measuring ({name})")
+if {v['path'] for v in summary['files'].values()} != set(contents):
+    raise RuntimeError("Source inventory differs from analysis.json; rerun analyze.py")
 by_name = {Path(p).stem:t for p,t in contents.items()}
 checks = {
     "history_reads_all_users": "db.requestDao().all()" in by_name["ServiceLocator"],

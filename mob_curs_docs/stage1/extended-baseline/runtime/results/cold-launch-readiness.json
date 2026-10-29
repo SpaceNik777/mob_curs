@@ -1,0 +1,32 @@
+[
+    {
+        "run":  1,
+        "activityCommandMs":  2309.0038,
+        "visibleLoginObservedMs":  5028.6704,
+        "ready":  true
+    },
+    {
+        "run":  2,
+        "activityCommandMs":  1769.9237,
+        "visibleLoginObservedMs":  4865.9213,
+        "ready":  true
+    },
+    {
+        "run":  3,
+        "activityCommandMs":  1997.6177,
+        "visibleLoginObservedMs":  4826.5707,
+        "ready":  true
+    },
+    {
+        "run":  4,
+        "activityCommandMs":  1712.6727,
+        "visibleLoginObservedMs":  4384.5546,
+        "ready":  true
+    },
+    {
+        "run":  5,
+        "activityCommandMs":  1995.9178000000002,
+        "visibleLoginObservedMs":  4781.4334,
+        "ready":  true
+    }
+]

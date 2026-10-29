@@ -1,0 +1,131 @@
+{
+  "package": "ru.course.cityservices.baseline",
+  "androidApi": 34,
+  "timeoutAfterCommit": {
+    "serverRows": 1,
+    "localRows": 2,
+    "excessDuplicates": 1,
+    "submitResult": "Не удалось отправить заявку. Заявка сохранена локально.",
+    "localIds": [
+      1793228227446,
+      1
+    ],
+    "localStatuses": [
+      "Создана",
+      "Создана"
+    ]
+  },
+  "preCommitFailure": {
+    "refreshesAfterRecovery": 5,
+    "createCalls": 1,
+    "serverRows": 0,
+    "localPendingRows": 1,
+    "undeliveredIntents": 1,
+    "localStatuses": [
+      "Создана"
+    ]
+  },
+  "multiuser": {
+    "totalRows": 10,
+    "foreignRowsVisible": 5
+  },
+  "concurrentRefresh": {
+    "trials": 50,
+    "duplicateTrials": 48,
+    "notifications": 98,
+    "scheduling": "two IO coroutines released by shared start gate; no production hooks"
+  },
+  "launchLoginReadyMs": 1961.3764,
+  "loginCatalogReadyMs": 2595.219,
+  "history": [
+    {
+      "records": 100,
+      "daoReadMs": [
+        3.2483,
+        3.2649,
+        2.9751,
+        2.8131,
+        3.0802,
+        3.1395,
+        3.0563,
+        2.909,
+        2.9881,
+        2.9403
+      ],
+      "uiFirstRecordReadyMs": 519.1947
+    },
+    {
+      "records": 1000,
+      "daoReadMs": [
+        17.0092,
+        17.3475,
+        16.6463,
+        16.9826,
+        14.8,
+        15.2355,
+        14.3155,
+        15.3091,
+        15.0627,
+        14.3737
+      ],
+      "uiFirstRecordReadyMs": 559.6244
+    }
+  ],
+  "scroll": {
+    "swipes": 20,
+    "records": 1000
+  },
+  "navigationMemory": {
+    "before": {
+      "totalPssKb": 85496,
+      "dalvikPssKb": 8566,
+      "nativePssKb": 20178,
+      "javaUsedBytes": 10625000
+    },
+    "samples": [
+      {
+        "cycles": 5,
+        "memory": {
+          "totalPssKb": 85680,
+          "dalvikPssKb": 8074,
+          "nativePssKb": 20482,
+          "javaUsedBytes": 10059176
+        }
+      },
+      {
+        "cycles": 10,
+        "memory": {
+          "totalPssKb": 85724,
+          "dalvikPssKb": 7918,
+          "nativePssKb": 20442,
+          "javaUsedBytes": 9877784
+        }
+      },
+      {
+        "cycles": 15,
+        "memory": {
+          "totalPssKb": 85680,
+          "dalvikPssKb": 7646,
+          "nativePssKb": 20518,
+          "javaUsedBytes": 9604448
+        }
+      },
+      {
+        "cycles": 20,
+        "memory": {
+          "totalPssKb": 86292,
+          "dalvikPssKb": 7970,
+          "nativePssKb": 20610,
+          "javaUsedBytes": 9966712
+        }
+      }
+    ],
+    "after": {
+      "totalPssKb": 86296,
+      "dalvikPssKb": 7974,
+      "nativePssKb": 20610,
+      "javaUsedBytes": 9966712
+    },
+    "forcedGc": false
+  }
+}
